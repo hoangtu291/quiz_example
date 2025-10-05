@@ -1,673 +1,464 @@
 <!doctype html>
 <html lang="vi">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Quiz Viewer — Hiển thị câu hỏi</title>
-  <style>
-    :root {
-      --bg: #0f1724;
-      --card: #0b1220;
-      --muted: #9aa4b2;
-      --accent: #7dd3fc;
-      --accent-2: #60a5fa;
-      --glass: rgba(255, 255, 255, 0.03);
-      --success: #10b981;
-      --maxw: 1100px;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-
-    body.light {
-      --bg: #f5f7fa;
-      --card: #ffffff;
-      --muted: #6b7280;
-      --accent: #3b82f6;
-      --accent-2: #60a5fa;
-      --glass: rgba(0, 0, 0, 0.03);
-      --success: #10b981;
-      color: #111827;
-    }
-
-    * {
-      box-sizing: border-box
-    }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: inherit;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      padding: 28px;
-      display: flex;
-      justify-content: center;
-      transition: background 0.3s, color 0.3s;
-    }
-
-    .app {
-      width: 100%;
-      max-width: var(--maxw);
-    }
-
-    header {
-      display: flex;
-      gap: 16px;
-      align-items: center;
-      margin-bottom: 18px;
-    }
-
-    .brand {
-      display: flex;
-      gap: 12px;
-      align-items: center;
-    }
-
-    .logo {
-      width: 56px;
-      height: 56px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, var(--accent), var(--accent-2));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 20px;
-      box-shadow: 0 6px 18px rgba(2, 8, 23, 0.6);
-      color: #021027;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 20px
-    }
-
-    p.lead {
-      margin: 0;
-      color: var(--muted);
-      font-size: 13px
-    }
-
-    .controls {
-      margin-left: auto;
-      display: flex;
-      gap: 8px;
-      align-items: center;
-    }
-
-    .btn {
-      background: var(--glass);
-      border: 1px solid rgba(255, 255, 255, 0.04);
-      color: var(--accent);
-      padding: 8px 12px;
-      border-radius: 10px;
-      cursor: pointer;
-      font-weight: 600;
-      font-size: 13px;
-      transition: all 0.2s;
-    }
-
-    .btn:hover {
-      opacity: 0.85;
-    }
-
-    .btn.alt {
-      color: var(--muted);
-      background: transparent;
-      border: 1px solid rgba(255, 255, 255, 0.03)
-    }
-
-    .searchbar {
-      flex: 1;
-      max-width: 420px;
-      display: flex;
-      gap: 8px;
-      align-items: center;
-      background: #031226;
-      padding: 8px;
-      border-radius: 10px;
-    }
-
-    .searchbar input {
-      flex: 1;
-      border: 0;
-      outline: none;
-      background: transparent;
-      color: var(--muted)
-    }
-
-    main {
-      display: grid;
-      grid-template-columns: 1fr 360px;
-      gap: 18px;
-      align-items: start;
-    }
-
-    .left {
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
-      padding: 18px;
-      border-radius: 12px;
-    }
-
-    .card {
-      background: var(--card);
-      padding: 14px;
-      border-radius: 10px;
-      margin-bottom: 12px;
-      border: 1px solid rgba(255, 255, 255, 0.03);
-    }
-
-    .qheader {
-      display: flex;
-      gap: 12px;
-      align-items: center;
-      margin-bottom: 8px;
-    }
-
-    .qid {
-      min-width: 48px;
-      height: 48px;
-      background: #021826;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      color: var(--accent);
-    }
-
-    .qtext {
-      font-size: 15px;
-      color: inherit
-    }
-
-    .options {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      margin-top: 10px;
-    }
-
-    .opt {
-      padding: 10px 12px;
-      background: rgba(255, 255, 255, 0.02);
-      border-radius: 8px;
-      border: 1px solid rgba(255, 255, 255, 0.02);
-      cursor: pointer;
-      transition: all .12s;
-      display: flex;
-      gap: 12px;
-      align-items: center;
-    }
-
-    .opt:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 24px rgba(2, 8, 23, 0.5)
-    }
-
-    .opt .label {
-      width: 28px;
-      height: 28px;
-      border-radius: 6px;
-      display: inline-grid;
-      place-items: center;
-      font-weight: 700;
-      color: #021027;
-      background: linear-gradient(180deg, var(--accent), var(--accent-2));
-    }
-
-    .opt.correct {
-      border-color: rgba(16, 185, 129, 0.18);
-      box-shadow: 0 6px 18px rgba(16, 185, 129, 0.06)
-    }
-
-    .opt.wrong {
-      opacity: 0.6;
-      filter: grayscale(.2)
-    }
-
-    .meta {
-      display: flex;
-      gap: 10px;
-      color: var(--muted);
-      font-size: 13px;
-      margin-top: 8px;
-    }
-
-    .pager {
-      display: flex;
-      gap: 8px;
-      justify-content: center;
-      margin-top: 8px;
-      align-items: center;
-    }
-
-    .side {
-      padding: 18px;
-      border-radius: 12px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), transparent);
-      border: 1px solid rgba(255, 255, 255, 0.03);
-    }
-
-    .stat {
-      display: flex;
-      gap: 12px;
-      align-items: center;
-      margin-bottom: 12px;
-    }
-
-    .stat .big {
-      font-size: 22px;
-      font-weight: 800;
-      color: var(--accent)
-    }
-
-    .tools {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .small {
-      font-size: 13px;
-      color: var(--muted)
-    }
-
-    .page-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-top: 8px;
-    }
-
-    .page-btn {
-      padding: 8px 10px;
-      border-radius: 8px;
-      background: transparent;
-      border: 1px solid rgba(255, 255, 255, 0.03);
-      cursor: pointer;
-      color: var(--muted)
-    }
-
-    .page-btn.active {
-      background: linear-gradient(90deg, var(--accent), var(--accent-2));
-      color: #021027;
-      font-weight: 700;
-      box-shadow: 0 8px 20px rgba(8, 20, 40, 0.6)
-    }
-
-    .footer-note {
-      margin-top: 10px;
-      color: var(--muted);
-      font-size: 13px;
-      text-align: center
-    }
-
-    @media (max-width:980px) {
-      main {
-        grid-template-columns: 1fr;
-      }
-
-      .controls {
-        flex-wrap: wrap
-      }
-
-      .side {
-        order: 2
-      }
-    }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Quiz Viewer — Hiển thị câu hỏi</title>
+<style>
+  :root{
+    --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#7dd3fc; --accent-2:#60a5fa;
+    --glass: rgba(255,255,255,0.03); --success:#10b981;
+    --maxw:1100px;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:linear-gradient(180deg,#071020 0%, #071826 60%); color:#e6eef6;
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    padding:28px; display:flex; justify-content:center;
+  }
+  .app{
+    width:100%; max-width:var(--maxw);
+  }
+  header{
+    display:flex; gap:16px; align-items:center; margin-bottom:18px;
+  }
+  .brand{
+    display:flex; gap:12px; align-items:center;
+  }
+  .logo{
+    width:56px; height:56px; border-radius:12px; background:linear-gradient(135deg,var(--accent),var(--accent-2));
+    display:flex; align-items:center; justify-content:center; color:#021027; font-weight:700; font-size:20px;
+    box-shadow:0 6px 18px rgba(2,8,23,0.6);
+  }
+  h1{margin:0; font-size:20px}
+  p.lead{margin:0; color:var(--muted); font-size:13px}
+  .controls{
+    margin-left:auto; display:flex; gap:8px; align-items:center;
+  }
+  .btn{
+    background:var(--glass); border:1px solid rgba(255,255,255,0.04); color:var(--accent); padding:8px 12px;
+    border-radius:10px; cursor:pointer; font-weight:600; font-size:13px;
+  }
+  .btn.alt{color:var(--muted); background:transparent; border:1px solid rgba(255,255,255,0.03)}
+  .searchbar{flex:1; max-width:420px; display:flex; gap:8px; align-items:center; background:#031226; padding:8px;border-radius:10px;}
+  .searchbar input{flex:1; border:0; outline:none; background:transparent; color:var(--muted)}
+  main{display:grid; grid-template-columns: 1fr 360px; gap:18px; align-items:start;}
+  /* left column: questions */
+  .left{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent); padding:18px; border-radius:12px;}
+  .card{background:transparent; padding:14px; border-radius:10px; margin-bottom:12px; border:1px solid rgba(255,255,255,0.03);}
+  .qheader{display:flex; gap:12px; align-items:center; margin-bottom:8px;}
+  .qid{min-width:48px; height:48px; background:#021826; border-radius:8px; display:flex; align-items:center; justify-content:center; font-weight:700; color:var(--accent);}
+  .qtext{font-size:15px; color:#dbeafe}
+  .options{display:flex; flex-direction:column; gap:8px; margin-top:10px;}
+  .opt{padding:10px 12px; background:rgba(255,255,255,0.02); border-radius:8px; border:1px solid rgba(255,255,255,0.02); cursor:pointer; transition:all .12s; display:flex; gap:12px; align-items:center;}
+  .opt:hover{transform:translateY(-3px); box-shadow:0 8px 24px rgba(2,8,23,0.5)}
+  .opt .label{width:28px; height:28px; border-radius:6px; display:inline-grid; place-items:center; font-weight:700; color:#021027; background:linear-gradient(180deg,var(--accent),var(--accent-2));}
+  .opt.correct{border-color:rgba(16,185,129,0.18); box-shadow:0 6px 18px rgba(16,185,129,0.06)}
+  .opt.wrong{opacity:0.6; filter:grayscale(.2)}
+  .meta{display:flex; gap:10px; color:var(--muted); font-size:13px; margin-top:8px;}
+  .pager{display:flex; gap:8px; justify-content:center; margin-top:8px; align-items:center;}
+  .side{padding:18px; border-radius:12px; background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent); border:1px solid rgba(255,255,255,0.03);}
+  .stat{display:flex; gap:12px; align-items:center; margin-bottom:12px;}
+  .stat .big{font-size:22px; font-weight:800; color:var(--accent)}
+  .tools{display:flex; flex-direction:column; gap:12px;}
+  .small{font-size:13px; color:var(--muted)}
+  .page-list{display:flex; flex-wrap:wrap; gap:6px; margin-top:8px;}
+  .page-btn{padding:8px 10px; border-radius:8px; background:transparent; border:1px solid rgba(255,255,255,0.03); cursor:pointer; color:var(--muted)}
+  .page-btn.active{background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:#021027; font-weight:700; box-shadow:0 8px 20px rgba(8,20,40,0.6)}
+  .footer-note{margin-top:10px; color:var(--muted); font-size:13px; text-align:center}
+  /* responsive */
+  @media (max-width:980px){
+    main{grid-template-columns:1fr; }
+    .controls{flex-wrap:wrap}
+    .side{order:2}
+  }
+</style>
 </head>
-
 <body>
-  <div class="app" id="app">
-    <header>
-      <div class="brand">
-        <div class="logo">QZ</div>
-        <div>
-          <h1>Quiz Viewer</h1>
-          <p class="lead">Hiển thị & duyệt câu hỏi — tìm kiếm, phân trang, chế độ Quiz/Flashcard</p>
-        </div>
-      </div>
-
-      <div class="controls">
-        <div class="searchbar" title="Tìm theo nội dung">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-            <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
-          </svg>
-          <input id="search" placeholder="Tìm kiếm câu hỏi hoặc từ khóa..." />
-          <button class="btn alt" id="clearSearch" title="Xóa tìm kiếm">✕</button>
-        </div>
-
-        <button class="btn" id="quizModeBtn" title="Bật chế độ quiz">Bắt đầu Quiz</button>
-        <button class="btn" id="flashcardBtn" title="Chế độ Flashcard">Flashcard</button>
-        <button class="btn alt" id="themeBtn" title="Chuyển chế độ sáng/tối">Light/Dark</button>
-        <button class="btn alt" id="loadJsonBtn" title="Nếu không có file, dán JSON">Dán JSON</button>
-      </div>
-    </header>
-
-    <main>
-      <div class="left">
-        <div id="questionsContainer"></div>
-
-        <div class="pager" id="pagerArea">
-          <button class="btn alt" id="prevPage">&larr; Trước</button>
-          <div id="pageNumbers" style="display:flex;gap:6px;"></div>
-          <button class="btn" id="nextPage">Tiếp &rarr;</button>
-        </div>
-
-        <div class="footer-note">Mở rộng: Sắp xếp / export / in có thể thêm theo yêu cầu.</div>
-      </div>
-
-      <aside class="side">
-        <div class="stat">
-          <div>
-            <div class="small">Tổng câu hỏi</div>
-            <div class="big" id="totalCount">0</div>
-          </div>
-          <div>
-            <div class="small">Câu hiện tại</div>
-            <div class="big" id="currentIndex">0</div>
-          </div>
-        </div>
-
-        <div class="tools">
-          <div>
-            <label class="small">Hiển thị mỗi trang:</label>
-            <div style="margin-top:8px; display:flex; gap:8px;">
-              <button class="page-btn" data-per="5">5</button>
-              <button class="page-btn active" data-per="10">10</button>
-              <button class="page-btn" data-per="20">20</button>
-              <button class="page-btn" data-per="50">50</button>
-            </div>
-          </div>
-
-          <div>
-            <label class="small">Đi tới câu:</label>
-            <div style="display:flex; gap:8px; margin-top:8px;">
-              <input id="gotoInput" type="number" min="1" placeholder="số"
-                style="flex:1; padding:8px; border-radius:8px; border:1px solid rgba(255,255,255,0.04); background:transparent; color:var(--muted)" />
-              <button class="btn" id="gotoBtn">Đi</button>
-            </div>
-          </div>
-
-          <div>
-            <label class="small">Tùy chọn</label>
-            <div style="display:flex; flex-direction:column; gap:8px; margin-top:8px;">
-              <button class="btn alt" id="shuffleBtn">Xáo câu hỏi</button>
-              <button class="btn alt" id="showAnswersBtn">Hiện đáp án</button>
-              <button class="btn" id="exportBtn">Tải JSON hiển thị</button>
-            </div>
-          </div>
-
-          <div>
-            <label class="small">Trạng thái</label>
-            <div style="margin-top:8px; color:var(--muted); font-size:13px;">
-              <div id="statusLine">Đang chờ load file...</div>
-            </div>
-          </div>
-        </div>
-      </aside>
-    </main>
-  </div>
-
-  <!-- Modal paste JSON -->
-  <div id="jsonModal"
-    style="display:none; position:fixed; inset:0; background:rgba(2,6,12,0.6); align-items:center; justify-content:center;">
-    <div style="width:90%; max-width:900px; background:#071426; padding:16px; border-radius:10px;">
-      <h3 style="margin:0 0 8px 0">Dán JSON ở đây</h3>
-      <textarea id="jsonPaste"
-        style="width:100%; height:320px; background:#001022; color:#dbeafe; border-radius:8px; padding:12px; border:1px solid rgba(255,255,255,0.03)"></textarea>
-      <div style="display:flex; gap:8px; justify-content:flex-end; margin-top:8px;">
-        <button class="btn alt" id="cancelJson">Hủy</button>
-        <button class="btn" id="loadPastedJson">Load JSON</button>
+<div class="app" id="app">
+  <header>
+    <div class="brand">
+      <div class="logo">QZ</div>
+      <div>
+        <h1>Quiz Viewer</h1>
+        <p class="lead">Hiển thị & duyệt câu hỏi — tìm kiếm, phân trang, chế độ Quiz</p>
       </div>
     </div>
+
+    <div class="controls">
+      <div class="searchbar" title="Tìm theo nội dung">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <input id="search" placeholder="Tìm kiếm câu hỏi hoặc từ khóa..." />
+        <button class="btn alt" id="clearSearch" title="Xóa tìm kiếm">✕</button>
+      </div>
+
+      <button class="btn" id="quizModeBtn" title="Bật chế độ quiz">Bắt đầu Quiz</button>
+      <button class="btn alt" id="loadJsonBtn" title="Nếu không có file, dán JSON">Dán JSON</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="left">
+      <div id="questionsContainer"></div>
+
+      <div class="pager" id="pagerArea">
+        <button class="btn alt" id="prevPage">&larr; Trước</button>
+        <div id="pageNumbers" style="display:flex;gap:6px;"></div>
+        <button class="btn" id="nextPage">Tiếp &rarr;</button>
+      </div>
+
+      <div class="footer-note">Mở rộng: Sắp xếp / export / in có thể thêm theo yêu cầu.</div>
+    </div>
+
+    <aside class="side">
+      <div class="stat">
+        <div>
+          <div class="small">Tổng câu hỏi</div>
+          <div class="big" id="totalCount">0</div>
+        </div>
+        <div>
+          <div class="small">Câu hiện tại</div>
+          <div class="big" id="currentIndex">0</div>
+        </div>
+      </div>
+
+      <div class="tools">
+        <div>
+          <label class="small">Hiển thị mỗi trang:</label>
+          <div style="margin-top:8px; display:flex; gap:8px;">
+            <button class="page-btn" data-per="5">5</button>
+            <button class="page-btn active" data-per="10">10</button>
+            <button class="page-btn" data-per="20">20</button>
+            <button class="page-btn" data-per="50">50</button>
+          </div>
+        </div>
+
+        <div>
+          <label class="small">Đi tới câu:</label>
+          <div style="display:flex; gap:8px; margin-top:8px;">
+            <input id="gotoInput" type="number" min="1" placeholder="số" style="flex:1; padding:8px; border-radius:8px; border:1px solid rgba(255,255,255,0.04); background:transparent; color:var(--muted)" />
+            <button class="btn" id="gotoBtn">Đi</button>
+          </div>
+        </div>
+
+        <div>
+          <label class="small">Tùy chọn</label>
+          <div style="display:flex; flex-direction:column; gap:8px; margin-top:8px;">
+            <button class="btn alt" id="shuffleBtn">Xáo câu hỏi</button>
+            <button class="btn alt" id="showAnswersBtn">Hiện đáp án</button>
+            <button class="btn" id="exportBtn">Tải JSON hiển thị</button>
+          </div>
+        </div>
+
+        <div>
+          <label class="small">Trạng thái</label>
+          <div style="margin-top:8px; color:var(--muted); font-size:13px;">
+            <div id="statusLine">Đang chờ load file...</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </main>
+</div>
+
+<!-- Modal paste JSON -->
+<div id="jsonModal" style="display:none; position:fixed; inset:0; background:rgba(2,6,12,0.6); align-items:center; justify-content:center;">
+  <div style="width:90%; max-width:900px; background:#071426; padding:16px; border-radius:10px;">
+    <h3 style="margin:0 0 8px 0">Dán JSON ở đây</h3>
+    <textarea id="jsonPaste" style="width:100%; height:320px; background:#001022; color:#dbeafe; border-radius:8px; padding:12px; border:1px solid rgba(255,255,255,0.03)"></textarea>
+    <div style="display:flex; gap:8px; justify-content:flex-end; margin-top:8px;">
+      <button class="btn alt" id="cancelJson">Hủy</button>
+      <button class="btn" id="loadPastedJson">Load JSON</button>
+    </div>
   </div>
+</div>
 
-  <script>
-    let questions = [];
-    let filtered = [];
-    let perPage = 10;
-    let currentPage = 1;
-    let showAnswers = false;
-    let quizMode = false;
+<script>
+/*
+  Quiz Viewer JS
+  - expects questions.json in same folder: an array of objects with:
+    { id: number, question: string, options: [{key: 'a', text:'..'}, ...], answer: 'a' }
+  - If file missing, click "Dán JSON" and paste the questions JSON.
+*/
 
-    // Flashcard mode
-    let flashcardMode = false;
-    let flashcardIndex = 0;
-    let flashcardFlipped = false;
+let questions = [];
+let filtered = [];
+let perPage = 10;
+let currentPage = 1;
+let showAnswers = false;
+let quizMode = false;
+const statusLine = document.getElementById('statusLine');
 
-    const statusLine = document.getElementById('statusLine');
+function setStatus(s){ statusLine.textContent = s; }
 
-    function setStatus(s) { statusLine.textContent = s; }
+  async function loadJSON() {
+    const fileList = ["./default_quiz.json", "./questions.json"]; 
+    let loaded = false;
 
-    async function loadJSON() {
-      const fileList = ["./default_quiz.json", "./questions.json"];
-      let loaded = false;
-      for (const file of fileList) {
-        try {
-          setStatus(`Đang tải ${file}...`);
-          const resp = await fetch(file, { cache: 'no-cache' });
-          if (!resp.ok) throw new Error(`Không tìm thấy ${file} (HTTP ${resp.status})`);
-          questions = await resp.json();
-          setStatus(`Đã load file ${file}`);
-          loaded = true;
-          break;
-        } catch (err) {
-          console.warn(err);
-        }
+    for (const file of fileList) {
+      try {
+        setStatus(`Đang tải ${file}...`);
+        const resp = await fetch(file, { cache: 'no-cache' });
+        if (!resp.ok) throw new Error(`Không tìm thấy ${file} (HTTP ${resp.status})`);
+        questions = await resp.json();
+        setStatus(`Đã load file ${file}`);
+        loaded = true;
+        break;
+      } catch (err) {
+        console.warn(err);
       }
-      if (!loaded) {
-        setStatus('Không tìm thấy default_quiz.json hoặc questions.json. Bạn có thể bấm "Dán JSON" để dán thủ công.');
-        questions = [];
-      }
-      initData();
     }
 
-    function initData() {
-      questions = (questions || []).map(q => {
-        const opts = Array.isArray(q.options) ? q.options : (q.choices || []);
-        return {
-          id: q.id ?? q.question?.slice(0, 6) ?? Math.random(),
-          question: (q.question || q.text || q.q || '').toString().trim(),
-          options: opts.map(o => ({ key: (o.key || '').toString().trim(), text: (o.text || o).toString().trim() })),
-          answer: q.answer ?? null,
-          raw: q
-        };
+    if (!loaded) {
+      setStatus('Không tìm thấy default_quiz.json hoặc questions.json. Bạn có thể bấm "Dán JSON" để dán thủ công.');
+      questions = [];
+    }
+
+    initData();
+  }
+
+  function initData() {
+    questions = (questions || []).map(q => {
+      const opts = Array.isArray(q.options) ? q.options : (q.choices || []);
+      return {
+        id: q.id ?? q.question?.slice(0, 6) ?? Math.random(),
+        question: (q.question || q.text || q.q || '').toString().trim(),
+        options: opts.map(o => ({ key: (o.key || '').toString().trim(), text: (o.text || o).toString().trim() })),
+        answer: q.answer ?? null,
+        raw: q
+      };
+    });
+    filtered = [...questions];
+    document.getElementById('totalCount').textContent = questions.length;
+    renderPage();
+    renderPager();
+    setStatus(`Sẵn sàng — ${questions.length} câu hỏi`);
+  }
+
+function renderPage(){
+  const container = document.getElementById('questionsContainer');
+  container.innerHTML = '';
+  const start = (currentPage-1)*perPage;
+  const pageItems = filtered.slice(start, start+perPage);
+  document.getElementById('currentIndex').textContent = (pageItems.length ? start+1 : 0);
+
+  pageItems.forEach((q, idx) => {
+    const card = document.createElement('div'); card.className='card';
+    const qnum = start + idx + 1;
+    const header = document.createElement('div'); header.className='qheader';
+    header.innerHTML = `<div class="qid">${qnum}</div><div style="flex:1"><div class="qtext">${escapeHtml(q.question)}</div></div>`;
+    card.appendChild(header);
+
+    const opts = document.createElement('div'); opts.className='options';
+    if(!q.options || q.options.length===0){
+      // fallback: try to detect options from raw
+      opts.innerHTML = '<div class="small" style="color:var(--muted)">Không có lựa chọn (dữ liệu thô)</div>';
+    } else {
+      q.options.forEach(o=>{
+        const opt = document.createElement('div');
+        opt.className = 'opt';
+        opt.setAttribute('data-key', o.key);
+        opt.innerHTML = `<div class="label">${escapeHtml(o.key)}</div><div style="flex:1">${escapeHtml(o.text)}</div>`;
+        // click handler (if quiz mode, mark selected)
+        opt.addEventListener('click', ()=>{
+          if(quizMode){
+            // mark selected and show correct/wrong
+            const siblings = opt.parentNode.querySelectorAll('.opt');
+            siblings.forEach(s=>s.classList.remove('selected','wrong','correct'));
+            opt.classList.add('selected');
+            if(q.answer && o.key === q.answer){
+              opt.classList.add('correct');
+            } else {
+              opt.classList.add('wrong');
+              // highlight correct
+              const corr = opt.parentNode.querySelector('.opt[data-key="'+q.answer+'"]');
+              if(corr) corr.classList.add('correct');
+            }
+          }
+        });
+        opts.appendChild(opt);
       });
-      filtered = [...questions];
-      document.getElementById('totalCount').textContent = questions.length;
-      renderPage();
-      renderPager();
-      setStatus(`Sẵn sàng — ${questions.length} câu hỏi`);
     }
+    card.appendChild(opts);
 
-    function escapeHtml(s) {
-      if (!s) return '';
-      return s.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
-    }
-
-    function renderPage() {
-      if (flashcardMode) { renderFlashcard(); return; }
-      const container = document.getElementById('questionsContainer');
-      container.innerHTML = '';
-      const start = (currentPage - 1) * perPage;
-      const pageItems = filtered.slice(start, start + perPage);
-      document.getElementById('currentIndex').textContent = (pageItems.length ? start + 1 : 0);
-      pageItems.forEach((q, idx) => {
-        const card = document.createElement('div'); card.className = 'card';
-        const qnum = start + idx + 1;
-        const header = document.createElement('div'); header.className = 'qheader';
-        header.innerHTML = `<div class="qid">${qnum}</div><div style="flex:1"><div class="qtext">${escapeHtml(q.question)}</div></div>`;
-        card.appendChild(header);
-
-        const opts = document.createElement('div'); opts.className = 'options';
-        if (!q.options || q.options.length === 0) {
-          opts.innerHTML = '<div class="small" style="color:var(--muted)">Không có lựa chọn (dữ liệu thô)</div>';
-        } else {
-          q.options.forEach(o => {
-            const opt = document.createElement('div');
-            opt.className = 'opt';
-            opt.setAttribute('data-key', o.key);
-            opt.innerHTML = `<div class="label">${escapeHtml(o.key)}</div><div style="flex:1">${escapeHtml(o.text)}</div>`;
-            opt.addEventListener('click', () => {
-              if (quizMode) {
-                const siblings = opt.parentNode.querySelectorAll('.opt');
-                siblings.forEach(s => s.classList.remove('selected', 'wrong', 'correct'));
-                opt.classList.add('selected');
-                if (q.answer && o.key === q.answer) {
-                  opt.classList.add('correct');
-                } else {
-                  opt.classList.add('wrong');
-                  const corr = opt.parentNode.querySelector('.opt[data-key="' + q.answer + '"]');
-                  if (corr) corr.classList.add('correct');
-                }
-              }
-            });
-            opts.appendChild(opt);
-          });
-        }
-        card.appendChild(opts);
-
-        const meta = document.createElement('div'); meta.className = 'meta';
-        meta.innerHTML = `<div class="small">ID: ${escapeHtml(String(q.id))}</div>
+    const meta = document.createElement('div'); meta.className='meta';
+    meta.innerHTML = `<div class="small">ID: ${escapeHtml(String(q.id))}</div>
                       <div class="small">Opts: ${q.options?.length ?? 0}</div>
                       <div class="small">${q.answer ? 'Has answer' : 'No answer'}</div>`;
-        card.appendChild(meta);
+    card.appendChild(meta);
 
-        if (showAnswers && q.answer) {
-          const note = document.createElement('div');
-          note.style.marginTop = '8px'; note.style.fontSize = '13px'; note.style.color = 'var(--muted)';
-          note.innerHTML = `<strong>Đáp án:</strong> ${escapeHtml(String(q.answer))}`;
-          card.appendChild(note);
-          const corr = opts.querySelector('.opt[data-key="' + q.answer + '"]');
-          if (corr) corr.classList.add('correct');
-        }
-
-        container.appendChild(card);
-      });
-
-      if (pageItems.length === 0) {
-        container.innerHTML = '<div style="padding:18px; color:var(--muted)">Không có câu hỏi để hiển thị.</div>';
-      }
+    if(showAnswers && q.answer){
+      // show answer note
+      const note = document.createElement('div');
+      note.style.marginTop='8px';
+      note.style.fontSize='13px';
+      note.style.color='var(--muted)';
+      note.innerHTML = `<strong>Đáp án:</strong> ${escapeHtml(String(q.answer))}`;
+      card.appendChild(note);
+      // mark correct option visually
+      const corr = opts.querySelector('.opt[data-key="'+q.answer+'"]');
+      if(corr) corr.classList.add('correct');
     }
 
-    function renderPager() {
-      const pageNumbers = document.getElementById('pageNumbers');
-      pageNumbers.innerHTML = '';
-      const totalPage = Math.ceil(filtered.length / perPage);
-      for (let i = 1; i <= totalPage; i++) {
-        const btn = document.createElement('button');
-        btn.className = 'page-btn' + (i === currentPage ? ' active' : '');
-        btn.textContent = i;
-        btn.addEventListener('click', () => { currentPage = i; renderPage(); renderPager(); });
-        pageNumbers.appendChild(btn);
-      }
-    }
+    container.appendChild(card);
+  });
 
-    // --- Flashcard ---
-    function renderFlashcard() {
-      const container = document.getElementById('questionsContainer');
-      container.innerHTML = '';
-      if (filtered.length === 0) {
-        container.innerHTML = '<div style="padding:18px; color:var(--muted)">Không có câu hỏi để hiển thị.</div>';
-        return;
-      }
-      const q = filtered[flashcardIndex];
-      const card = document.createElement('div'); card.className = 'card';
-      const header = document.createElement('div'); header.className = 'qheader';
-      header.innerHTML = `<div class="qid">${flashcardIndex + 1}</div><div style="flex:1"><div class="qtext">${escapeHtml(q.question)}</div></div>`;
-      card.appendChild(header);
+  // if none
+  if(pageItems.length===0){
+    container.innerHTML = '<div style="padding:18px; color:var(--muted)">Không có câu hỏi để hiển thị.</div>';
+  }
+}
 
-      const opts = document.createElement('div'); opts.className = 'options';
-      if (flashcardFlipped) {
-        if (q.options && q.options.length > 0) {
-          q.options.forEach(o => {
-            const opt = document.createElement('div'); opt.className = 'opt';
-            if (q.answer && o.key === q.answer) opt.classList.add('correct');
-            opt.innerHTML = `<div class="label">${escapeHtml(o.key)}</div><div style="flex:1">${escapeHtml(o.text)}</div>`;
-            opts.appendChild(opt);
-          });
-        }
-        if (q.answer && (!q.options || !q.options.some(o => o.key === q.answer))) {
-          const note = document.createElement('div'); note.style.marginTop = '8px';
-          note.style.fontSize = '13px'; note.style.color = 'var(--muted)';
-          note.innerHTML = `<strong>Đáp án:</strong> ${escapeHtml(q.answer)}`;
-          opts.appendChild(note);
-        }
-      } else {
-        opts.innerHTML = '<div style="padding:20px; text-align:center; color:var(--muted)">Click để lật ra xem đáp án</div>';
-      }
-      card.appendChild(opts);
-      card.addEventListener('click', () => { flashcardFlipped = !flashcardFlipped; renderFlashcard(); });
-      container.appendChild(card);
-      document.getElementById('currentIndex').textContent = flashcardIndex + 1;
-    }
+function renderPager(){
+  const pageNumbers = document.getElementById('pageNumbers');
+  pageNumbers.innerHTML = '';
+  const pageCount = Math.max(1, Math.ceil(filtered.length / perPage));
+  // show window of pages
+  const maxButtons = 7;
+  let start = Math.max(1, currentPage - Math.floor(maxButtons/2));
+  let end = Math.min(pageCount, start + maxButtons -1);
+  if(end - start < maxButtons -1) start = Math.max(1, end - maxButtons + 1);
 
-    // --- Event Listeners ---
-    document.getElementById('flashcardBtn').addEventListener('click', () => {
-      flashcardMode = !flashcardMode;
-      flashcardIndex = 0;
-      flashcardFlipped = false;
-      document.getElementById('flashcardBtn').textContent = flashcardMode ? 'Thoát Flashcard' : 'Flashcard';
-      if (flashcardMode) { renderFlashcard(); setStatus('Chế độ Flashcard: click để lật, phím ← → sang câu'); }
-      else { renderPage(); setStatus('Thoát Flashcard'); }
+  for(let i=start;i<=end;i++){
+    const b = document.createElement('button');
+    b.className = 'page-btn' + (i===currentPage ? ' active':'');
+    b.textContent = i;
+    b.addEventListener('click', ()=>{ currentPage = i; renderPage(); renderPager(); });
+    pageNumbers.appendChild(b);
+  }
+}
+
+function escapeHtml(s){
+  if(!s) return '';
+  return s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
+}
+
+// controls
+document.getElementById('prevPage').addEventListener('click', ()=>{
+  if(currentPage>1) currentPage--; renderPage(); renderPager();
+});
+document.getElementById('nextPage').addEventListener('click', ()=>{
+  const pageCount = Math.max(1, Math.ceil(filtered.length / perPage));
+  if(currentPage<pageCount) currentPage++; renderPage(); renderPager();
+});
+document.querySelectorAll('.page-btn[data-per]').forEach(b=>{
+  b.addEventListener('click', ()=>{
+    document.querySelectorAll('.page-btn[data-per]').forEach(x=>x.classList.remove('active'));
+    b.classList.add('active');
+    perPage = Number(b.dataset.per);
+    currentPage = 1;
+    renderPage(); renderPager();
+  });
+});
+
+document.getElementById('gotoBtn').addEventListener('click', ()=>{
+  const v = Number(document.getElementById('gotoInput').value);
+  if(!v || v<1) return;
+  const idx = v - 1;
+  const page = Math.floor(idx / perPage) + 1;
+  currentPage = Math.min(Math.max(1,page), Math.ceil(filtered.length / perPage));
+  renderPage(); renderPager();
+});
+
+document.getElementById('search').addEventListener('input', (e)=>{
+  const q = e.target.value.trim().toLowerCase();
+  if(!q){
+    filtered = [...questions];
+  } else {
+    filtered = questions.filter(it=>{
+      return (it.question || '').toLowerCase().includes(q)
+             || (it.options||[]).some(o=> (o.text||'').toLowerCase().includes(q) || (o.key||'').toLowerCase().includes(q))
+             || String(it.id || '').includes(q);
     });
+  }
+  currentPage = 1;
+  renderPage(); renderPager();
+});
 
-    document.addEventListener('keydown', (e) => {
-      if (flashcardMode) {
-        if (e.key === 'ArrowRight') { flashcardIndex = Math.min(flashcardIndex + 1, filtered.length - 1); flashcardFlipped = false; renderFlashcard(); }
-        if (e.key === 'ArrowLeft') { flashcardIndex = Math.max(flashcardIndex - 1, 0); flashcardFlipped = false; renderFlashcard(); }
-      }
-    });
+document.getElementById('clearSearch').addEventListener('click', ()=>{
+  document.getElementById('search').value=''; document.getElementById('search').dispatchEvent(new Event('input'));
+});
 
-    document.getElementById('themeBtn').addEventListener('click', () => {
-      document.body.classList.toggle('light');
-    });
+document.getElementById('shuffleBtn').addEventListener('click', ()=>{
+  questions = shuffleArray(questions);
+  filtered = [...questions];
+  currentPage = 1;
+  renderPage(); renderPager();
+  setStatus('Đã xáo câu hỏi');
+});
 
-    // --- search ---
-    document.getElementById('search').addEventListener('input', (e) => {
-      const v = e.target.value.toLowerCase().trim();
-      filtered = questions.filter(q => q.question.toLowerCase().includes(v));
-      currentPage = 1; renderPage(); renderPager();
-    });
-    document.getElementById('clearSearch').addEventListener('click', () => {
-      document.getElementById('search').value = ''; filtered = [...questions]; currentPage = 1; renderPage(); renderPager();
-    });
+document.getElementById('showAnswersBtn').addEventListener('click', ()=>{
+  showAnswers = !showAnswers;
+  document.getElementById('showAnswersBtn').textContent = showAnswers ? 'Ẩn đáp án' : 'Hiện đáp án';
+  renderPage();
+});
 
-    // --- per page ---
-    document.querySelectorAll('.page-btn[data-per]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        perPage = parseInt(btn.dataset.per); currentPage = 1;
-        document.querySelectorAll('.page-btn[data-per]').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active'); renderPage(); renderPager();
-      });
-    });
+document.getElementById('exportBtn').addEventListener('click', ()=>{
+  const start = (currentPage-1)*perPage;
+  const slice = filtered.slice(start, start+perPage);
+  const blob = new Blob([JSON.stringify(slice, null, 2)], {type:'application/json;charset=utf-8'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a'); a.href=url; a.download = `questions-page-${currentPage}.json`; a.click();
+  URL.revokeObjectURL(url);
+});
 
-    // --- navigation ---
-    document.getElementById('prevPage').addEventListener('click', () => { if (currentPage > 1) currentPage--; renderPage(); renderPager(); });
-    document.getElementById('nextPage').addEventListener('click', () => { if (currentPage < Math.ceil(filtered.length / perPage)) currentPage++; renderPage(); renderPager(); });
+document.getElementById('quizModeBtn').addEventListener('click', ()=>{
+  quizMode = !quizMode;
+  document.getElementById('quizModeBtn').textContent = quizMode ? 'Thoát Quiz' : 'Bắt đầu Quiz';
+  // in quiz mode hide answers by default and remove previous selected classes
+  document.querySelectorAll('.opt').forEach(o=>o.classList.remove('selected','wrong','correct'));
+  showAnswers = false;
+  document.getElementById('showAnswersBtn').textContent = 'Hiện đáp án';
+  setStatus(quizMode ? 'Chế độ Quiz: chọn đáp án để kiểm tra' : 'Thoát chế độ Quiz');
+});
 
-    // --- goto ---
-    document.getElementById('gotoBtn').addEventListener('click', () => {
-      const n = parseInt(document.getElementById('gotoInput').value);
-      if (n >= 1 && n <= filtered.length) {
-        if (flashcardMode) { flashcardIndex = n - 1; flashcardFlipped = false; renderFlashcard(); }
-        else { currentPage = Math.ceil(n / perPage); renderPage(); renderPager(); }
-      }
-    });
+function shuffleArray(a){
+  for(let i=a.length-1;i>0;i--){
+    const j = Math.floor(Math.random()*(i+1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
 
-    // --- load JSON paste ---
-    document.getElementById('loadJsonBtn').addEventListener('click', () => { document.getElementById('jsonModal').style.display = 'flex'; });
-    document.getElementById('cancelJson').addEventListener('click', () => { document.getElementById('jsonModal').style.display = 'none'; });
-    document.getElementById('loadPastedJson').addEventListener('click', () => {
-      try { questions = JSON.parse(document.getElementById('jsonPaste').value); document.getElementById('jsonModal').style.display = 'none'; initData(); }
-      catch (err) { alert('JSON không hợp lệ'); console.error(err); }
-    });
+/* JSON paste modal */
+const modal = document.getElementById('jsonModal');
+document.getElementById('loadJsonBtn').addEventListener('click', ()=>{ modal.style.display='flex'; });
+document.getElementById('cancelJson').addEventListener('click', ()=>{ modal.style.display='none'; });
+document.getElementById('loadPastedJson').addEventListener('click', ()=>{
+  const txt = document.getElementById('jsonPaste').value.trim();
+  if(!txt) return alert('Chưa dán JSON');
+  try{
+    const arr = JSON.parse(txt);
+    if(!Array.isArray(arr)) throw new Error('JSON phải là mảng các câu hỏi');
+    questions = arr;
+    modal.style.display='none';
+    document.getElementById('jsonPaste').value='';
+    initData();
+  } catch(err){
+    alert('JSON không hợp lệ: ' + err.message);
+  }
+});
 
-    loadJSON();
-  </script>
+/* keyboard navigation */
+document.addEventListener('keydown', (e)=>{
+  if(e.key === 'ArrowRight') { document.getElementById('nextPage').click(); }
+  if(e.key === 'ArrowLeft') { document.getElementById('prevPage').click(); }
+});
+
+/* initial load */
+loadJSON();
+
+/* helpers */
+function download(filename, text) {
+  const pom = document.createElement('a');
+  pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+  pom.setAttribute('download', filename);
+  pom.style.display = 'none';
+  document.body.appendChild(pom);
+  pom.click();
+  document.body.removeChild(pom);
+}
+</script>
 </body>
-
 </html>
