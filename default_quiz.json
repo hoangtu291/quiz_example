@@ -1,0 +1,8773 @@
+[
+  {
+    "id": 1,
+    "question": "Trong bảng tính MS Excel, tại ô A2 có giá trị chuỗi \"a\", tại ô B2 gõ công thức =5/A2 cho kết quả:",
+    "options": [
+      {
+        "key": "a",
+        "text": "#DIV/0!"
+      },
+      {
+        "key": "b",
+        "text": "5"
+      },
+      {
+        "key": "c",
+        "text": "#VALUE!"
+      },
+      {
+        "key": "d",
+        "text": "0"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 2,
+    "question": "Dưới góc độ địa lý, mạng máy tính được phân biệt thành:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Mạng diện rộng, mạng toàn cầu, mạng toàn cục"
+      },
+      {
+        "key": "b",
+        "text": "Mạng cục bộ, mạng toàn cục, mạng toàn cầu"
+      },
+      {
+        "key": "c",
+        "text": "Mạng cục bộ, mạng diện rộng, mạng toàn cầu"
+      },
+      {
+        "key": "d",
+        "text": "Mạng cục bộ, mạng diện rộng, mạng toàn cục"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 3,
+    "question": "Muốn tính trung bình của hàng hay cột, ta sử dụng hàm nào trong số các hàm dưới đây?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Hàm SUM()"
+      },
+      {
+        "key": "b",
+        "text": "Hàm AVERAGE()"
+      },
+      {
+        "key": "c",
+        "text": "Hàm COUNT()"
+      },
+      {
+        "key": "d",
+        "text": "Hàm MEDIAN()"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 4,
+    "question": "Công thức INT(123/2) cho kết quả là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "61"
+      },
+      {
+        "key": "b",
+        "text": "62"
+      },
+      {
+        "key": "c",
+        "text": "60"
+      },
+      {
+        "key": "d",
+        "text": "Công thức sai"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 5,
+    "question": "Phương pháp nào nhanh nhất cho phép bạn xem hai hoặc nhiều website trên trình duyệt của bạn?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Mở tab mới trên trình duyệt để truy cập website khác"
+      },
+      {
+        "key": "b",
+        "text": "Nhập địa chỉ mới của website vào thanh địa chỉ hiện tại"
+      },
+      {
+        "key": "c",
+        "text": "Thiết lập cửa sổ riêng biệt để mở thêm trang web khác"
+      },
+      {
+        "key": "d",
+        "text": "Sử dụng tính năng chia màn hình của hệ điều hành"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 6,
+    "question": "Trong bảng tính Excel, tại ô A2 có giá trị là chuỗi '25/', tại ô B2 gõ công thức =SQRT(A2) thì nhận được kết quả:",
+    "options": [
+      {
+        "key": "a",
+        "text": "#VALUE!"
+      },
+      {
+        "key": "b",
+        "text": "5"
+      },
+      {
+        "key": "c",
+        "text": "25"
+      },
+      {
+        "key": "d",
+        "text": "#NAME?"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 7,
+    "question": "Công thức MOD(8*3/2,7) cho kết quả:",
+    "options": [
+      {
+        "key": "a",
+        "text": "5"
+      },
+      {
+        "key": "b",
+        "text": "6"
+      },
+      {
+        "key": "c",
+        "text": "4"
+      },
+      {
+        "key": "d",
+        "text": "1"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 8,
+    "question": "Trong soạn thảo Word, muốn trình bày văn bản theo hướng ngang (landscape) ta chọn mục:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Page Layout → Orientation → Landscape"
+      },
+      {
+        "key": "b",
+        "text": "File → Page Setup → Portrait"
+      },
+      {
+        "key": "c",
+        "text": "View → Orientation → Landscape"
+      },
+      {
+        "key": "d",
+        "text": "Insert → Layout → Landscape"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 9,
+    "question": "Trên màn hình Desktop, ta có thể thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tạo hoặc xóa Shortcut"
+      },
+      {
+        "key": "b",
+        "text": "Tạo hoặc xóa tập tin"
+      },
+      {
+        "key": "c",
+        "text": "Tạo hoặc xóa thư mục"
+      },
+      {
+        "key": "d",
+        "text": "Cả ba phương án trên đều đúng"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 10,
+    "question": "Công thức INT(7*5/2) cho kết quả là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "17"
+      },
+      {
+        "key": "b",
+        "text": "17.5"
+      },
+      {
+        "key": "c",
+        "text": "18"
+      },
+      {
+        "key": "d",
+        "text": "Công thức sai"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 11,
+    "question": "Công thức INT(123.56,1) cho kết quả là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "123"
+      },
+      {
+        "key": "b",
+        "text": "123.5"
+      },
+      {
+        "key": "c",
+        "text": "124"
+      },
+      {
+        "key": "d",
+        "text": "Công thức sai"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 12,
+    "question": "Trong PowerPoint, để chèn một bảng vào trong slide, bạn có thể:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chọn Insert → Table → Insert Table"
+      },
+      {
+        "key": "b",
+        "text": "Chọn Layout → Table → Insert Table"
+      },
+      {
+        "key": "c",
+        "text": "Chọn Home → New Slide"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 13,
+    "question": "Người và máy tính giao tiếp thông qua:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Bàn phím và màn hình"
+      },
+      {
+        "key": "b",
+        "text": "Cả ba đều đúng"
+      },
+      {
+        "key": "c",
+        "text": "RAM"
+      },
+      {
+        "key": "d",
+        "text": "Hệ điều hành"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 14,
+    "question": "Trong MS Word 2013, để chèn hình vào văn bản, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thẻ Insert → Picture"
+      },
+      {
+        "key": "b",
+        "text": "Thẻ Review → Picture"
+      },
+      {
+        "key": "c",
+        "text": "Thẻ Data → Picture"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 15,
+    "question": "Trong MS Word, để mở một tệp có dạng *.docx hoặc *.xlsx, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "File → Open"
+      },
+      {
+        "key": "b",
+        "text": "File → Save"
+      },
+      {
+        "key": "c",
+        "text": "Insert → Object"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 16,
+    "question": "An đã truy cập đến một website vào thứ Ba tuần trước, trong đó có công thức làm bánh mì thịt mà An đang muốn thử lại nhưng không nhớ địa chỉ trang. An nên làm gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Mở lại lịch sử trình duyệt (History) để tìm website"
+      },
+      {
+        "key": "b",
+        "text": "Nhấn nút Refresh để tải lại trang"
+      },
+      {
+        "key": "c",
+        "text": "Thực hiện tìm kiếm lại công thức trên công cụ tìm kiếm"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 17,
+    "question": "Phần mở rộng nào sau đây là phần mở rộng của tập tin hình ảnh?",
+    "options": [
+      {
+        "key": "a",
+        "text": ".BMP"
+      },
+      {
+        "key": "b",
+        "text": ".DOCX"
+      },
+      {
+        "key": "c",
+        "text": ".EXE"
+      },
+      {
+        "key": "d",
+        "text": ".XLSX"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 18,
+    "question": "Trong MS Word, tổ hợp phím Ctrl + V dùng để:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Dán nội dung trong Clipboard vào vị trí con trỏ"
+      },
+      {
+        "key": "b",
+        "text": "Sao chép nội dung đã chọn vào Clipboard"
+      },
+      {
+        "key": "c",
+        "text": "Cắt nội dung đã chọn và lưu vào Clipboard"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 19,
+    "question": "Để tạo một slide giống hệt như slide hiện hành mà không phải thiết kế lại, người dùng thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Insert → Duplicate Slide"
+      },
+      {
+        "key": "b",
+        "text": "Insert → New Slide"
+      },
+      {
+        "key": "c",
+        "text": "Home → Layout"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 20,
+    "question": "Trong PowerPoint, để thiết kế trình chiếu, ta dùng:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Vào tab Slide Show → chọn Set Up Slide Show"
+      },
+      {
+        "key": "b",
+        "text": "Vào tab View → chọn Slide Master"
+      },
+      {
+        "key": "c",
+        "text": "Vào tab Animations → thiết lập hiệu ứng"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 21,
+    "question": "Trong Word, để di chuyển về đầu tài liệu, nhấn:",
+    "options": [
+      {
+        "key": "a",
+        "text": "End"
+      },
+      {
+        "key": "b",
+        "text": "Ctrl + Home"
+      },
+      {
+        "key": "c",
+        "text": "Ctrl + Page Down"
+      },
+      {
+        "key": "d",
+        "text": "Page Down"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 22,
+    "question": "Cho biết kết quả của công thức sau đây: =AND(OR(12>=10,73>=50,48>=6),(32<3))",
+    "options": [
+      {
+        "key": "a",
+        "text": "Công thức sai"
+      },
+      {
+        "key": "b",
+        "text": "TRUE"
+      },
+      {
+        "key": "c",
+        "text": "FALSE"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 23,
+    "question": "Trong Windows, để thay đổi thiết lập hệ thống, ta chọn chức năng:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Control Panel"
+      },
+      {
+        "key": "b",
+        "text": "Control Desktop"
+      },
+      {
+        "key": "c",
+        "text": "Control Windows"
+      },
+      {
+        "key": "d",
+        "text": "System Settings"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 24,
+    "question": "Trong PowerPoint, hãy liệt kê các phương pháp có thể sử dụng để chèn biểu đồ vào trong slide:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thay đổi bố cục slide thành Title and Content, chọn biểu tượng Insert Chart"
+      },
+      {
+        "key": "b",
+        "text": "Trên thẻ Insert, trong nhóm Illustrations, chọn Chart → Insert Chart"
+      },
+      {
+        "key": "c",
+        "text": "Chèn biểu đồ bằng cách sao chép từ Excel sang PowerPoint"
+      },
+      {
+        "key": "d",
+        "text": "Cả ba phương án trên đều đúng"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 25,
+    "question": "Anh (chị) hiểu virus tin học là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Là chương trình có khả năng phá hoại các sản phẩm tin học"
+      },
+      {
+        "key": "b",
+        "text": "Có khả năng tự sao chép để lây lan"
+      },
+      {
+        "key": "c",
+        "text": "Là chương trình máy tính do con người tạo ra"
+      },
+      {
+        "key": "d",
+        "text": "Tất cả các đáp án trên đều đúng"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 26,
+    "question": "Trong MS Word, muốn tạo số thứ tự tự động ở đầu mỗi đoạn văn bản, ta chọn chức năng:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Symbol"
+      },
+      {
+        "key": "b",
+        "text": "Bullets"
+      },
+      {
+        "key": "c",
+        "text": "Numbering and Bullets"
+      },
+      {
+        "key": "d",
+        "text": "Numbering"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 27,
+    "question": "Trong MS Word 2013, để tìm và thay thế những định dạng đặc biệt, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thẻ Page Layout → Edit → Find/Replace → More → Format"
+      },
+      {
+        "key": "b",
+        "text": "Thẻ Home → Editing → Replace → More → Format"
+      },
+      {
+        "key": "c",
+        "text": "Thẻ Insert → Editing → Replace"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 28,
+    "question": "Khi đang làm việc với Word hoặc Excel, nếu lưu tệp tin vào đĩa, thì tệp đó:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Có thể lưu vào bất kỳ thư mục nào người dùng chọn"
+      },
+      {
+        "key": "b",
+        "text": "Luôn nằm trong thư mục My Documents (mặc định)"
+      },
+      {
+        "key": "c",
+        "text": "Bắt buộc ở trong thư mục cài đặt phần mềm"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 29,
+    "question": "Công thức MOD(6*3/2,5) cho kết quả:",
+    "options": [
+      {
+        "key": "a",
+        "text": "4"
+      },
+      {
+        "key": "b",
+        "text": "5"
+      },
+      {
+        "key": "c",
+        "text": "1"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 30,
+    "question": "Cái gì dưới đây là sự kết hợp giữa phần cứng và phần mềm, cho phép các máy tính sử dụng chung tài nguyên trong một tổ chức?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Mạng máy tính"
+      },
+      {
+        "key": "b",
+        "text": "Hệ điều hành"
+      },
+      {
+        "key": "c",
+        "text": "Cơ sở dữ liệu quan hệ"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 31,
+    "question": "Trong MS Word, bôi đen một cụm từ trong văn bản rồi lần lượt thực hiện thao tác: nhấn tổ hợp phím Ctrl + B tiếp đến Ctrl + I, cụm từ được bôi đen sẽ:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Được in đậm và in nghiêng"
+      },
+      {
+        "key": "b",
+        "text": "Được in đậm"
+      },
+      {
+        "key": "c",
+        "text": "Được gạch dưới"
+      },
+      {
+        "key": "d",
+        "text": "Không có thay đổi nào"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 32,
+    "question": "Trong MS PowerPoint, muốn chèn thêm một slide mới ta nhấn tổ hợp phím:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ctrl + M"
+      },
+      {
+        "key": "b",
+        "text": "Ctrl + N"
+      },
+      {
+        "key": "c",
+        "text": "Ctrl + D"
+      },
+      {
+        "key": "d",
+        "text": "Ctrl + O"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 33,
+    "question": "Trong MS Word, phím hoặc tổ hợp phím nào cho phép di chuyển con trỏ về đầu tài liệu:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ctrl + Page Up"
+      },
+      {
+        "key": "b",
+        "text": "Home"
+      },
+      {
+        "key": "c",
+        "text": "Ctrl + Home"
+      },
+      {
+        "key": "d",
+        "text": "Ctrl + End"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 34,
+    "question": "Trong Excel, hàm MIN(-52, 20, 15) cho kết quả:",
+    "options": [
+      {
+        "key": "a",
+        "text": "-52"
+      },
+      {
+        "key": "b",
+        "text": "15"
+      },
+      {
+        "key": "c",
+        "text": "20"
+      },
+      {
+        "key": "d",
+        "text": "0"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 35,
+    "question": "Phím Page Up trong Windows hoặc các trình soạn thảo có tác dụng gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Di chuyển con trỏ lên trên một trang"
+      },
+      {
+        "key": "b",
+        "text": "Di chuyển con trỏ xuống dưới một trang"
+      },
+      {
+        "key": "c",
+        "text": "Xóa trang hiện tại"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 36,
+    "question": "Trong MS Word 2013, để định dạng văn bản theo kiểu danh sách, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Format → Bullets and Numbering"
+      },
+      {
+        "key": "b",
+        "text": "Tools → Bullets and Numbering"
+      },
+      {
+        "key": "c",
+        "text": "Home → Paragraph → Bullets/Numbering"
+      },
+      {
+        "key": "d",
+        "text": "Insert → Numbering"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 37,
+    "question": "Trong Excel, để chọn vùng dữ liệu từ ô B1 đến ô D10, ta nhập vào thanh công thức:",
+    "options": [
+      {
+        "key": "a",
+        "text": "B1:D10"
+      },
+      {
+        "key": "b",
+        "text": "B$1:D$10"
+      },
+      {
+        "key": "c",
+        "text": "=$B$1:$D$10"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 38,
+    "question": "Phần mềm gián điệp (Spyware) là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Phần mềm tự động theo dõi và thu thập thông tin người dùng mà không có sự cho phép"
+      },
+      {
+        "key": "b",
+        "text": "Phần mềm sao chép chính nó để lây lan"
+      },
+      {
+        "key": "c",
+        "text": "Phần mềm quản lý hệ thống mạng"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 39,
+    "question": "Thiết bị lưu trữ nào thường được dùng để sao lưu dữ liệu?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ổ đĩa cứng (Hard Disk)"
+      },
+      {
+        "key": "b",
+        "text": "Đĩa CD/DVD"
+      },
+      {
+        "key": "c",
+        "text": "USB hoặc ổ lưu trữ di động"
+      },
+      {
+        "key": "d",
+        "text": "Cả ba phương án trên đều đúng"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 40,
+    "question": "Trong Windows, từ 'Shortcut' có ý nghĩa là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Đường dẫn nhanh đến một tệp hoặc thư mục"
+      },
+      {
+        "key": "b",
+        "text": "Đường dẫn tạm thời"
+      },
+      {
+        "key": "c",
+        "text": "Liên kết ảo không thể mở"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 41,
+    "question": "Trong khi đang soạn thảo văn bản Word, tổ hợp phím Ctrl + V thường được sử dụng để:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Dán nội dung đã sao chép vào vị trí con trỏ"
+      },
+      {
+        "key": "b",
+        "text": "Cắt một đoạn văn bản"
+      },
+      {
+        "key": "c",
+        "text": "Sao chép một đoạn văn bản"
+      },
+      {
+        "key": "d",
+        "text": "Lưu tài liệu hiện tại"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 42,
+    "question": "Những công cụ nào thường được sử dụng cho giáo dục từ xa trên nền web mà không có tương tác trực tiếp mặt đối mặt?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Google Classroom, Moodle, Edmodo"
+      },
+      {
+        "key": "b",
+        "text": "Microsoft Word, Excel"
+      },
+      {
+        "key": "c",
+        "text": "Zalo, Messenger"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 43,
+    "question": "Trong Excel, để đổi chữ thường thành chữ IN HOA, ta dùng:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Hàm UPPER()"
+      },
+      {
+        "key": "b",
+        "text": "Hàm LOWER()"
+      },
+      {
+        "key": "c",
+        "text": "Hàm PROPER()"
+      },
+      {
+        "key": "d",
+        "text": "Hàm CAPITAL()"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 44,
+    "question": "Những hành động nào giúp giảm nguy cơ căng mắt khi làm việc với máy tính?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ngồi đối diện cửa sổ có ánh sáng mạnh"
+      },
+      {
+        "key": "b",
+        "text": "Điều chỉnh độ sáng màn hình vừa phải và nghỉ ngơi định kỳ"
+      },
+      {
+        "key": "c",
+        "text": "Ngồi cách màn hình 10 cm để nhìn rõ hơn"
+      },
+      {
+        "key": "d",
+        "text": "Tăng độ sáng tối đa của màn hình"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 45,
+    "question": "Phương thức thông tin nào giúp một nhóm người có thể gặp mặt và trao đổi đồng thời trong thời gian thực?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Họp trực tuyến (Video Conference)"
+      },
+      {
+        "key": "b",
+        "text": "Thư điện tử (Email)"
+      },
+      {
+        "key": "c",
+        "text": "Viết blog cá nhân"
+      },
+      {
+        "key": "d",
+        "text": "Tin nhắn SMS"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 46,
+    "question": "Tùy chọn nào sau đây là biện pháp bảo mật hiệu quả?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Đặt mật khẩu mạnh và thay đổi định kỳ"
+      },
+      {
+        "key": "b",
+        "text": "Chia sẻ mật khẩu với đồng nghiệp"
+      },
+      {
+        "key": "c",
+        "text": "Ghi mật khẩu ra giấy dán trên màn hình"
+      },
+      {
+        "key": "d",
+        "text": "Tắt tường lửa để tăng tốc mạng"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 47,
+    "question": "Nếu bạn chọn bảng mã là Unicode nhưng gõ bằng kiểu gõ VNI (hoặc Telex) trong phần mềm gõ tiếng Việt (Unikey, Vietkey), thì font chữ nào sẽ hiển thị đúng?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Times New Roman"
+      },
+      {
+        "key": "b",
+        "text": "VNI-Times"
+      },
+      {
+        "key": "c",
+        "text": "TCVN3 (ABC)"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 48,
+    "question": "Trong danh sách liệt kê thông tin, tính năng 'Header Repeat' dùng để:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Lặp lại tiêu đề bảng ở đầu mỗi trang khi in"
+      },
+      {
+        "key": "b",
+        "text": "Tô màu tiêu đề"
+      },
+      {
+        "key": "c",
+        "text": "Ẩn tiêu đề khi cuộn trang"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 49,
+    "question": "Trong bảng tính Excel, hàm IF được sử dụng để:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tính toán các giá trị logic đúng/sai"
+      },
+      {
+        "key": "b",
+        "text": "Thực hiện phép nhân giữa các ô"
+      },
+      {
+        "key": "c",
+        "text": "Lấy giá trị lớn nhất"
+      },
+      {
+        "key": "d",
+        "text": "Thay đổi mật khẩu người dùng"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 50,
+    "question": "Chọn phát biểu đúng nhất về Header trong MS Word:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Là phần tiêu đề xuất hiện ở đầu mỗi trang"
+      },
+      {
+        "key": "b",
+        "text": "Là phần nằm ở cuối tài liệu"
+      },
+      {
+        "key": "c",
+        "text": "Là phần ghi chú ở giữa tài liệu"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 51,
+    "question": "Tùy chọn nào giúp bảo vệ sự riêng tư và bảo mật cá nhân khi truy cập Internet?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Không chia sẻ thông tin cá nhân hoặc mật khẩu trên mạng"
+      },
+      {
+        "key": "b",
+        "text": "Luôn cung cấp địa chỉ email thật của bạn trên mọi website"
+      },
+      {
+        "key": "c",
+        "text": "Đăng nhập bằng tài khoản công cộng"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 52,
+    "question": "Các font nào sau đây tương thích với bảng mã Unicode?",
+    "options": [
+      {
+        "key": "a",
+        "text": "VNI-Times"
+      },
+      {
+        "key": "b",
+        "text": "ABC-Times"
+      },
+      {
+        "key": "c",
+        "text": "Times New Roman, Arial, Tahoma"
+      },
+      {
+        "key": "d",
+        "text": "TCVN3 (ABC)"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 53,
+    "question": "Trong MS Word, muốn gõ các chỉ số trong toán học như a² + b², ta chọn chức năng:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Superscript"
+      },
+      {
+        "key": "b",
+        "text": "Subscript"
+      },
+      {
+        "key": "c",
+        "text": "Nhấn tổ hợp phím Ctrl + Shift + ="
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 54,
+    "question": "Trong PowerPoint, bạn có thể xóa các slide trong tất cả chế độ xem, ngoại trừ:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Slide Show View (chế độ trình chiếu)"
+      },
+      {
+        "key": "b",
+        "text": "Normal View"
+      },
+      {
+        "key": "c",
+        "text": "Slide Sorter View"
+      },
+      {
+        "key": "d",
+        "text": "Outline View"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 55,
+    "question": "Các đối số của hàm trong Excel được phân cách với nhau bằng dấu:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Dấu phẩy (,)"
+      },
+      {
+        "key": "b",
+        "text": "Dấu chấm phẩy (;)"
+      },
+      {
+        "key": "c",
+        "text": "Dấu hai chấm (:)"
+      },
+      {
+        "key": "d",
+        "text": "Dấu gạch dưới (_)"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 56,
+    "question": "Trong Excel, nếu ô A5 chứa giá trị ngày 18/05/2008, thì hàm DAY(A5) sẽ trả về:",
+    "options": [
+      {
+        "key": "a",
+        "text": "18"
+      },
+      {
+        "key": "b",
+        "text": "5"
+      },
+      {
+        "key": "c",
+        "text": "2008"
+      },
+      {
+        "key": "d",
+        "text": "#VALUE!"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 57,
+    "question": "Khi đang làm việc trong Windows, để xem tổ chức các tệp tin trên máy tính, bạn có thể sử dụng:",
+    "options": [
+      {
+        "key": "a",
+        "text": "File Explorer (Windows Explorer)"
+      },
+      {
+        "key": "b",
+        "text": "Control Panel"
+      },
+      {
+        "key": "c",
+        "text": "Task Manager"
+      },
+      {
+        "key": "d",
+        "text": "Recycle Bin"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 58,
+    "question": "Trong soạn thảo Word, muốn trình bày văn bản trong khổ giấy theo hướng ngang, ta chọn:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Landscape"
+      },
+      {
+        "key": "b",
+        "text": "Portrait"
+      },
+      {
+        "key": "c",
+        "text": "Right"
+      },
+      {
+        "key": "d",
+        "text": "Left"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 59,
+    "question": "Trong MS Excel, khi nhập dữ liệu kiểu ngày tháng vào một ô, dữ liệu này được xem là hợp lệ nếu:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Nằm bên phải của ô (căn phải tự động)"
+      },
+      {
+        "key": "b",
+        "text": "Nằm bên trái của ô"
+      },
+      {
+        "key": "c",
+        "text": "Được hiển thị ở giữa ô"
+      },
+      {
+        "key": "d",
+        "text": "Có màu nền khác biệt"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 60,
+    "question": "Trong khi làm việc với Word, tổ hợp phím tắt nào cho phép chọn toàn bộ văn bản đang soạn thảo?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ctrl + A"
+      },
+      {
+        "key": "b",
+        "text": "Alt + A"
+      },
+      {
+        "key": "c",
+        "text": "Shift + A"
+      },
+      {
+        "key": "d",
+        "text": "Ctrl + Shift + A"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 61,
+    "question": "Điều gì xảy ra khi nhấn tổ hợp phím Ctrl + N trong một chương trình Microsoft Office?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Một tệp tài liệu mới trống được tạo ra"
+      },
+      {
+        "key": "b",
+        "text": "Mở lại tệp tài liệu gần nhất"
+      },
+      {
+        "key": "c",
+        "text": "Lưu tệp hiện tại"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 62,
+    "question": "Loại tệp tin nào thường chiếm ít dung lượng lưu trữ nhất?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tệp âm thanh (audio)"
+      },
+      {
+        "key": "b",
+        "text": "Tệp hình ảnh (image)"
+      },
+      {
+        "key": "c",
+        "text": "Tệp video"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 63,
+    "question": "Trong Windows, khi xóa tệp hoặc thư mục nó sẽ vào Recycle Bin. Để xóa vĩnh viễn, ta dùng tổ hợp phím:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ctrl + Del"
+      },
+      {
+        "key": "b",
+        "text": "Shift + Del"
+      },
+      {
+        "key": "c",
+        "text": "Alt + Del"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 64,
+    "question": "Trong Excel, hàm YEAR(\"19-08-2008\") cho kết quả:",
+    "options": [
+      {
+        "key": "a",
+        "text": "2008"
+      },
+      {
+        "key": "b",
+        "text": "19"
+      },
+      {
+        "key": "c",
+        "text": "08"
+      },
+      {
+        "key": "d",
+        "text": "#VALUE!"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 65,
+    "question": "Công thức =ROUND(1235.896, 1) cho kết quả là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "1235.9"
+      },
+      {
+        "key": "b",
+        "text": "1235.8"
+      },
+      {
+        "key": "c",
+        "text": "1236"
+      },
+      {
+        "key": "d",
+        "text": "1235.0"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 66,
+    "question": "Trong khi soạn thảo văn bản, nếu kết thúc một đoạn và muốn sang đoạn mới, ta nhấn:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Enter"
+      },
+      {
+        "key": "b",
+        "text": "Shift + Enter"
+      },
+      {
+        "key": "c",
+        "text": "Ctrl + Enter"
+      },
+      {
+        "key": "d",
+        "text": "Alt + Enter"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 67,
+    "question": "Trong MS Word 2013, để chuyển đổi giữa chế độ gõ chèn (Insert) và gõ đè (Overtype), ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Vào File → Options → Advanced → bật/tắt Use Overtype Mode"
+      },
+      {
+        "key": "b",
+        "text": "Nhấn phím Insert"
+      },
+      {
+        "key": "c",
+        "text": "Nhấn Caps Lock"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 68,
+    "question": "Trong MS PowerPoint, chế độ nào dùng để xem một slide duy nhất?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Normal View"
+      },
+      {
+        "key": "b",
+        "text": "Slide Show View"
+      },
+      {
+        "key": "c",
+        "text": "Outline View"
+      },
+      {
+        "key": "d",
+        "text": "Slide Sorter View"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 69,
+    "question": "Trong chế độ tạo bảng (Table) của MS Word, muốn tách một ô thành nhiều ô, ta chọn chức năng:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Split Cells"
+      },
+      {
+        "key": "b",
+        "text": "Merge Cells"
+      },
+      {
+        "key": "c",
+        "text": "Split Table"
+      },
+      {
+        "key": "d",
+        "text": "Table Tools → Layout → Split Cells"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 70,
+    "question": "Trong Word, để soạn thảo công thức toán học phức tạp, ta thường sử dụng công cụ:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Equation (trình soạn công thức)"
+      },
+      {
+        "key": "b",
+        "text": "WordArt"
+      },
+      {
+        "key": "c",
+        "text": "SmartArt"
+      },
+      {
+        "key": "d",
+        "text": "Chart"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 71,
+    "question": "Trong MS Excel, giả sử tại ô B5 có công thức =A1+$B$2+C$3. Sau khi sao chép công thức đó từ ô B5 đến ô D8, công thức tại D8 sẽ là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "=C4+$B$2+E$3"
+      },
+      {
+        "key": "b",
+        "text": "=A1+$B$2+C$3"
+      },
+      {
+        "key": "c",
+        "text": "=A4+$B$2+D$3"
+      },
+      {
+        "key": "d",
+        "text": "=C1+$B$2+E$3"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 72,
+    "question": "Loại phần mềm độc hại nào phải tự gắn vào chương trình khác để có thể lây lan?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Virus"
+      },
+      {
+        "key": "b",
+        "text": "Worm (sâu máy tính)"
+      },
+      {
+        "key": "c",
+        "text": "Trojan (mã độc ngụy trang)"
+      },
+      {
+        "key": "d",
+        "text": "Spyware (phần mềm gián điệp)"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 73,
+    "question": "Máy tính đang kết nối Internet, sử dụng tường lửa (Firewall) có tác dụng gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ngăn chặn truy cập trái phép từ mạng ngoài vào hệ thống"
+      },
+      {
+        "key": "b",
+        "text": "Tăng tốc độ xử lý của máy tính"
+      },
+      {
+        "key": "c",
+        "text": "Giảm dung lượng ổ đĩa"
+      },
+      {
+        "key": "d",
+        "text": "Làm đẹp giao diện Windows"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 74,
+    "question": "Thiết bị xuất chuẩn của máy tính là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Màn hình"
+      },
+      {
+        "key": "b",
+        "text": "Bàn phím"
+      },
+      {
+        "key": "c",
+        "text": "Chuột"
+      },
+      {
+        "key": "d",
+        "text": "Máy quét (Scanner)"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 75,
+    "question": "Trong các loại phần mềm độc hại sau, loại nào giả dạng chương trình hợp pháp để xâm nhập vào hệ thống?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Trojan (mã độc ngụy trang)"
+      },
+      {
+        "key": "b",
+        "text": "Worm (sâu máy tính)"
+      },
+      {
+        "key": "c",
+        "text": "Virus"
+      },
+      {
+        "key": "d",
+        "text": "Spyware"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 76,
+    "question": "Trong MS PowerPoint, siêu liên kết (Hyperlink) cho phép người dùng liên kết đến:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Một trang web hoặc một slide khác trong bài trình chiếu"
+      },
+      {
+        "key": "b",
+        "text": "Chỉ các slide trong bài trình chiếu hiện tại"
+      },
+      {
+        "key": "c",
+        "text": "Chỉ các tệp tin có sẵn trong thư mục cài đặt PowerPoint"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 77,
+    "question": "Trong Microsoft Word, tổ hợp phím Ctrl + F dùng để:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Mở hộp thoại tìm kiếm văn bản (Find)"
+      },
+      {
+        "key": "b",
+        "text": "Mở tệp văn bản mới"
+      },
+      {
+        "key": "c",
+        "text": "Canh trái cho đoạn văn bản"
+      },
+      {
+        "key": "d",
+        "text": "Lưu tệp văn bản"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 78,
+    "question": "Trong MS PowerPoint, chế độ in nào cho phép in nhiều slide trên cùng một trang giấy?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Handouts"
+      },
+      {
+        "key": "b",
+        "text": "Notes Pages"
+      },
+      {
+        "key": "c",
+        "text": "Outline View"
+      },
+      {
+        "key": "d",
+        "text": "Full Page Slides"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 79,
+    "question": "Khi đang làm việc với Excel, tổ hợp phím nào cho phép nhanh chóng đưa con trỏ về ô đầu tiên (A1) của bảng tính?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ctrl + Home"
+      },
+      {
+        "key": "b",
+        "text": "Alt + Home"
+      },
+      {
+        "key": "c",
+        "text": "Shift + Home"
+      },
+      {
+        "key": "d",
+        "text": "Ctrl + End"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 80,
+    "question": "Thông tin nào sau đây an toàn nhất khi trao đổi qua thư điện tử (email)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Đường dẫn (URL) của trang web công khai"
+      },
+      {
+        "key": "b",
+        "text": "Số thẻ tín dụng"
+      },
+      {
+        "key": "c",
+        "text": "Tên truy cập và mật khẩu"
+      },
+      {
+        "key": "d",
+        "text": "Thông tin cá nhân chi tiết"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 81,
+    "question": "Loại phần mềm nào dưới đây thích hợp để quản lý hồ sơ thanh toán hàng tháng của khách hàng tại công ty thẻ tín dụng?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Phần mềm cơ sở dữ liệu (Database)"
+      },
+      {
+        "key": "b",
+        "text": "Phần mềm bảng tính (Spreadsheet)"
+      },
+      {
+        "key": "c",
+        "text": "Phần mềm trình chiếu (PowerPoint)"
+      },
+      {
+        "key": "d",
+        "text": "Phần mềm xử lý văn bản (Word Processor)"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 82,
+    "question": "Điều nào sau đây là một lợi ích của việc nâng cấp phần mềm?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Cần ít thời gian đào tạo hơn"
+      },
+      {
+        "key": "b",
+        "text": "Chi phí thấp hơn"
+      },
+      {
+        "key": "c",
+        "text": "Có thêm các tính năng mới"
+      },
+      {
+        "key": "d",
+        "text": "Giảm kích thước tập tin"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 83,
+    "question": "Khả năng xử lý của máy tính phụ thuộc vào yếu tố nào sau đây?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tốc độ CPU, dung lượng RAM và tốc độ ổ cứng"
+      },
+      {
+        "key": "b",
+        "text": "Hiện tượng phân mảnh ổ đĩa"
+      },
+      {
+        "key": "c",
+        "text": "Số lượng cổng USB"
+      },
+      {
+        "key": "d",
+        "text": "Kích thước màn hình"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 84,
+    "question": "Trong Excel, hàm TODAY() trả về:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Số năm của giá trị ngày tháng"
+      },
+      {
+        "key": "b",
+        "text": "Ngày tháng hiện tại của hệ thống"
+      },
+      {
+        "key": "c",
+        "text": "Số ngày trong tháng của giá trị ngày tháng"
+      },
+      {
+        "key": "d",
+        "text": "Số tháng trong năm của giá trị ngày tháng"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 85,
+    "question": "Bạn nên bấm nút Reset khi máy tính gặp tình huống nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Máy tính bị treo và không phản hồi thao tác"
+      },
+      {
+        "key": "b",
+        "text": "Máy tính đang cập nhật phần mềm"
+      },
+      {
+        "key": "c",
+        "text": "Đang tải tập tin lớn"
+      },
+      {
+        "key": "d",
+        "text": "Đang sao chép dữ liệu sang USB"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 86,
+    "question": "File .ZIP là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "File sao lưu (backup file)"
+      },
+      {
+        "key": "b",
+        "text": "File chứa virus"
+      },
+      {
+        "key": "c",
+        "text": "File của chương trình diệt virus"
+      },
+      {
+        "key": "d",
+        "text": "File nén (compressed file)"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 87,
+    "question": "Cho biết kết quả của công thức sau trong Excel: AND(5>=0, 2>=3, 8>=6)",
+    "options": [
+      {
+        "key": "a",
+        "text": "FALSE"
+      },
+      {
+        "key": "b",
+        "text": "TRUE"
+      },
+      {
+        "key": "c",
+        "text": "Lỗi cú pháp"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 88,
+    "question": "Loại truyền thông nào thích hợp nhất cho việc gửi thư có kèm giấy tờ, chữ ký yêu cầu?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thư điện tử (Email)"
+      },
+      {
+        "key": "b",
+        "text": "Thư tín truyền thống (Mail)"
+      },
+      {
+        "key": "c",
+        "text": "Tin nhắn SMS"
+      },
+      {
+        "key": "d",
+        "text": "Cuộc gọi thoại (Voice call)"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 89,
+    "question": "Sau khi máy tính bị treo và khởi động lại, để kiểm tra và sửa lỗi ổ đĩa, bạn nên chạy chương trình nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "ScanDisk"
+      },
+      {
+        "key": "b",
+        "text": "Disk Defragmenter"
+      },
+      {
+        "key": "c",
+        "text": "Format Disk"
+      },
+      {
+        "key": "d",
+        "text": "Task Manager"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 90,
+    "question": "Thiết bị phần cứng nào giúp bảo vệ máy tính khỏi nguy cơ do biến động điện áp?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Bộ lưu điện (UPS)"
+      },
+      {
+        "key": "b",
+        "text": "Ổn áp (Stabilizer)"
+      },
+      {
+        "key": "c",
+        "text": "Bộ nguồn (Power Supply)"
+      },
+      {
+        "key": "d",
+        "text": "Đầu chuyển đổi (Adapter)"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 91,
+    "question": "Trong các thiết bị phần cứng, bộ phận nào cung cấp điện cho toàn bộ máy tính?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Bộ triệt sóng"
+      },
+      {
+        "key": "b",
+        "text": "Bộ nguồn (Power Supply)"
+      },
+      {
+        "key": "c",
+        "text": "Bộ lưu điện UPS"
+      },
+      {
+        "key": "d",
+        "text": "Bộ chuyển đổi tín hiệu"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 92,
+    "question": "Trong MS Word, để canh giữa một đoạn văn bản, ta chọn đoạn văn và nhấn tổ hợp phím nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ctrl + E"
+      },
+      {
+        "key": "b",
+        "text": "Ctrl + C"
+      },
+      {
+        "key": "c",
+        "text": "Ctrl + J"
+      },
+      {
+        "key": "d",
+        "text": "Ctrl + R"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 93,
+    "question": "Trong MS Word, muốn gõ các chỉ số trong công thức hóa học như H₂SO₄, ta sử dụng chức năng nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Subscript (Chỉ số dưới)"
+      },
+      {
+        "key": "b",
+        "text": "Superscript (Chỉ số trên)"
+      },
+      {
+        "key": "c",
+        "text": "Symbol"
+      },
+      {
+        "key": "d",
+        "text": "Equation"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 94,
+    "question": "Trong MS Word 2013, để bật/tắt hiển thị thanh thước (Ruler) trên giao diện, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "View → Show → đánh dấu hoặc bỏ chọn mục Ruler"
+      },
+      {
+        "key": "b",
+        "text": "View → Ruler"
+      },
+      {
+        "key": "c",
+        "text": "Insert → Ruler"
+      },
+      {
+        "key": "d",
+        "text": "Layout → Ruler"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 95,
+    "question": "Loại tài liệu văn bản nào có thể được sử dụng mà không cần xin phép bản quyền?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tài liệu thương hiệu"
+      },
+      {
+        "key": "b",
+        "text": "Tài liệu chưa công bố"
+      },
+      {
+        "key": "c",
+        "text": "Tài liệu có bản quyền"
+      },
+      {
+        "key": "d",
+        "text": "Tài liệu thuộc phạm vi công cộng (Public Domain)"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 96,
+    "question": "Loại tệp nào không thể chèn trực tiếp vào tài liệu Word?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Video"
+      },
+      {
+        "key": "b",
+        "text": "Ảnh (jpg, png)"
+      },
+      {
+        "key": "c",
+        "text": "Biểu đồ (graph)"
+      },
+      {
+        "key": "d",
+        "text": "Sơ đồ (diagram)"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 97,
+    "question": "Trong Excel, để chọn nhiều vùng không liền kề nhau trong bảng tính, ta nhấn giữ phím nào khi chọn?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ctrl"
+      },
+      {
+        "key": "b",
+        "text": "Shift"
+      },
+      {
+        "key": "c",
+        "text": "Alt"
+      },
+      {
+        "key": "d",
+        "text": "Tab"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 98,
+    "question": "Cho biết kết quả của công thức: =AND(5>=0, 2>=3, 8>=6)",
+    "options": [
+      {
+        "key": "a",
+        "text": "FALSE"
+      },
+      {
+        "key": "b",
+        "text": "TRUE"
+      },
+      {
+        "key": "c",
+        "text": "Lỗi cú pháp"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 99,
+    "question": "Trong MS Word, để trộn nhiều ô lại thành một ô trong bảng (Table), ta sử dụng chức năng:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Merge Cells"
+      },
+      {
+        "key": "b",
+        "text": "Split Cells"
+      },
+      {
+        "key": "c",
+        "text": "Merge & Center"
+      },
+      {
+        "key": "d",
+        "text": "Combine Cells"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 100,
+    "question": "Dữ liệu lưu trữ ở đâu sẽ không bị mất khi cúp điện?",
+    "options": [
+      {
+        "key": "a",
+        "text": "ROM"
+      },
+      {
+        "key": "b",
+        "text": "RAM"
+      },
+      {
+        "key": "c",
+        "text": "Đĩa cứng (Hard Disk)"
+      },
+      {
+        "key": "d",
+        "text": "Bộ nhớ Cache"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 101,
+    "question": "Định nghĩa nào sau đây phù hợp nhất với World Wide Web (WWW)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Là một tập hợp các trang web có liên quan, bao gồm văn bản, hình ảnh, video, được nhận diện bằng tên miền và địa chỉ URL."
+      },
+      {
+        "key": "b",
+        "text": "Là một mạng riêng sử dụng giao thức Internet để chia sẻ thông tin nội bộ an toàn."
+      },
+      {
+        "key": "c",
+        "text": "Là một ứng dụng dùng để truy cập và hiển thị các trang web trên Internet."
+      },
+      {
+        "key": "d",
+        "text": "Là một giao thức truyền dữ liệu giữa các máy tính."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 102,
+    "question": "Một pop-up quảng cáo là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Là một cửa sổ quảng cáo tự động xuất hiện trên trình duyệt khi truy cập một trang web."
+      },
+      {
+        "key": "b",
+        "text": "Là một chương trình được cài đặt thủ công bởi người dùng."
+      },
+      {
+        "key": "c",
+        "text": "Là một tiện ích giúp chặn quảng cáo hiển thị trên trình duyệt."
+      },
+      {
+        "key": "d",
+        "text": "Là một phần mềm hệ thống trong máy tính."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 103,
+    "question": "Trong PowerPoint, để bắt đầu trình chiếu (Slide Show) từ slide đầu tiên, ta nhấn phím:",
+    "options": [
+      {
+        "key": "a",
+        "text": "F5"
+      },
+      {
+        "key": "b",
+        "text": "F7"
+      },
+      {
+        "key": "c",
+        "text": "F3"
+      },
+      {
+        "key": "d",
+        "text": "Shift + F5"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 104,
+    "question": "Ký tự nào sau đây không được phép sử dụng khi đặt tên tệp tin hoặc thư mục trong Windows?",
+    "options": [
+      {
+        "key": "a",
+        "text": "/ \\ : * ? \" < > |"
+      },
+      {
+        "key": "b",
+        "text": "@ # $"
+      },
+      {
+        "key": "c",
+        "text": "% ^ &"
+      },
+      {
+        "key": "d",
+        "text": "~ _"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 105,
+    "question": "Công thức ROUND(4687, -2) trong Excel sẽ cho kết quả là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "4600"
+      },
+      {
+        "key": "b",
+        "text": "4700"
+      },
+      {
+        "key": "c",
+        "text": "4000"
+      },
+      {
+        "key": "d",
+        "text": "5000"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 106,
+    "question": "Công thức =MOD(7*3/2, 5) trong Excel cho kết quả là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "0.5"
+      },
+      {
+        "key": "b",
+        "text": "1.5"
+      },
+      {
+        "key": "c",
+        "text": "10.5"
+      },
+      {
+        "key": "d",
+        "text": "Sai công thức"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 107,
+    "question": "Kết quả của công thức =ROUND(MOD(5*3,4)/2,0) trong Excel là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "1"
+      },
+      {
+        "key": "b",
+        "text": "2"
+      },
+      {
+        "key": "c",
+        "text": "3"
+      },
+      {
+        "key": "d",
+        "text": "4"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 108,
+    "question": "Trong PowerPoint, thao tác Insert → New Slide dùng để:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chèn thêm một slide mới sau slide hiện tại."
+      },
+      {
+        "key": "b",
+        "text": "Xóa slide hiện tại."
+      },
+      {
+        "key": "c",
+        "text": "Thêm hiệu ứng chuyển cảnh cho slide."
+      },
+      {
+        "key": "d",
+        "text": "Chèn hình ảnh vào slide."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 109,
+    "question": "Tùy chọn nào trong Control Panel cho phép khôi phục lại thiết lập mặc định ban đầu?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Apply (Áp dụng)"
+      },
+      {
+        "key": "b",
+        "text": "Cancel (Hủy bỏ)"
+      },
+      {
+        "key": "c",
+        "text": "Use Default (Dùng mặc định)"
+      },
+      {
+        "key": "d",
+        "text": "OK (Đồng ý)"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 110,
+    "question": "Microsoft Word thuộc loại phần mềm nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Phần mềm ứng dụng"
+      },
+      {
+        "key": "b",
+        "text": "Phần mềm hệ thống"
+      },
+      {
+        "key": "c",
+        "text": "Phần mềm mã nguồn mở"
+      },
+      {
+        "key": "d",
+        "text": "Phần mềm diệt virus"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 111,
+    "question": "Bạn nên làm gì trước khi tặng một máy tính không còn sử dụng cho trường học hoặc tổ chức từ thiện?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Xóa toàn bộ dữ liệu cá nhân khỏi ổ đĩa."
+      },
+      {
+        "key": "b",
+        "text": "Cài đặt lại hệ điều hành và phần mềm cần thiết."
+      },
+      {
+        "key": "c",
+        "text": "Đảm bảo máy tính hoạt động tốt và có thể kết nối mạng."
+      },
+      {
+        "key": "d",
+        "text": "Kiểm tra cấu hình phần cứng và nâng cấp RAM nếu cần."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 112,
+    "question": "Để chuẩn bị in một bảng tính Excel ra giấy, bạn cần thực hiện thao tác nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thiết lập vùng in (Print Area) và khổ giấy."
+      },
+      {
+        "key": "b",
+        "text": "Chỉ đánh số trang."
+      },
+      {
+        "key": "c",
+        "text": "Tắt chế độ chia trang."
+      },
+      {
+        "key": "d",
+        "text": "Định dạng ô theo kiểu General."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 113,
+    "question": "Thiết bị nhập chuẩn của máy tính là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Bàn phím."
+      },
+      {
+        "key": "b",
+        "text": "Màn hình."
+      },
+      {
+        "key": "c",
+        "text": "Máy in."
+      },
+      {
+        "key": "d",
+        "text": "Máy chiếu."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 114,
+    "question": "Ký tự nào được dùng để tách tên người dùng và tên miền trong một địa chỉ email?",
+    "options": [
+      {
+        "key": "a",
+        "text": "@"
+      },
+      {
+        "key": "b",
+        "text": "#"
+      },
+      {
+        "key": "c",
+        "text": "$"
+      },
+      {
+        "key": "d",
+        "text": "&"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 115,
+    "question": "Trong MS Word, để di chuyển con trỏ đến ô kế tiếp trong một bảng (table), ta dùng phím nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ctrl + Tab"
+      },
+      {
+        "key": "b",
+        "text": "Tab"
+      },
+      {
+        "key": "c",
+        "text": "Alt + Tab"
+      },
+      {
+        "key": "d",
+        "text": "Shift + Tab"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 116,
+    "question": "Công thức =INT(9*5/2) trong Excel cho kết quả là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "23"
+      },
+      {
+        "key": "b",
+        "text": "22"
+      },
+      {
+        "key": "c",
+        "text": "22.5"
+      },
+      {
+        "key": "d",
+        "text": "Sai công thức"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 117,
+    "question": "Trong MS Excel, công thức =IF(5>=5, \"Đạt\", \"Không đạt\") sẽ trả về kết quả gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "\"Đạt\""
+      },
+      {
+        "key": "b",
+        "text": "\"Không đạt\""
+      },
+      {
+        "key": "c",
+        "text": "TRUE"
+      },
+      {
+        "key": "d",
+        "text": "FALSE"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 118,
+    "question": "Trong PowerPoint, muốn sắp xếp lại thứ tự các slide, ta dùng chế độ xem nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Slide Sorter"
+      },
+      {
+        "key": "b",
+        "text": "Normal"
+      },
+      {
+        "key": "c",
+        "text": "Slide Master"
+      },
+      {
+        "key": "d",
+        "text": "Reading View"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 119,
+    "question": "Trong Excel, hàm =MONTH(\"09-Jan-2008\") sẽ trả về kết quả:",
+    "options": [
+      {
+        "key": "a",
+        "text": "1"
+      },
+      {
+        "key": "b",
+        "text": "9"
+      },
+      {
+        "key": "c",
+        "text": "2008"
+      },
+      {
+        "key": "d",
+        "text": "Sai công thức"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 120,
+    "question": "Hành động nào sau đây là không nên khi đọc một email không rõ nguồn gốc?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Nhấp vào liên kết hoặc tải tệp đính kèm trong email."
+      },
+      {
+        "key": "b",
+        "text": "Xóa email ngay lập tức."
+      },
+      {
+        "key": "c",
+        "text": "Báo cáo email là spam."
+      },
+      {
+        "key": "d",
+        "text": "Không mở email đó."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 121,
+    "question": "Đường tắt (Shortcut) là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Là biểu tượng đại diện giúp mở nhanh một tệp hoặc chương trình."
+      },
+      {
+        "key": "b",
+        "text": "Là chương trình cài đặt hệ điều hành."
+      },
+      {
+        "key": "c",
+        "text": "Là thư mục chứa các tệp tin của hệ thống."
+      },
+      {
+        "key": "d",
+        "text": "Là một loại virus máy tính."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 122,
+    "question": "Trong MS Word, chức năng Formula trong Table dùng để:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tính toán các giá trị trong bảng."
+      },
+      {
+        "key": "b",
+        "text": "Chèn ký hiệu toán học vào ô trong bảng."
+      },
+      {
+        "key": "c",
+        "text": "Sắp xếp dữ liệu trong bảng theo thứ tự nhất định."
+      },
+      {
+        "key": "d",
+        "text": "Định dạng khung và viền của bảng."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 123,
+    "question": "Công thức =ROUND(7475.47, -2) trong Excel cho kết quả:",
+    "options": [
+      {
+        "key": "a",
+        "text": "7400"
+      },
+      {
+        "key": "b",
+        "text": "7500"
+      },
+      {
+        "key": "c",
+        "text": "7000"
+      },
+      {
+        "key": "d",
+        "text": "7475"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 124,
+    "question": "Định nghĩa nào sau đây đúng về giấy phép bản quyền phần mềm?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Là sự cho phép hợp pháp để sử dụng một sản phẩm phần mềm."
+      },
+      {
+        "key": "b",
+        "text": "Là khóa bảo mật để ngăn người khác truy cập vào phần mềm."
+      },
+      {
+        "key": "c",
+        "text": "Là bản sao chép trái phép của phần mềm."
+      },
+      {
+        "key": "d",
+        "text": "Là giấy chứng nhận quyền sở hữu máy tính."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 125,
+    "question": "Trong Excel, muốn chèn thêm một cột sau cột E, con trỏ cần đặt ở đâu?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tại cột F."
+      },
+      {
+        "key": "b",
+        "text": "Tại cột E."
+      },
+      {
+        "key": "c",
+        "text": "Tại hàng 5."
+      },
+      {
+        "key": "d",
+        "text": "Bất kỳ ô nào trong bảng tính."
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 126,
+    "question": "Phát biểu nào sau đây đúng về hệ điều hành?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Hệ điều hành quản lý tài nguyên và điều khiển hoạt động của máy tính."
+      },
+      {
+        "key": "b",
+        "text": "Hệ điều hành chỉ dùng để soạn thảo văn bản."
+      },
+      {
+        "key": "c",
+        "text": "Hệ điều hành là phần cứng của máy tính."
+      },
+      {
+        "key": "d",
+        "text": "Hệ điều hành là phần mềm diệt virus."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 127,
+    "question": "Trong Excel, hàm =SUM(-12, -5, 7, 100) cho kết quả:",
+    "options": [
+      {
+        "key": "a",
+        "text": "90"
+      },
+      {
+        "key": "b",
+        "text": "100"
+      },
+      {
+        "key": "c",
+        "text": "95"
+      },
+      {
+        "key": "d",
+        "text": "80"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 128,
+    "question": "Trong PowerPoint, hiệu ứng được áp dụng cho hình ảnh hoặc đối tượng trên slide được gọi là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Slide Transition"
+      },
+      {
+        "key": "b",
+        "text": "Custom Animation"
+      },
+      {
+        "key": "c",
+        "text": "Layout Effect"
+      },
+      {
+        "key": "d",
+        "text": "Object Design"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 129,
+    "question": "Trong Excel, khi viết sai tên hàm trong công thức, chương trình sẽ thông báo lỗi:",
+    "options": [
+      {
+        "key": "a",
+        "text": "#VALUE!"
+      },
+      {
+        "key": "b",
+        "text": "#NAME?"
+      },
+      {
+        "key": "c",
+        "text": "#N/A"
+      },
+      {
+        "key": "d",
+        "text": "#REF!"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 130,
+    "question": "Trong Windows, có thể sử dụng chương trình nào như một máy tính bỏ túi?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Calculator"
+      },
+      {
+        "key": "b",
+        "text": "Notepad"
+      },
+      {
+        "key": "c",
+        "text": "Excel"
+      },
+      {
+        "key": "d",
+        "text": "Paint"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 131,
+    "question": "Tập tin có phần mở rộng .RAR hoặc .ZIP là loại tập tin gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tập tin nén (compressed file)."
+      },
+      {
+        "key": "b",
+        "text": "Tập tin bảo mật."
+      },
+      {
+        "key": "c",
+        "text": "Tập tin thực thi."
+      },
+      {
+        "key": "d",
+        "text": "Tập tin chứa virus."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 132,
+    "question": "Trong soạn thảo văn bản Word, tổ hợp phím Ctrl + F dùng để:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Định dạng trang."
+      },
+      {
+        "key": "b",
+        "text": "Lưu tài liệu vào ổ đĩa."
+      },
+      {
+        "key": "c",
+        "text": "Tạo tài liệu mới."
+      },
+      {
+        "key": "d",
+        "text": "Tìm kiếm nội dung trong văn bản."
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 133,
+    "question": "Phương thức phân phối phần mềm nào là miễn phí để dùng thử, nhưng phải trả phí khi sử dụng lâu dài?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Phần mềm nâng cấp."
+      },
+      {
+        "key": "b",
+        "text": "Phần mềm miễn phí (Freeware)."
+      },
+      {
+        "key": "c",
+        "text": "Phần mềm nguồn mở (Open Source)."
+      },
+      {
+        "key": "d",
+        "text": "Phần mềm chia sẻ (Shareware)."
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 134,
+    "question": "Trong Excel, tại ô A2 có giá trị \"1Angiang2\". Nếu dùng nút điền (Fill Handle) để kéo đến ô E2, giá trị tại E2 sẽ là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "5Angiang6"
+      },
+      {
+        "key": "b",
+        "text": "1Angiang2"
+      },
+      {
+        "key": "c",
+        "text": "2Angiang3"
+      },
+      {
+        "key": "d",
+        "text": "4Angiang5"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 135,
+    "question": "Trong MS PowerPoint, chức năng Custom Animation được dùng để:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thêm hiệu ứng cho đối tượng (văn bản, hình ảnh) trên slide."
+      },
+      {
+        "key": "b",
+        "text": "Thêm hiệu ứng chuyển slide."
+      },
+      {
+        "key": "c",
+        "text": "Chèn biểu đồ và bảng biểu."
+      },
+      {
+        "key": "d",
+        "text": "Thay đổi nền (background) của slide."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 136,
+    "question": "Tùy chọn nào trong Control Panel cho phép bạn thay đổi thiết lập người dùng?",
+    "options": [
+      {
+        "key": "a",
+        "text": "User Accounts"
+      },
+      {
+        "key": "b",
+        "text": "Hardware and Sound"
+      },
+      {
+        "key": "c",
+        "text": "Network and Internet"
+      },
+      {
+        "key": "d",
+        "text": "Ease of Access"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 137,
+    "question": "Trong MS Word, để in văn bản hiện hành ra máy in, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chọn menu Edit → Print"
+      },
+      {
+        "key": "b",
+        "text": "Chọn menu Insert → Print"
+      },
+      {
+        "key": "c",
+        "text": "Chọn menu Home → Print"
+      },
+      {
+        "key": "d",
+        "text": "Chọn menu File → Print"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 138,
+    "question": "Văn bản trong MS Word có thể chứa tối đa bao nhiêu ký tự?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tối đa 65.536 ký tự."
+      },
+      {
+        "key": "b",
+        "text": "Tối đa 10.000 từ."
+      },
+      {
+        "key": "c",
+        "text": "Tối đa 256 dòng."
+      },
+      {
+        "key": "d",
+        "text": "Không giới hạn ký tự."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 139,
+    "question": "Hàm nào trong Excel cho phép đếm các giá trị thỏa mãn một điều kiện cho trước?",
+    "options": [
+      {
+        "key": "a",
+        "text": "SUMIF"
+      },
+      {
+        "key": "b",
+        "text": "COUNT"
+      },
+      {
+        "key": "c",
+        "text": "COUNTIF"
+      },
+      {
+        "key": "d",
+        "text": "AVERAGEIF"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 140,
+    "question": "Trong Excel, nếu các ô A1, A2, A3 lần lượt chứa 234, 'abc', 236, công thức =COUNTA(A1:A3) cho kết quả là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "3"
+      },
+      {
+        "key": "b",
+        "text": "2"
+      },
+      {
+        "key": "c",
+        "text": "1"
+      },
+      {
+        "key": "d",
+        "text": "0"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 141,
+    "question": "Thông tin nào sau đây ít ảnh hưởng nhất đến quyền riêng tư nếu bạn đăng tải trên diễn đàn trực tuyến?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tên của bạn."
+      },
+      {
+        "key": "b",
+        "text": "Địa chỉ email."
+      },
+      {
+        "key": "c",
+        "text": "Số điện thoại cá nhân."
+      },
+      {
+        "key": "d",
+        "text": "Địa chỉ nhà riêng."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 142,
+    "question": "Trong MS Word, muốn chèn số trang tự động vào văn bản, ta cần thực hiện lệnh nào sau đây?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tab Insert → Page Number."
+      },
+      {
+        "key": "b",
+        "text": "Tab Insert → AutoText."
+      },
+      {
+        "key": "c",
+        "text": "Tab Layout → Page Setup."
+      },
+      {
+        "key": "d",
+        "text": "Tab Home → Paragraph."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 143,
+    "question": "Mỗi trang trình chiếu trong PowerPoint được gọi là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Một Slide."
+      },
+      {
+        "key": "b",
+        "text": "Một File."
+      },
+      {
+        "key": "c",
+        "text": "Một Document."
+      },
+      {
+        "key": "d",
+        "text": "Một Trang in."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 144,
+    "question": "Loại phần mềm nào quản lý và điều phối toàn bộ hoạt động của máy tính?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Hệ điều hành (Operating System)."
+      },
+      {
+        "key": "b",
+        "text": "Phần mềm tiện ích (Utility Software)."
+      },
+      {
+        "key": "c",
+        "text": "Phần mềm ứng dụng (Application Software)."
+      },
+      {
+        "key": "d",
+        "text": "Trình duyệt web (Web Browser)."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 145,
+    "question": "Thông báo tình trạng khởi động thất bại tới một máy tính được gọi là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thông báo lỗi khởi động (Boot error)."
+      },
+      {
+        "key": "b",
+        "text": "Tập tin quan trọng bị lỗi."
+      },
+      {
+        "key": "c",
+        "text": "Lỗi hệ điều hành."
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 146,
+    "question": "Trong MS Word, để chèn mục AutoCorrect vào văn bản sau khi nhập tên tắt, ta nhấn:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Phím F3"
+      },
+      {
+        "key": "b",
+        "text": "Phím F2"
+      },
+      {
+        "key": "c",
+        "text": "Phím F4"
+      },
+      {
+        "key": "d",
+        "text": "Phím Enter"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 147,
+    "question": "Kết quả của công thức sau trong Excel: =OR(5>=0,3>=0,8>=6)",
+    "options": [
+      {
+        "key": "a",
+        "text": "TRUE"
+      },
+      {
+        "key": "b",
+        "text": "FALSE"
+      },
+      {
+        "key": "c",
+        "text": "Công thức sai cú pháp."
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 148,
+    "question": "Lựa chọn nào góp phần giảm thiểu rủi ro khi mua hàng trực tuyến?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Gửi thông tin thẻ tín dụng qua email."
+      },
+      {
+        "key": "b",
+        "text": "Đảm bảo trang web an toàn, có địa chỉ bắt đầu bằng https."
+      },
+      {
+        "key": "c",
+        "text": "Mua hàng chỉ trong giờ hành chính."
+      },
+      {
+        "key": "d",
+        "text": "Cung cấp thông tin thẻ tín dụng qua điện thoại."
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 149,
+    "question": "Trong MS Word, để giảm cỡ chữ (tạo chữ nhỏ hơn), sau khi quét chọn khối văn bản, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Nhấn Ctrl + ["
+      },
+      {
+        "key": "b",
+        "text": "Nhấn Ctrl + ]"
+      },
+      {
+        "key": "c",
+        "text": "Nhấn Alt + ["
+      },
+      {
+        "key": "d",
+        "text": "Nhấn Alt + ]"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 150,
+    "question": "Phần mềm được phép cài đặt và sử dụng trong một thời gian giới hạn, sau đó phải mua bản quyền, gọi là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Trialware (phần mềm dùng thử)."
+      },
+      {
+        "key": "b",
+        "text": "Freeware (phần mềm miễn phí)."
+      },
+      {
+        "key": "c",
+        "text": "Shareware (phần mềm chia sẻ)."
+      },
+      {
+        "key": "d",
+        "text": "Open Source (phần mềm mã nguồn mở)."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 151,
+    "question": "Trong MS Word, muốn hủy bỏ thao tác vừa thực hiện, ta dùng lệnh:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ctrl + Z"
+      },
+      {
+        "key": "b",
+        "text": "Ctrl + Y"
+      },
+      {
+        "key": "c",
+        "text": "Ctrl + U"
+      },
+      {
+        "key": "d",
+        "text": "Ctrl + X"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 152,
+    "question": "Các công cụ pháp lý để điều chỉnh việc sử dụng hay phân phối lại phần mềm là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Luật phần mềm"
+      },
+      {
+        "key": "b",
+        "text": "Hợp đồng phần mềm"
+      },
+      {
+        "key": "c",
+        "text": "Bản quyền phần mềm"
+      },
+      {
+        "key": "d",
+        "text": "Giấy phép phần mềm"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 153,
+    "question": "Trong bảng tính MS Excel, điều kiện trong hàm IF được phát biểu dưới dạng một phép so sánh. Khi cần so sánh đồng thời nhiều điều kiện thì sử dụng hàm nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "AND"
+      },
+      {
+        "key": "b",
+        "text": "OR"
+      },
+      {
+        "key": "c",
+        "text": "NOT"
+      },
+      {
+        "key": "d",
+        "text": "IFERROR"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 154,
+    "question": "Dữ liệu lưu trữ ở đâu sẽ bị mất khi tắt máy hoặc cúp điện?",
+    "options": [
+      {
+        "key": "a",
+        "text": "RAM"
+      },
+      {
+        "key": "b",
+        "text": "ROM"
+      },
+      {
+        "key": "c",
+        "text": "Ổ cứng"
+      },
+      {
+        "key": "d",
+        "text": "USB"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 155,
+    "question": "Điều nào sau đây là đặc điểm của bộ nhớ chỉ đọc (ROM)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Không bị mất dữ liệu khi mất điện"
+      },
+      {
+        "key": "b",
+        "text": "Lưu trữ tạm thời dữ liệu trong khi làm việc"
+      },
+      {
+        "key": "c",
+        "text": "Dễ dàng ghi và xóa dữ liệu"
+      },
+      {
+        "key": "d",
+        "text": "Được dùng như thiết bị lưu trữ di động"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 156,
+    "question": "Chọn câu trả lời đúng nhất: Đĩa cứng là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thiết bị lưu trữ trong"
+      },
+      {
+        "key": "b",
+        "text": "Thiết bị lưu trữ ngoài"
+      },
+      {
+        "key": "c",
+        "text": "Thiết bị nhập/xuất dữ liệu"
+      },
+      {
+        "key": "d",
+        "text": "Thiết bị lưu trữ tạm thời"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 157,
+    "question": "Trong MS Excel, công thức nào sau đây cho kết quả FALSE?",
+    "options": [
+      {
+        "key": "a",
+        "text": "NOT(OR(12=5, 8+4/2<9, 32>31+1))"
+      },
+      {
+        "key": "b",
+        "text": "NOT(AND(12>=5, 8+4/2<9, 32=31+1))"
+      },
+      {
+        "key": "c",
+        "text": "NOT(AND(12=5, 8+4/2<9, 32=31+1))"
+      },
+      {
+        "key": "d",
+        "text": "NOT(OR(12=5, 8+4/2<9, 32=31+1))"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 158,
+    "question": "Trong bảng tính MS Excel, để ẩn một cột, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thẻ Home → Cells → Format → Hide & Unhide → Hide Columns"
+      },
+      {
+        "key": "b",
+        "text": "Thẻ View → Cells → Format → Hide & Unhide → Hide Columns"
+      },
+      {
+        "key": "c",
+        "text": "Thẻ Data → Cells → Format → Hide & Unhide → Hide Columns"
+      },
+      {
+        "key": "d",
+        "text": "Thẻ Formulas → Cells → Format → Hide & Unhide → Hide Columns"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 159,
+    "question": "Thiết bị nào hoạt động như một thiết bị đầu ra?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Màn hình"
+      },
+      {
+        "key": "b",
+        "text": "Bàn phím"
+      },
+      {
+        "key": "c",
+        "text": "Chuột"
+      },
+      {
+        "key": "d",
+        "text": "Máy quét (Scanner)"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 160,
+    "question": "Hãy chọn ra tên của một thiết bị mạng:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Hub"
+      },
+      {
+        "key": "b",
+        "text": "USB"
+      },
+      {
+        "key": "c",
+        "text": "Webcam"
+      },
+      {
+        "key": "d",
+        "text": "UPS"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 161,
+    "question": "Loại tệp tin nào thường chiếm dung lượng ổ cứng ít nhất?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tệp văn bản (Text)"
+      },
+      {
+        "key": "b",
+        "text": "Tệp video"
+      },
+      {
+        "key": "c",
+        "text": "Tệp hình ảnh"
+      },
+      {
+        "key": "d",
+        "text": "Tệp âm thanh"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 162,
+    "question": "Trong quá trình duyệt web, bạn cần đánh dấu một trang web để truy cập lại sau này. Bạn sẽ sử dụng chức năng nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "FTP"
+      },
+      {
+        "key": "b",
+        "text": "Bookmark (Đánh dấu trang)"
+      },
+      {
+        "key": "c",
+        "text": "Address Book (Danh bạ địa chỉ)"
+      },
+      {
+        "key": "d",
+        "text": "History (Lịch sử truy cập)"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 163,
+    "question": "Hệ điều hành là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Trang chủ (Home Page)"
+      },
+      {
+        "key": "b",
+        "text": "Phần mềm giao tiếp giữa phần cứng và người dùng"
+      },
+      {
+        "key": "c",
+        "text": "Phần mềm ứng dụng"
+      },
+      {
+        "key": "d",
+        "text": "Phần mềm tiện ích"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 164,
+    "question": "Trong Excel, tại ô A2 gõ công thức =IF(3>5,100,IF(5<6,200,300)) thì kết quả nhận được tại ô A2 là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "FALSE"
+      },
+      {
+        "key": "b",
+        "text": "300"
+      },
+      {
+        "key": "c",
+        "text": "200"
+      },
+      {
+        "key": "d",
+        "text": "100"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 165,
+    "question": "Loại phần mềm nào sau đây sẽ thích hợp cho kế toán?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Bảng tính (Spreadsheet)"
+      },
+      {
+        "key": "b",
+        "text": "Cơ sở dữ liệu (Access)"
+      },
+      {
+        "key": "c",
+        "text": "Xử lý văn bản (Word)"
+      },
+      {
+        "key": "d",
+        "text": "Trình chiếu (PowerPoint)"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 166,
+    "question": "Trong PowerPoint, chức năng 'Set Up Show' để chọn các slide cho buổi trình chiếu nằm trong thẻ nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Slide Show"
+      },
+      {
+        "key": "b",
+        "text": "View"
+      },
+      {
+        "key": "c",
+        "text": "Insert"
+      },
+      {
+        "key": "d",
+        "text": "Home"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 167,
+    "question": "Trong bảng tính Excel, hàm nào sau đây cho phép tính tổng các giá trị kiểu số thỏa mãn một điều kiện cho trước?",
+    "options": [
+      {
+        "key": "a",
+        "text": "SUMIF"
+      },
+      {
+        "key": "b",
+        "text": "COUNTIF"
+      },
+      {
+        "key": "c",
+        "text": "AVERAGEIF"
+      },
+      {
+        "key": "d",
+        "text": "IF"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 168,
+    "question": "Trong PowerPoint, muốn định dạng cùng lúc font chữ, màu chữ, kích thước chữ cho tất cả các slide (cũ và mới), ta chọn:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Header and Footer"
+      },
+      {
+        "key": "b",
+        "text": "Slide Master"
+      },
+      {
+        "key": "c",
+        "text": "Design Templates"
+      },
+      {
+        "key": "d",
+        "text": "Page Setup"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 169,
+    "question": "Phần mềm soạn thảo văn bản Microsoft Word cho phép người dùng:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Soạn thảo văn bản"
+      },
+      {
+        "key": "b",
+        "text": "Thay đổi phông chữ"
+      },
+      {
+        "key": "c",
+        "text": "Soạn thảo văn bản tiếng Anh"
+      },
+      {
+        "key": "d",
+        "text": "Soạn thảo văn bản tiếng Việt"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 170,
+    "question": "Giả sử ngày hệ thống của máy tính là 18/08/2008. Khi nhập công thức =TODAY()-1 trong ô A2, kết quả sẽ là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "17/08/2008"
+      },
+      {
+        "key": "b",
+        "text": "#VALUE!"
+      },
+      {
+        "key": "c",
+        "text": "#NAME?"
+      },
+      {
+        "key": "d",
+        "text": "0"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 171,
+    "question": "Điều gì được xem là một lợi thế của việc sử dụng máy tính xách tay để ghi chép trong lớp học nếu bạn là sinh viên?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tốc độ ghi chép nhanh hơn"
+      },
+      {
+        "key": "b",
+        "text": "Kích thước nhỏ gọn, dễ mang theo"
+      },
+      {
+        "key": "c",
+        "text": "Tiết kiệm giấy và dễ chỉnh sửa"
+      },
+      {
+        "key": "d",
+        "text": "Chi phí thấp hơn so với máy để bàn"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 172,
+    "question": "Để tìm giá trị lớn nhất trong các số number1, number2, ..., ta dùng hàm nào trong Excel?",
+    "options": [
+      {
+        "key": "a",
+        "text": "=MIN(number1, number2, ...)"
+      },
+      {
+        "key": "b",
+        "text": "=AVERAGE(number1, number2, ...)"
+      },
+      {
+        "key": "c",
+        "text": "=ROUND(number1, number2, ...)"
+      },
+      {
+        "key": "d",
+        "text": "=MAX(number1, number2, ...)"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 173,
+    "question": "Khi đang trình chiếu (Slide Show) một bài PowerPoint, muốn chuyển sang màn hình của một chương trình khác (đã mở trước đó) mà không kết thúc trình chiếu, bạn phải làm gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Nhấn tổ hợp phím Alt + Tab"
+      },
+      {
+        "key": "b",
+        "text": "Nhấn tổ hợp phím Shift + Tab"
+      },
+      {
+        "key": "c",
+        "text": "Nhấn tổ hợp phím Ctrl + Tab"
+      },
+      {
+        "key": "d",
+        "text": "Nhấn tổ hợp phím Alt + Esc"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 174,
+    "question": "Gói dịch vụ (Service Pack) là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Một bản cập nhật phần mềm chứa các bản vá lỗi và cải tiến"
+      },
+      {
+        "key": "b",
+        "text": "Một hệ điều hành nhúng"
+      },
+      {
+        "key": "c",
+        "text": "Một chương trình diệt virus"
+      },
+      {
+        "key": "d",
+        "text": "Một công cụ tăng tốc phần cứng"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 175,
+    "question": "Điều nào sau đây không phải là một hệ điều hành?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Microsoft Word"
+      },
+      {
+        "key": "b",
+        "text": "Windows"
+      },
+      {
+        "key": "c",
+        "text": "UNIX"
+      },
+      {
+        "key": "d",
+        "text": "MS-DOS"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 176,
+    "question": "Thiết bị nào sau đây hoạt động như một thiết bị đầu vào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Bàn phím"
+      },
+      {
+        "key": "b",
+        "text": "Màn hình"
+      },
+      {
+        "key": "c",
+        "text": "Máy in"
+      },
+      {
+        "key": "d",
+        "text": "Máy chiếu (Projector)"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 177,
+    "question": "Hãy chỉ ra định nghĩa đúng nhất về mạng Intranet:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Mạng nội bộ của một tổ chức, thường nằm trong cùng tòa nhà hoặc văn phòng"
+      },
+      {
+        "key": "b",
+        "text": "Một mạng tuân thủ quy tắc Internet nhưng chỉ hoạt động trong phạm vi nội bộ"
+      },
+      {
+        "key": "c",
+        "text": "Một mạng toàn cầu kết nối các máy tính trên toàn thế giới"
+      },
+      {
+        "key": "d",
+        "text": "Một mạng không dây công cộng"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 178,
+    "question": "Khi đang trình chiếu một file PowerPoint (chế độ Slide Show), thao tác nào dùng để mở slide kế tiếp?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Bấm phím Spacebar"
+      },
+      {
+        "key": "b",
+        "text": "Bấm phím mũi tên sang phải (Right Arrow)"
+      },
+      {
+        "key": "c",
+        "text": "Cả hai cách trên đều đúng"
+      },
+      {
+        "key": "d",
+        "text": "Bấm phím Enter"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 179,
+    "question": "Chọn phát biểu sai về hiệu ứng trong PowerPoint:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Không thể thay đổi hiệu ứng chuyển trang cho từng slide riêng lẻ"
+      },
+      {
+        "key": "b",
+        "text": "Có thể áp dụng hiệu ứng chuyển trang cho tất cả các slide trong bài trình chiếu"
+      },
+      {
+        "key": "c",
+        "text": "Có thể tạo hiệu ứng động cho từng đoạn văn bản trong slide"
+      },
+      {
+        "key": "d",
+        "text": "Có thể thiết lập thời gian tự động chuyển slide"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 180,
+    "question": "Tiêu chí nào sau đây quan trọng nhất khi lựa chọn một máy tính cá nhân?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Phù hợp với nhu cầu sử dụng"
+      },
+      {
+        "key": "b",
+        "text": "Có nhiều phần mềm cài sẵn"
+      },
+      {
+        "key": "c",
+        "text": "Thiết kế đẹp"
+      },
+      {
+        "key": "d",
+        "text": "Thương hiệu nổi tiếng"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 181,
+    "question": "Trong MS Word, để chèn thêm một hàng phía trên hàng hiện tại của bảng biểu (Table), ta chọn lệnh nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Insert Rows Above"
+      },
+      {
+        "key": "b",
+        "text": "Insert Rows Below"
+      },
+      {
+        "key": "c",
+        "text": "Insert Columns"
+      },
+      {
+        "key": "d",
+        "text": "Table Properties"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 182,
+    "question": "Khi soạn thảo email, tại ô 'Subject' ta điền thông tin gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tiêu đề hoặc nội dung tóm tắt của email"
+      },
+      {
+        "key": "b",
+        "text": "Địa chỉ của người nhận khác"
+      },
+      {
+        "key": "c",
+        "text": "Tên người gửi"
+      },
+      {
+        "key": "d",
+        "text": "Tệp đính kèm của email"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 183,
+    "question": "Trong MS Word, tổ hợp phím Ctrl + [ dùng để:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tăng cỡ chữ (mỗi lần tăng lên 1 đơn vị)"
+      },
+      {
+        "key": "b",
+        "text": "Giảm cỡ chữ (mỗi lần giảm đi 1 đơn vị)"
+      },
+      {
+        "key": "c",
+        "text": "Tăng độ đậm của chữ"
+      },
+      {
+        "key": "d",
+        "text": "Chuyển kiểu chữ sang in hoa"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 184,
+    "question": "Để tổ chức và quản lý dữ liệu trong máy tính (tệp tin, thư mục, ...), ta sử dụng chương trình nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Microsoft Word"
+      },
+      {
+        "key": "b",
+        "text": "Windows Explorer"
+      },
+      {
+        "key": "c",
+        "text": "Microsoft Excel"
+      },
+      {
+        "key": "d",
+        "text": "Paint"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 185,
+    "question": "Trong MS Word, muốn dán nội dung của một đối tượng trong Clipboard vào văn bản, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ctrl + V"
+      },
+      {
+        "key": "b",
+        "text": "Ctrl + C"
+      },
+      {
+        "key": "c",
+        "text": "Ctrl + X"
+      },
+      {
+        "key": "d",
+        "text": "Ctrl + Z"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 186,
+    "question": "Anh (chị) hiểu B-Virus là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Là loại virus tin học chủ yếu lây lan qua các tệp văn bản của Word và Excel"
+      },
+      {
+        "key": "b",
+        "text": "Là chương trình chống virus"
+      },
+      {
+        "key": "c",
+        "text": "Là phần mềm quản lý dữ liệu"
+      },
+      {
+        "key": "d",
+        "text": "Là công cụ tạo hiệu ứng trình chiếu"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 187,
+    "question": "Trong MS Word, chức năng nào sau đây cho phép tự động sửa từ sai thành từ đúng sau khi nhập sai?",
+    "options": [
+      {
+        "key": "a",
+        "text": "AutoCorrect"
+      },
+      {
+        "key": "b",
+        "text": "Find and Replace"
+      },
+      {
+        "key": "c",
+        "text": "AutoText"
+      },
+      {
+        "key": "d",
+        "text": "Spelling and Grammar"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 188,
+    "question": "Trong MS Excel, để xuống dòng trong cùng một ô, ta dùng phím:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Alt + Enter"
+      },
+      {
+        "key": "b",
+        "text": "Shift + Enter"
+      },
+      {
+        "key": "c",
+        "text": "Ctrl + Enter"
+      },
+      {
+        "key": "d",
+        "text": "Enter"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 189,
+    "question": "Đơn vị thông tin cơ sở của máy tính là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Bit"
+      },
+      {
+        "key": "b",
+        "text": "Byte"
+      },
+      {
+        "key": "c",
+        "text": "Kilobyte"
+      },
+      {
+        "key": "d",
+        "text": "Megabyte"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 190,
+    "question": "Để thay đổi cấu hình hệ thống máy tính cho phù hợp với công việc hay sở thích, ta dùng chức năng trong nhóm:",
+    "options": [
+      {
+        "key": "a",
+        "text": "System"
+      },
+      {
+        "key": "b",
+        "text": "Control Panel"
+      },
+      {
+        "key": "c",
+        "text": "Task Manager"
+      },
+      {
+        "key": "d",
+        "text": "Program Files"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 191,
+    "question": "Một người sử dụng phiên bản mới của phần mềm trong quá trình phát triển để tìm lỗi được gọi là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Người thử nghiệm (Beta Tester)"
+      },
+      {
+        "key": "b",
+        "text": "Người dùng cuối"
+      },
+      {
+        "key": "c",
+        "text": "Lập trình viên"
+      },
+      {
+        "key": "d",
+        "text": "Kỹ sư hệ thống"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 192,
+    "question": "Trong MS Word, muốn tìm kiếm và thay thế một chuỗi văn bản, ta chọn lệnh:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ctrl + H"
+      },
+      {
+        "key": "b",
+        "text": "Find"
+      },
+      {
+        "key": "c",
+        "text": "Ctrl + F"
+      },
+      {
+        "key": "d",
+        "text": "Ctrl + G"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 193,
+    "question": "Loại máy tính nào được sử dụng làm máy chủ của một trang web?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Máy khách (Client)"
+      },
+      {
+        "key": "b",
+        "text": "Modem"
+      },
+      {
+        "key": "c",
+        "text": "PDA"
+      },
+      {
+        "key": "d",
+        "text": "Máy chủ (Server)"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 194,
+    "question": "Microsoft PowerPoint trong bộ Microsoft Office là phần mềm dùng để:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tạo và trình chiếu bài thuyết trình"
+      },
+      {
+        "key": "b",
+        "text": "Soạn thảo văn bản"
+      },
+      {
+        "key": "c",
+        "text": "Tính toán dữ liệu"
+      },
+      {
+        "key": "d",
+        "text": "Quản lý tệp tin và thư mục"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 195,
+    "question": "Dịch vụ nào cho phép người dùng truy cập các trang web bằng cách sử dụng tên miền thay vì địa chỉ IP?",
+    "options": [
+      {
+        "key": "a",
+        "text": "DNS"
+      },
+      {
+        "key": "b",
+        "text": "DSL"
+      },
+      {
+        "key": "c",
+        "text": "DHCP"
+      },
+      {
+        "key": "d",
+        "text": "HTTP"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 196,
+    "question": "Hoạt động nào có thể gây chấn thương cổ tay và bàn tay khi sử dụng máy tính?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Gõ bàn phím và sử dụng chuột trong thời gian dài"
+      },
+      {
+        "key": "b",
+        "text": "Thay đổi màn hình nền liên tục"
+      },
+      {
+        "key": "c",
+        "text": "In tài liệu"
+      },
+      {
+        "key": "d",
+        "text": "Mở nhiều tab trình duyệt"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 197,
+    "question": "Trong MS Word, để chèn mục AutoText vào văn bản, sau khi nhập tên viết tắt, ta nhấn phím:",
+    "options": [
+      {
+        "key": "a",
+        "text": "F3"
+      },
+      {
+        "key": "b",
+        "text": "F4"
+      },
+      {
+        "key": "c",
+        "text": "F2"
+      },
+      {
+        "key": "d",
+        "text": "Spacebar"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 198,
+    "question": "Trong MS Word, muốn mở một văn bản đã có sẵn trên đĩa, ta chọn:",
+    "options": [
+      {
+        "key": "a",
+        "text": "File → Open"
+      },
+      {
+        "key": "b",
+        "text": "Insert → File"
+      },
+      {
+        "key": "c",
+        "text": "File → Import"
+      },
+      {
+        "key": "d",
+        "text": "Home → Open"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 199,
+    "question": "Dữ liệu lưu trữ ở đâu sẽ không bị mất khi tắt máy hoặc mất điện?",
+    "options": [
+      {
+        "key": "a",
+        "text": "ROM"
+      },
+      {
+        "key": "b",
+        "text": "RAM"
+      },
+      {
+        "key": "c",
+        "text": "Cache"
+      },
+      {
+        "key": "d",
+        "text": "Thanh ghi"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 200,
+    "question": "Dãy số '168.191.11' là ví dụ của:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Địa chỉ IP"
+      },
+      {
+        "key": "b",
+        "text": "Tên miền"
+      },
+      {
+        "key": "c",
+        "text": "Cookie"
+      },
+      {
+        "key": "d",
+        "text": "Cổng mạng (Port)"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 201,
+    "question": "Trong MS Word, định dạng indent nào sau đây thụt tất cả các dòng trong đoạn văn so với lề phải của trang?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Hanging Indent"
+      },
+      {
+        "key": "b",
+        "text": "First Line Indent"
+      },
+      {
+        "key": "c",
+        "text": "Right Indent"
+      },
+      {
+        "key": "d",
+        "text": "Left Indent"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 202,
+    "question": "Trong PowerPoint, để sử dụng những Slide đã được định sẵn, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Photo Album"
+      },
+      {
+        "key": "b",
+        "text": "AutoContent Wizard"
+      },
+      {
+        "key": "c",
+        "text": "Blank Presentation"
+      },
+      {
+        "key": "d",
+        "text": "From Existing Presentation"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 203,
+    "question": "Đơn vị nào được sử dụng để đo tốc độ của bộ vi xử lý trong máy tính?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Megahertz (MHz)"
+      },
+      {
+        "key": "b",
+        "text": "Megabyte (MB)"
+      },
+      {
+        "key": "c",
+        "text": "Kilobit/giây (Kbit/s)"
+      },
+      {
+        "key": "d",
+        "text": "Vòng/phút (RPM)"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 204,
+    "question": "Muốn gõ được tiếng Việt trong Windows, bắt buộc phải dùng phần mềm:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Unikey"
+      },
+      {
+        "key": "b",
+        "text": "Vietkey"
+      },
+      {
+        "key": "c",
+        "text": "Vietware"
+      },
+      {
+        "key": "d",
+        "text": "Microsoft IME"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 205,
+    "question": "Muốn xóa một thư mục hoặc tệp tin trong Windows, ta nhấn chuột phải vào thư mục hoặc tệp cần xóa và chọn:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Delete"
+      },
+      {
+        "key": "b",
+        "text": "Cut"
+      },
+      {
+        "key": "c",
+        "text": "Remove"
+      },
+      {
+        "key": "d",
+        "text": "Rename"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 206,
+    "question": "Trong MS Word, muốn tạo tự động các ký hiệu (dấu chấm, hình tròn) ở đầu mỗi đoạn, ta chọn chức năng:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Bullets and Numbering"
+      },
+      {
+        "key": "b",
+        "text": "Symbols"
+      },
+      {
+        "key": "c",
+        "text": "Numbering"
+      },
+      {
+        "key": "d",
+        "text": "Paragraph"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 207,
+    "question": "Để gõ được tiếng Việt với font chữ VNI-Times, ta phải chọn bảng mã thích hợp nào sau đây:",
+    "options": [
+      {
+        "key": "a",
+        "text": "TCVN3 (ABC)"
+      },
+      {
+        "key": "b",
+        "text": "VNI Windows"
+      },
+      {
+        "key": "c",
+        "text": "Unicode"
+      },
+      {
+        "key": "d",
+        "text": "UTF-8"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 208,
+    "question": "Trong MS Word, tổ hợp phím nào sau đây dùng để bật/tắt chế độ viết chỉ số dưới (Subscript)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ctrl + Shift + ="
+      },
+      {
+        "key": "b",
+        "text": "Alt + ="
+      },
+      {
+        "key": "c",
+        "text": "Ctrl + ="
+      },
+      {
+        "key": "d",
+        "text": "Ctrl + Shift + -"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 209,
+    "question": "Kết quả của công thức sau trong Excel là gì: =OR(14>=0, 32>=43, 48>=6)",
+    "options": [
+      {
+        "key": "a",
+        "text": "TRUE"
+      },
+      {
+        "key": "b",
+        "text": "FALSE"
+      },
+      {
+        "key": "c",
+        "text": "0"
+      },
+      {
+        "key": "d",
+        "text": "Lỗi cú pháp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 210,
+    "question": "Trong MS PowerPoint, khi đang trình chiếu một bài thuyết trình, muốn dừng trình chiếu ta nhấn phím:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Esc"
+      },
+      {
+        "key": "b",
+        "text": "Enter"
+      },
+      {
+        "key": "c",
+        "text": "Tab"
+      },
+      {
+        "key": "d",
+        "text": "Shift"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 211,
+    "question": "Trong Windows, biểu tượng của thư mục thường có màu gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Vàng"
+      },
+      {
+        "key": "b",
+        "text": "Đen"
+      },
+      {
+        "key": "c",
+        "text": "Xanh"
+      },
+      {
+        "key": "d",
+        "text": "Đỏ"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 212,
+    "question": "Trong MS Word, chế độ nào trong các chế độ sau dùng để soạn thảo văn bản?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Outline"
+      },
+      {
+        "key": "b",
+        "text": "Web Layout"
+      },
+      {
+        "key": "c",
+        "text": "Print Layout"
+      },
+      {
+        "key": "d",
+        "text": "Reading Layout"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 213,
+    "question": "Trong soạn thảo Word, muốn chuyển đổi giữa chế độ gõ chèn (Insert) và chế độ gõ đè (Overtype), ta nhấn phím:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Delete"
+      },
+      {
+        "key": "b",
+        "text": "Tab"
+      },
+      {
+        "key": "c",
+        "text": "Insert"
+      },
+      {
+        "key": "d",
+        "text": "Home"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 214,
+    "question": "Trong MS PowerPoint, để xóa nhanh một slide đang chọn, ta dùng tổ hợp phím:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ctrl + Delete"
+      },
+      {
+        "key": "b",
+        "text": "Alt + Shift"
+      },
+      {
+        "key": "c",
+        "text": "Ctrl + X"
+      },
+      {
+        "key": "d",
+        "text": "Ctrl + D"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 215,
+    "question": "Trong MS Word, tổ hợp phím Ctrl + X dùng để:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Cắt khối văn bản đã được đánh dấu và lưu vào bộ nhớ đệm (Clipboard)"
+      },
+      {
+        "key": "b",
+        "text": "Dán văn bản từ Clipboard vào vị trí con trỏ"
+      },
+      {
+        "key": "c",
+        "text": "Sao chép khối văn bản được chọn vào Clipboard"
+      },
+      {
+        "key": "d",
+        "text": "Xóa khối văn bản được chọn mà không lưu"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 216,
+    "question": "Khi đang làm việc với Windows, muốn xóa tất cả dữ liệu trong thùng rác, ta chọn chức năng:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Empty Recycle Bin"
+      },
+      {
+        "key": "b",
+        "text": "Delete all items"
+      },
+      {
+        "key": "c",
+        "text": "Restore all items"
+      },
+      {
+        "key": "d",
+        "text": "Clear Temp Folder"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 217,
+    "question": "Loại tệp tin nào sau đây là tệp tin thực thi trong Windows?",
+    "options": [
+      {
+        "key": "a",
+        "text": ".EXE"
+      },
+      {
+        "key": "b",
+        "text": ".DOCX"
+      },
+      {
+        "key": "c",
+        "text": ".TXT"
+      },
+      {
+        "key": "d",
+        "text": ".MP3"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 218,
+    "question": "Thiết bị nào sau đây được gọi là thiết bị xuất chuẩn?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Màn hình (Monitor)"
+      },
+      {
+        "key": "b",
+        "text": "Chuột (Mouse)"
+      },
+      {
+        "key": "c",
+        "text": "Máy quét (Scanner)"
+      },
+      {
+        "key": "d",
+        "text": "Bàn phím (Keyboard)"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 219,
+    "question": "Trong MS Word, thao tác nào dùng để sao chép một đoạn văn bản vào bộ nhớ đệm (Clipboard)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Đánh dấu khối văn bản rồi nhấn tổ hợp phím Ctrl + C"
+      },
+      {
+        "key": "b",
+        "text": "Đánh dấu khối văn bản rồi nhấn Ctrl + V"
+      },
+      {
+        "key": "c",
+        "text": "Nhấn Ctrl + X"
+      },
+      {
+        "key": "d",
+        "text": "Nhấn Ctrl + Z"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 220,
+    "question": "Trong MS PowerPoint, âm thanh đưa vào bài trình chiếu:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chỉ thực hiện được khi tạo hiệu ứng động cho đối tượng trong slide"
+      },
+      {
+        "key": "b",
+        "text": "Chỉ thực hiện được khi tạo hiệu ứng chuyển trang giữa các slide"
+      },
+      {
+        "key": "c",
+        "text": "Thực hiện được cả khi tạo hiệu ứng động và hiệu ứng chuyển trang"
+      },
+      {
+        "key": "d",
+        "text": "Không thể thực hiện được"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 221,
+    "question": "Hãy chỉ ra tổ hợp phím không cùng loại trong MS Word:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ctrl + P (In tài liệu)"
+      },
+      {
+        "key": "b",
+        "text": "Ctrl + J (Canh đều hai bên)"
+      },
+      {
+        "key": "c",
+        "text": "Ctrl + L (Canh trái)"
+      },
+      {
+        "key": "d",
+        "text": "Ctrl + E (Canh giữa)"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 222,
+    "question": "Trong hệ điều hành Windows, thao tác Drag and Drop (kéo thả chuột) được sử dụng khi ta:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Di chuyển đối tượng đến vị trí mới."
+      },
+      {
+        "key": "b",
+        "text": "Xem thuộc tính của tệp hiện tại."
+      },
+      {
+        "key": "c",
+        "text": "Sao chép đối tượng sang thư mục khác."
+      },
+      {
+        "key": "d",
+        "text": "Xóa đối tượng được chọn."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 223,
+    "question": "Trong MS Word, tổ hợp phím Ctrl + ] dùng để:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tăng cỡ chữ (mỗi lần tăng lên 1 đơn vị)."
+      },
+      {
+        "key": "b",
+        "text": "Giảm cỡ chữ (mỗi lần giảm đi 1 đơn vị)."
+      },
+      {
+        "key": "c",
+        "text": "Tăng khoảng cách giữa các ký tự."
+      },
+      {
+        "key": "d",
+        "text": "Giảm khoảng cách giữa các ký tự."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 224,
+    "question": "Trong MS Word, để tăng cỡ chữ của đoạn văn bản đã chọn, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Nhấn Ctrl + ]"
+      },
+      {
+        "key": "b",
+        "text": "Nhấn Ctrl + ["
+      },
+      {
+        "key": "c",
+        "text": "Nhấn Alt + ]"
+      },
+      {
+        "key": "d",
+        "text": "Nhấn Alt + ["
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 225,
+    "question": "PowerPoint cho phép người dùng thiết kế một slide chủ chứa các định dạng chung của toàn bộ các slide trong bài trình chiếu. Để thực hiện điều này, người dùng phải:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Vào View → Master → Slide Master."
+      },
+      {
+        "key": "b",
+        "text": "Vào Insert → Master Slide."
+      },
+      {
+        "key": "c",
+        "text": "Vào Design → Slide Master."
+      },
+      {
+        "key": "d",
+        "text": "Vào Layout → Master."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 226,
+    "question": "Trong hệ điều hành Windows, muốn đóng (thoát) cửa sổ chương trình ứng dụng đang làm việc, ta nhấn tổ hợp phím:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Alt + F4"
+      },
+      {
+        "key": "b",
+        "text": "Ctrl + F3"
+      },
+      {
+        "key": "c",
+        "text": "Ctrl + W"
+      },
+      {
+        "key": "d",
+        "text": "Shift + Esc"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 227,
+    "question": "Thiết bị nào sau đây được sử dụng để lưu trữ các chương trình ban đầu phục vụ cho việc khởi động máy tính khi bật nguồn?",
+    "options": [
+      {
+        "key": "a",
+        "text": "ROM"
+      },
+      {
+        "key": "b",
+        "text": "Đĩa cứng"
+      },
+      {
+        "key": "c",
+        "text": "RAM"
+      },
+      {
+        "key": "d",
+        "text": "CD/DVD"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 228,
+    "question": "Trong Excel, muốn chuyển đổi giữa địa chỉ tương đối và địa chỉ tuyệt đối trong công thức, ta sử dụng phím:",
+    "options": [
+      {
+        "key": "a",
+        "text": "F2"
+      },
+      {
+        "key": "b",
+        "text": "F3"
+      },
+      {
+        "key": "c",
+        "text": "F5"
+      },
+      {
+        "key": "d",
+        "text": "F4"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 229,
+    "question": "Điều nào sau đây không phải là một hệ điều hành?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Windows"
+      },
+      {
+        "key": "b",
+        "text": "GUI"
+      },
+      {
+        "key": "c",
+        "text": "UNIX"
+      },
+      {
+        "key": "d",
+        "text": "DOS"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 230,
+    "question": "Ngoài việc tạo hiệu ứng cho các đối tượng trên slide, ta có thể tạo hiệu ứng xuất hiện của từng slide bằng lệnh:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Animations"
+      },
+      {
+        "key": "b",
+        "text": "Transitions"
+      },
+      {
+        "key": "c",
+        "text": "Slide Show"
+      },
+      {
+        "key": "d",
+        "text": "Slide Master"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 231,
+    "question": "Trong bảng tính Excel, tại ô A2 gõ vào công thức =IF(3>5,100,IF(5<6,200,300)) thì kết quả nhận được tại ô A2 là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "200"
+      },
+      {
+        "key": "b",
+        "text": "100"
+      },
+      {
+        "key": "c",
+        "text": "300"
+      },
+      {
+        "key": "d",
+        "text": "FALSE"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 232,
+    "question": "Loại phần mềm phải được cài đặt trên máy tính để quản lý tệp tin và thực hiện các hoạt động cơ bản khác của máy tính là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Phần mềm tiện ích"
+      },
+      {
+        "key": "b",
+        "text": "Phần mềm ứng dụng"
+      },
+      {
+        "key": "c",
+        "text": "Hệ điều hành"
+      },
+      {
+        "key": "d",
+        "text": "Phần mềm mạng"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 233,
+    "question": "Thông tin nào sau đây ít ảnh hưởng nhất đến sự riêng tư cá nhân nếu bạn đăng tải trên diễn đàn trực tuyến?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thành phố nơi bạn sinh ra"
+      },
+      {
+        "key": "b",
+        "text": "Tên của bạn"
+      },
+      {
+        "key": "c",
+        "text": "Địa chỉ email cá nhân"
+      },
+      {
+        "key": "d",
+        "text": "Số điện thoại"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 234,
+    "question": "Phương thức phân phối phần mềm nào là miễn phí và có sẵn cho bản dùng thử nhưng cần trả phí khi sử dụng lâu dài?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Phần mềm nguồn mở (Open Source)"
+      },
+      {
+        "key": "b",
+        "text": "Phần mềm chia sẻ (Shareware)"
+      },
+      {
+        "key": "c",
+        "text": "Phần mềm miễn phí (Freeware)"
+      },
+      {
+        "key": "d",
+        "text": "Phần mềm thương mại (Commercial Software)"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 235,
+    "question": "Phương thức thông tin nào giúp một nhóm người có thể gặp mặt, trao đổi trực tiếp trong cùng thời gian làm việc?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Viết blog"
+      },
+      {
+        "key": "b",
+        "text": "Thư điện tử (Email)"
+      },
+      {
+        "key": "c",
+        "text": "Cung cấp thông tin trực tuyến"
+      },
+      {
+        "key": "d",
+        "text": "Đàm thoại truyền hình (Video Conference)"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 236,
+    "question": "Bạn nên làm gì trước khi tặng lại máy tính không còn sử dụng cho trường học hoặc tổ chức từ thiện?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Xóa hết các thông tin cá nhân khỏi ổ cứng"
+      },
+      {
+        "key": "b",
+        "text": "Kiểm tra khả năng kết nối với máy in"
+      },
+      {
+        "key": "c",
+        "text": "Cập nhật phiên bản hệ điều hành mới nhất"
+      },
+      {
+        "key": "d",
+        "text": "Cài đặt lại toàn bộ các phần mềm ứng dụng"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 237,
+    "question": "Theo bạn, điều gì mà hầu hết các loại virus máy tính đều có khả năng thực hiện?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tự sao chép và lây lan sang các tệp khác"
+      },
+      {
+        "key": "b",
+        "text": "Phá hủy BIOS của máy tính"
+      },
+      {
+        "key": "c",
+        "text": "Chặn người dùng truy cập Internet"
+      },
+      {
+        "key": "d",
+        "text": "Khóa toàn bộ hệ thống tệp của ổ cứng"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 238,
+    "question": "Các công cụ pháp lý để điều chỉnh việc sử dụng và phân phối lại phần mềm là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Bản quyền và giấy phép phần mềm"
+      },
+      {
+        "key": "b",
+        "text": "Hợp đồng phần mềm"
+      },
+      {
+        "key": "c",
+        "text": "Luật máy tính"
+      },
+      {
+        "key": "d",
+        "text": "Điều khoản sử dụng dịch vụ"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 239,
+    "question": "Trong MS Word, khi bôi đen một cụm từ và lần lượt thực hiện Ctrl + B rồi Ctrl + U, kết quả thu được là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chữ được in đậm"
+      },
+      {
+        "key": "b",
+        "text": "Chữ được gạch dưới"
+      },
+      {
+        "key": "c",
+        "text": "Chữ vừa in đậm vừa gạch dưới"
+      },
+      {
+        "key": "d",
+        "text": "Chữ được nghiêng"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 240,
+    "question": "Khi đang ở chế độ trình chiếu (Slide Show) trong PowerPoint, muốn quay lại slide trước đó, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Nhấn phím mũi tên trái (←)"
+      },
+      {
+        "key": "b",
+        "text": "Nhấn phím Backspace"
+      },
+      {
+        "key": "c",
+        "text": "Nhấn chuột phải và chọn Previous Slide"
+      },
+      {
+        "key": "d",
+        "text": "Nhấn Esc để thoát trình chiếu"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 241,
+    "question": "Kết quả của công thức =MIN(MAX(4,11,8,9,-4,-10),30) trong Excel là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "11"
+      },
+      {
+        "key": "b",
+        "text": "9"
+      },
+      {
+        "key": "c",
+        "text": "4"
+      },
+      {
+        "key": "d",
+        "text": "30"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 242,
+    "question": "Trong mạng máy tính, thuật ngữ LAN có nghĩa là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Mạng cục bộ (Local Area Network)"
+      },
+      {
+        "key": "b",
+        "text": "Mạng không dây toàn cầu"
+      },
+      {
+        "key": "c",
+        "text": "Mạng diện rộng (WAN)"
+      },
+      {
+        "key": "d",
+        "text": "Mạng Internet công cộng"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 243,
+    "question": "Nếu bạn chọn bảng mã là Unicode, kiểu gõ là VNI hoặc Telex trong phần mềm gõ tiếng Việt (Unikey, VietKey), thì nên sử dụng font chữ nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Times New Roman"
+      },
+      {
+        "key": "b",
+        "text": "TCVN3 (ABC)"
+      },
+      {
+        "key": "c",
+        "text": "VNI-Times"
+      },
+      {
+        "key": "d",
+        "text": "Arial"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 244,
+    "question": "Phương thức thông tin nào cho phép nhiều người có thể gặp mặt và trao đổi trực tiếp cùng lúc trong thời gian làm việc?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Cung cấp thông tin trực tuyến"
+      },
+      {
+        "key": "b",
+        "text": "Viết blog"
+      },
+      {
+        "key": "c",
+        "text": "Thư điện tử"
+      },
+      {
+        "key": "d",
+        "text": "Đàm thoại truyền hình (Video Conference)"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 245,
+    "question": "Từ một tệp trình chiếu PowerPoint có phần mở rộng .pptx, để tạo video có phần mở rộng .mp4, ta thực hiện thao tác nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chọn File → Export → Create a Video, sau đó đặt tên và lưu file .mp4"
+      },
+      {
+        "key": "b",
+        "text": "Chọn File → Save As → chọn định dạng MPEG-4 Video (*.mp4)"
+      },
+      {
+        "key": "c",
+        "text": "Không thể tạo tệp video từ PowerPoint"
+      },
+      {
+        "key": "d",
+        "text": "Chọn File → Share → Publish to Video"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 246,
+    "question": "Trong PowerPoint, ở chế độ Normal, để tách các ô đã chọn trong bảng (Table) thành nhiều ô nhỏ hơn, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Nhấp chuột phải vào vùng chọn và chọn Split Cells..."
+      },
+      {
+        "key": "b",
+        "text": "Chọn tab Layout trong Table Tools → chọn Split Cells"
+      },
+      {
+        "key": "c",
+        "text": "Chọn tab Design → chọn Merge Cells"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 247,
+    "question": "Trong MS Excel, hàm nào sau đây cho phép đếm các giá trị thỏa mãn một điều kiện cho trước?",
+    "options": [
+      {
+        "key": "a",
+        "text": "SUMIF"
+      },
+      {
+        "key": "b",
+        "text": "COUNTIF"
+      },
+      {
+        "key": "c",
+        "text": "COUNT"
+      },
+      {
+        "key": "d",
+        "text": "COUNTA"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 248,
+    "question": "Nút Back trên trình duyệt web có tác dụng gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Đi đến trang web tiếp theo"
+      },
+      {
+        "key": "b",
+        "text": "Quay trở lại trang web trước đó"
+      },
+      {
+        "key": "c",
+        "text": "Quay trở lại cửa sổ trình duyệt trước"
+      },
+      {
+        "key": "d",
+        "text": "Mở trang chủ mặc định"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 249,
+    "question": "Trong MS Word, để tăng cỡ chữ (tạo chữ to hơn), sau khi chọn khối văn bản, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Nhấn Alt + ["
+      },
+      {
+        "key": "b",
+        "text": "Nhấn Ctrl + ]"
+      },
+      {
+        "key": "c",
+        "text": "Nhấn Ctrl + ["
+      },
+      {
+        "key": "d",
+        "text": "Nhấn Alt + ]"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 250,
+    "question": "Phát biểu nào sau đây về hệ điều hành của máy tính cá nhân là đúng?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Là phần mềm cần có để máy tính có thể hoạt động"
+      },
+      {
+        "key": "b",
+        "text": "Là phần mềm cài sẵn trong mọi máy tính cá nhân"
+      },
+      {
+        "key": "c",
+        "text": "Là phần mềm không thể thay đổi"
+      },
+      {
+        "key": "d",
+        "text": "Là phần mềm ứng dụng của máy tính"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 251,
+    "question": "Thông tin nào sau đây ít ảnh hưởng nhất đến sự riêng tư cá nhân nếu được đăng tải trên diễn đàn trực tuyến?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Địa chỉ email"
+      },
+      {
+        "key": "b",
+        "text": "Liên kết đến các trang web bạn yêu thích"
+      },
+      {
+        "key": "c",
+        "text": "Tên của bạn"
+      },
+      {
+        "key": "d",
+        "text": "Số điện thoại cá nhân"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 252,
+    "question": "Trong MS PowerPoint, muốn in 2 slide trên một tờ giấy, ta thực hiện như sau:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chọn tab View → Print; trong phần Settings chọn Handouts, nhấp vào 2 Slides"
+      },
+      {
+        "key": "b",
+        "text": "Chọn tab Home → Print; trong phần Settings chọn Handouts, nhấp vào 2 Slides"
+      },
+      {
+        "key": "c",
+        "text": "Chọn tab File → Print; trong phần Settings nhập số 2 vào ô Slides"
+      },
+      {
+        "key": "d",
+        "text": "Chọn tab File → Print; trong phần Settings chọn Handouts, nhấp vào 2 Slides"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 253,
+    "question": "Các tập tin sau khi được xóa bằng tổ hợp phím Shift + Delete:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chỉ có tệp văn bản .DOC là có thể khôi phục"
+      },
+      {
+        "key": "b",
+        "text": "Có thể khôi phục trong Recycle Bin"
+      },
+      {
+        "key": "c",
+        "text": "Có thể khôi phục trong My Computer"
+      },
+      {
+        "key": "d",
+        "text": "Không thể khôi phục được nữa"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 254,
+    "question": "Để xem một trang web, người dùng gõ địa chỉ của trang web đó vào:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thanh địa chỉ (Address bar) của trình duyệt"
+      },
+      {
+        "key": "b",
+        "text": "Thanh trạng thái (Status bar) của trình duyệt"
+      },
+      {
+        "key": "c",
+        "text": "Thanh liên kết (Links bar) của trình duyệt"
+      },
+      {
+        "key": "d",
+        "text": "Thanh công cụ chuẩn (Standard toolbar) của trình duyệt"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 255,
+    "question": "Trong MS Excel, điều kiện trong hàm IF được phát biểu dưới dạng một phép so sánh. Khi cần so sánh đồng thời nhiều điều kiện thì sử dụng hàm nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "AND"
+      },
+      {
+        "key": "b",
+        "text": "NOT"
+      },
+      {
+        "key": "c",
+        "text": "OR"
+      },
+      {
+        "key": "d",
+        "text": "NOR"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 256,
+    "question": "Thuật ngữ Wi-Fi có nghĩa là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Phương thức kết nối Internet không dây"
+      },
+      {
+        "key": "b",
+        "text": "Virus máy tính"
+      },
+      {
+        "key": "c",
+        "text": "Phương thức mạng cục bộ"
+      },
+      {
+        "key": "d",
+        "text": "Hệ điều hành di động"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 257,
+    "question": "Trong MS PowerPoint, muốn dịch (translate) một đoạn văn bản từ tiếng Việt sang tiếng Anh, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chọn đoạn văn bản cần dịch → Nhấp chuột phải → Chọn Translate"
+      },
+      {
+        "key": "b",
+        "text": "Không thể thực hiện việc dịch văn bản trong MS PowerPoint"
+      },
+      {
+        "key": "c",
+        "text": "Chọn đoạn văn bản → Tab Review → Translate trong nhóm lệnh Language → Translate Selected Text"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 258,
+    "question": "Thuật ngữ Multimedia có nghĩa là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Truyền thông đa phương tiện"
+      },
+      {
+        "key": "b",
+        "text": "Truyền thông qua hình ảnh"
+      },
+      {
+        "key": "c",
+        "text": "Phương tiện truyền thông"
+      },
+      {
+        "key": "d",
+        "text": "Phương tiện di động"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 259,
+    "question": "Cho dữ liệu ở các ô như sau: A1 = 'Chào bạn'; A2 = 'A'; A3, A4 không có dữ liệu; A5 = 'B'; A6 = 'C'. Kết quả của công thức =COUNTA(A1:A6) là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "6"
+      },
+      {
+        "key": "b",
+        "text": "4"
+      },
+      {
+        "key": "c",
+        "text": "2"
+      },
+      {
+        "key": "d",
+        "text": "1"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 260,
+    "question": "Đâu là địa chỉ của một trang web trên Internet?",
+    "options": [
+      {
+        "key": "a",
+        "text": "www.Vnexpress.net"
+      },
+      {
+        "key": "b",
+        "text": "D:\\google\\download"
+      },
+      {
+        "key": "c",
+        "text": "Tất cả đều đúng"
+      },
+      {
+        "key": "d",
+        "text": "tamsu@vnexpress.net"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 261,
+    "question": "Trong MS PowerPoint, để xóa một slide đang chọn, ta sử dụng tổ hợp phím nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ctrl + Delete"
+      },
+      {
+        "key": "b",
+        "text": "Alt + Shift + Delete"
+      },
+      {
+        "key": "c",
+        "text": "Shift + Delete"
+      },
+      {
+        "key": "d",
+        "text": "Alt + Delete"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 262,
+    "question": "Trong MS PowerPoint, ở chế độ màn hình Normal, trong slide có biểu bảng (Table), muốn điều chỉnh các cột trong bảng có độ rộng đều nhau, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chọn các cột cần điều chỉnh → Tab Layout trong Table Tools → Chọn Distribute Columns trong nhóm Cell Size"
+      },
+      {
+        "key": "b",
+        "text": "Nhấp chuột phải → Chọn Distribute Columns"
+      },
+      {
+        "key": "c",
+        "text": "Chọn Tab Design → Table Tools → Distribute Columns trong nhóm Table Style Options"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 263,
+    "question": "Bạn sẽ làm gì trước khi tặng máy tính không sử dụng trong một trường học hoặc tổ chức từ thiện?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Cài đặt lại toàn bộ hệ điều hành"
+      },
+      {
+        "key": "b",
+        "text": "Xóa hết các thông tin cá nhân khỏi ổ cứng"
+      },
+      {
+        "key": "c",
+        "text": "Đảm bảo máy tính có thể kết nối với máy in"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 264,
+    "question": "Trong MS Word, bôi đen một cụm từ trong văn bản rồi lần lượt thực hiện thao tác Ctrl + B và Ctrl + U, cụm từ được bôi đen sẽ:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Được in đậm và gạch dưới"
+      },
+      {
+        "key": "b",
+        "text": "Được in nghiêng"
+      },
+      {
+        "key": "c",
+        "text": "Được gạch ngang"
+      },
+      {
+        "key": "d",
+        "text": "Không thay đổi"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 265,
+    "question": "Sau khi đã lưu bài thuyết trình, để thoát khỏi ứng dụng MS PowerPoint ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Nhấn tổ hợp phím Alt + F4"
+      },
+      {
+        "key": "b",
+        "text": "Nhấp vào nút Close (X) ở góc phải trên cửa sổ"
+      },
+      {
+        "key": "c",
+        "text": "Cả hai cách trên đều đúng"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 266,
+    "question": "Trong cửa sổ Windows, Menu Bar là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thanh thực đơn chứa các lệnh như File, Edit, View..."
+      },
+      {
+        "key": "b",
+        "text": "Thanh công cụ chứa các biểu tượng"
+      },
+      {
+        "key": "c",
+        "text": "Thanh tiêu đề của cửa sổ"
+      },
+      {
+        "key": "d",
+        "text": "Thanh trạng thái ở cuối cửa sổ"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 267,
+    "question": "Trong MS Excel, để đặt tên cho một vùng dữ liệu đã chọn, ta sử dụng chức năng:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Define Name (hoặc Name Manager)"
+      },
+      {
+        "key": "b",
+        "text": "Status Bar"
+      },
+      {
+        "key": "c",
+        "text": "Title Bar"
+      },
+      {
+        "key": "d",
+        "text": "Create Name from Selection"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 268,
+    "question": "Trong MS PowerPoint, để tạo bảng trong một slide trống (Blank), ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chọn tab Insert → Table → Insert Table..."
+      },
+      {
+        "key": "b",
+        "text": "Chọn tab Design → Table → Insert Table..."
+      },
+      {
+        "key": "c",
+        "text": "Nhấp chuột phải trong slide → Chọn Grid and Guides..."
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 269,
+    "question": "Muốn sử dụng Email để gửi và nhận thư điện tử, trước hết người dùng cần phải có:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Một địa chỉ Website trên Internet"
+      },
+      {
+        "key": "b",
+        "text": "Một địa chỉ Email hợp lệ"
+      },
+      {
+        "key": "c",
+        "text": "Một Website cá nhân"
+      },
+      {
+        "key": "d",
+        "text": "Một hộp thư tại bưu điện"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 270,
+    "question": "Trong Excel, hàm YEAR(\"19-08-2008\") cho kết quả là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "2008"
+      },
+      {
+        "key": "b",
+        "text": "19"
+      },
+      {
+        "key": "c",
+        "text": "08"
+      },
+      {
+        "key": "d",
+        "text": "Lỗi công thức"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 271,
+    "question": "Trong MS Word, để giảm cỡ chữ (tạo chữ nhỏ hơn), sau khi quét chọn khối văn bản, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Nhấn Ctrl + ]"
+      },
+      {
+        "key": "b",
+        "text": "Nhấn Ctrl + ["
+      },
+      {
+        "key": "c",
+        "text": "Nhấn Alt + ["
+      },
+      {
+        "key": "d",
+        "text": "Nhấn Shift + ["
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 272,
+    "question": "Cho biết kết quả của công thức =MOD(7*3,2) trong Excel là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "1"
+      },
+      {
+        "key": "b",
+        "text": "0.5"
+      },
+      {
+        "key": "c",
+        "text": "10"
+      },
+      {
+        "key": "d",
+        "text": "10.5"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 273,
+    "question": "Ổ đĩa cứng (Hard Disk) là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thiết bị lưu trữ thông tin ở bên trong vỏ máy"
+      },
+      {
+        "key": "b",
+        "text": "Thiết bị nhập dữ liệu"
+      },
+      {
+        "key": "c",
+        "text": "Thiết bị hiển thị thông tin ra màn hình"
+      },
+      {
+        "key": "d",
+        "text": "Thiết bị xuất dữ liệu ra giấy"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 274,
+    "question": "Thuật ngữ \"www\" là viết tắt của cụm từ nào sau đây?",
+    "options": [
+      {
+        "key": "a",
+        "text": "World Wide Web"
+      },
+      {
+        "key": "b",
+        "text": "World Website Windows"
+      },
+      {
+        "key": "c",
+        "text": "World Wifi Web"
+      },
+      {
+        "key": "d",
+        "text": "Khác"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 275,
+    "question": "Trong MS PowerPoint, ở bảng (Table), muốn chia các ô đã chọn thành nhiều ô, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Nhấp chuột phải vào ô cần tách → Chọn Split Cells..."
+      },
+      {
+        "key": "b",
+        "text": "Vào tab Layout → Chọn Split Cells trong nhóm Merge"
+      },
+      {
+        "key": "c",
+        "text": "Vào tab Design → Table Tools → Split Cells"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 276,
+    "question": "Chữ viết tắt MB thường gặp trong các tài liệu về máy tính có nghĩa là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Đơn vị đo dung lượng lưu trữ (Megabyte)"
+      },
+      {
+        "key": "b",
+        "text": "Đơn vị đo độ phân giải màn hình"
+      },
+      {
+        "key": "c",
+        "text": "Đơn vị đo cường độ âm thanh"
+      },
+      {
+        "key": "d",
+        "text": "Đơn vị đo tốc độ mạng"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 277,
+    "question": "Trong MS Excel, công thức =IF(5>=5, \"Không được tuyển dụng\") sẽ trả về:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Không được tuyển dụng"
+      },
+      {
+        "key": "b",
+        "text": "TRUE"
+      },
+      {
+        "key": "c",
+        "text": "FALSE"
+      },
+      {
+        "key": "d",
+        "text": "Công thức sai cú pháp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 278,
+    "question": "Trong cửa sổ Windows, Standard Bar là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thanh chứa các nút lệnh thường dùng như Save, Open, Print..."
+      },
+      {
+        "key": "b",
+        "text": "Thanh trạng thái ở cuối cửa sổ"
+      },
+      {
+        "key": "c",
+        "text": "Thanh tiêu đề hiển thị tên tệp hoặc chương trình"
+      },
+      {
+        "key": "d",
+        "text": "Thanh menu chứa các mục File, Edit, View..."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 279,
+    "question": "Chọn câu phát biểu đúng về mẫu thiết kế sẵn (Themes) trong MS PowerPoint:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Themes là mẫu thiết kế có sẵn, người dùng có thể chỉnh sửa màu, phông chữ và nền."
+      },
+      {
+        "key": "b",
+        "text": "Themes không cho phép thay đổi bất kỳ thành phần nào."
+      },
+      {
+        "key": "c",
+        "text": "Themes chỉ áp dụng được cho 1 slide duy nhất."
+      },
+      {
+        "key": "d",
+        "text": "Themes chỉ dùng trong Word, không có trong PowerPoint."
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 280,
+    "question": "Trong MS Excel, muốn tính trung bình cộng của một hàng hay cột, ta sử dụng hàm nào sau đây?",
+    "options": [
+      {
+        "key": "a",
+        "text": "AVERAGE"
+      },
+      {
+        "key": "b",
+        "text": "MEDIAN"
+      },
+      {
+        "key": "c",
+        "text": "SUM"
+      },
+      {
+        "key": "d",
+        "text": "COUNT"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 281,
+    "question": "Trong MS Excel, khi nhập dữ liệu kiểu ngày vào trong một ô, dữ liệu này được xem là hợp lệ nếu:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Được canh phải trong ô"
+      },
+      {
+        "key": "b",
+        "text": "Được canh trái trong ô"
+      },
+      {
+        "key": "c",
+        "text": "Hiển thị dạng số nguyên"
+      },
+      {
+        "key": "d",
+        "text": "Không hiển thị được"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 282,
+    "question": "Trong hệ điều hành Windows, thanh hiển thị tên chương trình và nằm trên cùng của cửa sổ được gọi là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thanh tiêu đề (Title Bar)"
+      },
+      {
+        "key": "b",
+        "text": "Thanh trạng thái (Status Bar)"
+      },
+      {
+        "key": "c",
+        "text": "Thanh công cụ chuẩn (Standard Bar)"
+      },
+      {
+        "key": "d",
+        "text": "Thanh menu (Menu Bar)"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 283,
+    "question": "Trong bảng tính Excel, tại ô A2 gõ công thức: =IF(6>8,100,IF(50<6,200,300)) thì kết quả nhận được tại ô A2 là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "300"
+      },
+      {
+        "key": "b",
+        "text": "200"
+      },
+      {
+        "key": "c",
+        "text": "100"
+      },
+      {
+        "key": "d",
+        "text": "Lỗi cú pháp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 284,
+    "question": "Từ một tập tin thuyết trình MS PowerPoint có phần mở rộng .pptx, để tạo tập tin dạng hình ảnh .jpg ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chọn File → Save As → trong hộp thoại Save As, chọn kiểu JPEG File Interchange Format (*.jpg) rồi nhấn Save"
+      },
+      {
+        "key": "b",
+        "text": "Chọn File → Export → Create a JPEG File Interchange Format (*.jpg)"
+      },
+      {
+        "key": "c",
+        "text": "Nhấp chuột phải vào tập tin → Properties → Change type thành .jpg"
+      },
+      {
+        "key": "d",
+        "text": "Không thể xuất hình ảnh từ PowerPoint"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 285,
+    "question": "Cho biết kết quả của công thức sau: =AVERAGE(SUM(45,60,20),25,30)",
+    "options": [
+      {
+        "key": "a",
+        "text": "60"
+      },
+      {
+        "key": "b",
+        "text": "51.7"
+      },
+      {
+        "key": "c",
+        "text": "Không có đáp án phù hợp"
+      },
+      {
+        "key": "d",
+        "text": "Lỗi công thức"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 286,
+    "question": "Trong hệ điều hành Windows, muốn đóng cửa sổ chương trình ứng dụng đang làm việc ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Nhấn tổ hợp phím Alt + F4"
+      },
+      {
+        "key": "b",
+        "text": "Nhấn Ctrl + F3"
+      },
+      {
+        "key": "c",
+        "text": "Nhấn Esc"
+      },
+      {
+        "key": "d",
+        "text": "Nhấn Ctrl + W"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 287,
+    "question": "Trong MS PowerPoint, để ẩn (hide) một slide trong bài thuyết trình, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chọn slide cần ẩn → Tab Slide Show → Chọn Hide Slide"
+      },
+      {
+        "key": "b",
+        "text": "Chọn slide cần ẩn → Tab View → Hide Slide"
+      },
+      {
+        "key": "c",
+        "text": "Nhấp chuột phải lên slide cần ẩn → Chọn Hide Slide"
+      },
+      {
+        "key": "d",
+        "text": "Không thể ẩn slide trong PowerPoint"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 288,
+    "question": "Các đối số của hàm trong bảng tính Excel được ngăn cách với nhau bởi dấu:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Dấu phẩy (,)"
+      },
+      {
+        "key": "b",
+        "text": "Dấu chấm phẩy (;)"
+      },
+      {
+        "key": "c",
+        "text": "Dấu hai chấm (:)"
+      },
+      {
+        "key": "d",
+        "text": "Dấu cách (space)"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 289,
+    "question": "Để tạo thêm nút hành động (Action Buttons) vào slide hiện hành trong PowerPoint, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chọn Insert → Shapes → chọn Action Buttons trong nhóm Illustrations"
+      },
+      {
+        "key": "b",
+        "text": "Chọn Home → Shapes → chọn Action Buttons trong nhóm Editing"
+      },
+      {
+        "key": "c",
+        "text": "Chọn Slide Show → Action Buttons trong nhóm Set Up"
+      },
+      {
+        "key": "d",
+        "text": "Chọn Design → Action Buttons trong nhóm Customize"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 290,
+    "question": "Để chuyển đổi font chữ (chuyển mã từ VNI sang Unicode, TCVN3...), bạn dùng phần mềm nào sau đây:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Unikey"
+      },
+      {
+        "key": "b",
+        "text": "MS Word"
+      },
+      {
+        "key": "c",
+        "text": "MS Paint"
+      },
+      {
+        "key": "d",
+        "text": "Foxit Reader"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 291,
+    "question": "Cho biết kết quả của công thức: =REPLACE(\"Ngonngulaptrinh\", 10, 3, \"chuong\")",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ngonnguchuongtrinh"
+      },
+      {
+        "key": "b",
+        "text": "Ngonngulachuonginh"
+      },
+      {
+        "key": "c",
+        "text": "Ngonnguchuonginh"
+      },
+      {
+        "key": "d",
+        "text": "Ngonngulaptrinhchuong"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 292,
+    "question": "Trong MS PowerPoint, các slide đã được tạo hiệu ứng hoạt hình (Animation) nhưng khi trình chiếu ta không muốn hiển thị các hiệu ứng đó, cần thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chọn tab Slide Show → trong nhóm Set Up → chọn Show Without Animation"
+      },
+      {
+        "key": "b",
+        "text": "Chọn tab Animations → bỏ chọn Animation Pane"
+      },
+      {
+        "key": "c",
+        "text": "Chọn tab Transitions → bỏ chọn Apply to All"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 293,
+    "question": "Cho biết kết quả của công thức: =IF(OR(5>3,AND(10>5,15>=20)),\"GT1\",\"GT2\")",
+    "options": [
+      {
+        "key": "a",
+        "text": "GT1"
+      },
+      {
+        "key": "b",
+        "text": "GT2"
+      },
+      {
+        "key": "c",
+        "text": "Lỗi công thức"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 294,
+    "question": "Để đọc tập tin có phần mở rộng *.PDF, ta sử dụng phần mềm:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Adobe Reader"
+      },
+      {
+        "key": "b",
+        "text": "Foxit Reader"
+      },
+      {
+        "key": "c",
+        "text": "Microsoft Word"
+      },
+      {
+        "key": "d",
+        "text": "MS Paint"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 295,
+    "question": "Trong cửa sổ Windows Explorer, nhấn giữ phím nào khi muốn chọn nhiều đối tượng liên tiếp nhau:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Shift"
+      },
+      {
+        "key": "b",
+        "text": "Ctrl"
+      },
+      {
+        "key": "c",
+        "text": "Alt"
+      },
+      {
+        "key": "d",
+        "text": "Enter"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 296,
+    "question": "Ở chế độ màn hình Slide Sorter trong MS PowerPoint, đặc điểm nào sau đây là đúng:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Có thể xem nhiều slide cùng lúc và dễ dàng thay đổi vị trí các slide"
+      },
+      {
+        "key": "b",
+        "text": "Không thể chèn video hoặc hiệu ứng"
+      },
+      {
+        "key": "c",
+        "text": "Chỉ hiển thị văn bản, không hiển thị hình ảnh"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 297,
+    "question": "Giả sử bài thuyết trình có 15 slide, nhưng chỉ muốn trình chiếu từ slide số 5 đến slide số 10. Thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Không thể thực hiện được"
+      },
+      {
+        "key": "b",
+        "text": "Chọn Tab Slide Show → chọn Set Up Slide Show → trong mục Show Slides, chọn From 5 to 10"
+      },
+      {
+        "key": "c",
+        "text": "Chọn Tab View → chọn Custom Slide Show → chọn From 5 to 10"
+      },
+      {
+        "key": "d",
+        "text": "Nhấn Ctrl + F5 để trình chiếu từ slide số 5"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 298,
+    "question": "Cho biết kết quả của công thức: =IF(LEFT(\"Camau\",1)=\"A\",\"BACLIEU\",\"VINHLONG\")",
+    "options": [
+      {
+        "key": "a",
+        "text": "VINHLONG"
+      },
+      {
+        "key": "b",
+        "text": "BACLIEU"
+      },
+      {
+        "key": "c",
+        "text": "CAMAU"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 299,
+    "question": "Hệ điều hành nào dưới đây không phải là hệ điều hành đa nhiệm:",
+    "options": [
+      {
+        "key": "a",
+        "text": "MS-DOS"
+      },
+      {
+        "key": "b",
+        "text": "Windows 8"
+      },
+      {
+        "key": "c",
+        "text": "Unix"
+      },
+      {
+        "key": "d",
+        "text": "Linux"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 300,
+    "question": "Trong chế độ màn hình Normal của MS PowerPoint, đối với bảng (Table), phát biểu nào sau đây đúng:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Có thể thêm hoặc xóa cột, hàng trong bảng"
+      },
+      {
+        "key": "b",
+        "text": "Không thể thay đổi kích thước cột"
+      },
+      {
+        "key": "c",
+        "text": "Không thể nhập văn bản trong ô"
+      },
+      {
+        "key": "d",
+        "text": "Chỉ hiển thị khung bảng, không có nội dung"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 301,
+    "question": "Cho dữ liệu các ô: B1=8, B2=5, B3=6, B4=9. Kết quả của công thức: =RANK(B1,B1:B4,0) là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "2"
+      },
+      {
+        "key": "b",
+        "text": "3"
+      },
+      {
+        "key": "c",
+        "text": "4"
+      },
+      {
+        "key": "d",
+        "text": "1"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 302,
+    "question": "Trong MS PowerPoint, muốn bật/tắt các đường lưới (Gridlines) trong slide của bài thuyết trình, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chọn tab View, đánh dấu hoặc bỏ chọn ô vuông trước lệnh Gridlines trong nhóm Show"
+      },
+      {
+        "key": "b",
+        "text": "Chọn tab Insert, chọn lệnh Gridlines trong nhóm Text"
+      },
+      {
+        "key": "c",
+        "text": "Trong MS PowerPoint không có chức năng bật/tắt đường lưới"
+      },
+      {
+        "key": "d",
+        "text": "Chọn tab Design, đánh dấu hoặc bỏ chọn ô vuông trước lệnh Gridlines trong nhóm Customize"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 303,
+    "question": "Trong MS PowerPoint, muốn thay thế một số ký tự này bằng ký tự khác, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chọn tab Home → Replace trong nhóm Editing"
+      },
+      {
+        "key": "b",
+        "text": "Chọn tab View → Replace trong nhóm Show"
+      },
+      {
+        "key": "c",
+        "text": "Chọn tab Insert → Replace trong nhóm Text"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 304,
+    "question": "Trong MS Word, các ký hiệu như @, &, %, ... được chèn từ nhóm lệnh nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Insert → Symbol"
+      },
+      {
+        "key": "b",
+        "text": "Insert → Pictures"
+      },
+      {
+        "key": "c",
+        "text": "Insert → Shapes"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 305,
+    "question": "Ở chế độ màn hình Normal của MS PowerPoint, muốn hiển thị hoặc ẩn thước dọc (Vertical Ruler), ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chọn tab File → Options → Advanced; trong phần Display, chọn hoặc bỏ chọn Show vertical ruler"
+      },
+      {
+        "key": "b",
+        "text": "Chọn tab View; trong nhóm Show, chọn hoặc bỏ chọn Ruler"
+      },
+      {
+        "key": "c",
+        "text": "MS PowerPoint không có thước dọc (Vertical Ruler)"
+      },
+      {
+        "key": "d",
+        "text": "Chọn tab File → General; chọn hoặc bỏ chọn Show vertical ruler"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 306,
+    "question": "Tại ô C4 chứa công thức =A$1+$C2. Khi sao chép ô C4 và dán vào ô F7, công thức tại ô F7 là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "=A$1+$E5"
+      },
+      {
+        "key": "b",
+        "text": "=A$1+$C2"
+      },
+      {
+        "key": "c",
+        "text": "=D$1+$F5"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 307,
+    "question": "Trong MS Excel, hàm OR thuộc nhóm hàm nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Hàm logic"
+      },
+      {
+        "key": "b",
+        "text": "Hàm xử lý chuỗi"
+      },
+      {
+        "key": "c",
+        "text": "Hàm tìm kiếm"
+      },
+      {
+        "key": "d",
+        "text": "Hàm toán học"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 308,
+    "question": "Muốn sắp xếp dữ liệu trong MS Excel, ta chọn nhóm lệnh:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Data → Sort"
+      },
+      {
+        "key": "b",
+        "text": "Home → Sort & Filter"
+      },
+      {
+        "key": "c",
+        "text": "View → Arrange"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 309,
+    "question": "Trong MS PowerPoint, muốn xóa bỏ liên kết Hyperlink cho đối tượng trong Slide đang mở, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Nhấp chuột phải vào đối tượng → chọn Remove Hyperlink"
+      },
+      {
+        "key": "b",
+        "text": "Nhấp chuột phải → chọn Delete"
+      },
+      {
+        "key": "c",
+        "text": "Nhấp chuột phải → chọn Delete Hyperlink"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 310,
+    "question": "Chọn phát biểu đúng về MS PowerPoint:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Không thể tạo ký tự DropCap trong Slide"
+      },
+      {
+        "key": "b",
+        "text": "Không thể tạo được chữ nghệ thuật (WordArt) trong Slide"
+      },
+      {
+        "key": "c",
+        "text": "Không sử dụng được chức năng AutoCorrect trong Slide"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 311,
+    "question": "Trong MS Excel, muốn chuyển đổi nhanh giữa địa chỉ tương đối, tuyệt đối và hỗn hợp trong công thức, ta dùng phím:",
+    "options": [
+      {
+        "key": "a",
+        "text": "F2"
+      },
+      {
+        "key": "b",
+        "text": "Shift + F3"
+      },
+      {
+        "key": "c",
+        "text": "Shift + F5"
+      },
+      {
+        "key": "d",
+        "text": "F4"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 312,
+    "question": "Cho biết kết quả của công thức: =FIND(\"a\",\"CHAOban\",1)",
+    "options": [
+      {
+        "key": "a",
+        "text": "6"
+      },
+      {
+        "key": "b",
+        "text": "3"
+      },
+      {
+        "key": "c",
+        "text": "2"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 313,
+    "question": "Internet Explorer là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Trình duyệt web dùng để hiển thị các trang web trên Internet"
+      },
+      {
+        "key": "b",
+        "text": "Một chuẩn mạng cục bộ (LAN)"
+      },
+      {
+        "key": "c",
+        "text": "Một phần mềm hệ thống"
+      },
+      {
+        "key": "d",
+        "text": "Thiết bị kết nối mạng"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 314,
+    "question": "Trong hệ điều hành Windows, thao tác nào sau đây được dùng để chọn nhiều đối tượng không liền kề nhau?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Giữ phím Ctrl và nhấp chọn từng đối tượng"
+      },
+      {
+        "key": "b",
+        "text": "Giữ phím Shift và nhấp chọn từng đối tượng"
+      },
+      {
+        "key": "c",
+        "text": "Nhấp chuột phải vào từng đối tượng"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 315,
+    "question": "Cho biết kết quả của công thức: =LEFT(\"A001\",2)=\"A\"",
+    "options": [
+      {
+        "key": "a",
+        "text": "FALSE"
+      },
+      {
+        "key": "b",
+        "text": "TRUE"
+      },
+      {
+        "key": "c",
+        "text": "Lỗi công thức"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 316,
+    "question": "Trong MS PowerPoint, ở chế độ màn hình Normal, trong Slide có bảng (Table), muốn điều chỉnh một số dòng trong bảng có chiều cao bằng nhau, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Xác định các dòng muốn điều chỉnh → vào tab Layout trong Table Tools → chọn Distribute Rows trong nhóm Cell Size"
+      },
+      {
+        "key": "b",
+        "text": "Xác định các dòng muốn điều chỉnh → chọn tab Design trong Table Tools → chọn Distribute Rows trong nhóm Table Style Options"
+      },
+      {
+        "key": "c",
+        "text": "Chọn tất cả các dòng → nhấn chuột phải → chọn Evenly Distribute Height"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 317,
+    "question": "Trong MS Excel, địa chỉ nào sau đây là địa chỉ tuyệt đối theo cột và tương đối theo hàng?",
+    "options": [
+      {
+        "key": "a",
+        "text": "$B1"
+      },
+      {
+        "key": "b",
+        "text": "B$1"
+      },
+      {
+        "key": "c",
+        "text": "$B$1"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 318,
+    "question": "Trong MS PowerPoint, phát biểu nào đúng về Slide bị ẩn (Hide Slide)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Khi một slide bị ẩn, nó sẽ không được hiển thị trong quá trình trình chiếu"
+      },
+      {
+        "key": "b",
+        "text": "Khi slide bị ẩn, nội dung trong slide đó bị mã hóa và không thể mở lại"
+      },
+      {
+        "key": "c",
+        "text": "Khi slide bị ẩn, không thể xóa hoặc chỉnh sửa slide đó"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 319,
+    "question": "Cho biết kết quả của công thức: =IF(25>=0, SQRT(25), \"Số âm\")",
+    "options": [
+      {
+        "key": "a",
+        "text": "5"
+      },
+      {
+        "key": "b",
+        "text": "Số âm"
+      },
+      {
+        "key": "c",
+        "text": "Lỗi công thức"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 320,
+    "question": "Muốn thay đổi các thông số hệ thống trong Windows như múi giờ, đơn vị tiền tệ, định dạng số..., ta sử dụng chương trình nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Control Panel"
+      },
+      {
+        "key": "b",
+        "text": "System Tools"
+      },
+      {
+        "key": "c",
+        "text": "Device Manager"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 321,
+    "question": "Cho biết kết quả của công thức: =ROUND(PRODUCT(2,3,4)/5)",
+    "options": [
+      {
+        "key": "a",
+        "text": "5"
+      },
+      {
+        "key": "b",
+        "text": "4.8"
+      },
+      {
+        "key": "c",
+        "text": "6"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 322,
+    "question": "Giả sử có 2 cửa sổ PowerPoint đang được mở. Muốn hiển thị chúng song song hai bên màn hình, ta thực hiện như thế nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Nhấp chuột phải vào thanh Taskbar, chọn 'Show windows side by side'"
+      },
+      {
+        "key": "b",
+        "text": "Nhấp chuột phải vào thanh tiêu đề của cửa sổ PowerPoint"
+      },
+      {
+        "key": "c",
+        "text": "Nhấn Ctrl + Tab để chuyển cửa sổ"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 323,
+    "question": "Để lựa chọn các vùng không liền kề nhau trong bảng tính Excel, ta cần sử dụng chuột kết hợp với phím nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Shift"
+      },
+      {
+        "key": "b",
+        "text": "Ctrl"
+      },
+      {
+        "key": "c",
+        "text": "Alt"
+      },
+      {
+        "key": "d",
+        "text": "Ctrl và Shift cùng lúc"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 324,
+    "question": "Trong Excel, tại ô A2 có giá trị chuỗi \"TINHOC\". Tại ô B2 gõ công thức =LEFT(A2,3) thì nhận được kết quả gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "TIN"
+      },
+      {
+        "key": "b",
+        "text": "HOC"
+      },
+      {
+        "key": "c",
+        "text": "TINH"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 325,
+    "question": "Trong MS PowerPoint, để tạo liên kết (Hyperlink) đến một slide khác trong cùng bài trình chiếu, ta thực hiện như thế nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chọn đối tượng cần liên kết → Tab Insert → nhóm Links → chọn Hyperlink → chọn 'Place in This Document'"
+      },
+      {
+        "key": "b",
+        "text": "Tab Home → nhóm Editing → chọn Hyperlink"
+      },
+      {
+        "key": "c",
+        "text": "Nhấp chuột phải vào slide → chọn Add Hyperlink"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 326,
+    "question": "Trong Excel, cho biết kết quả của công thức: =ROUND(7475.47, -2)",
+    "options": [
+      {
+        "key": "a",
+        "text": "7500"
+      },
+      {
+        "key": "b",
+        "text": "7475"
+      },
+      {
+        "key": "c",
+        "text": "7480"
+      },
+      {
+        "key": "d",
+        "text": "7000"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 327,
+    "question": "Trong MS PowerPoint, muốn sắp xếp các cửa sổ đang mở theo dạng chồng lên nhau, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Nhấp chuột phải vào thanh Taskbar, chọn 'Cascade windows'"
+      },
+      {
+        "key": "b",
+        "text": "Đóng tất cả các cửa sổ hiện hành"
+      },
+      {
+        "key": "c",
+        "text": "Nhấp chuột phải vào slide → chọn Arrange Windows"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 328,
+    "question": "Trong Excel, tại ô A2 có chuỗi \"Tin hoc\", tại ô B2 có giá trị số 2008. Khi gõ công thức =A2&B2 vào ô C2, kết quả nhận được là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tinhoc2008"
+      },
+      {
+        "key": "b",
+        "text": "2008"
+      },
+      {
+        "key": "c",
+        "text": "Tin hoc"
+      },
+      {
+        "key": "d",
+        "text": "Lỗi #VALUE!"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 329,
+    "question": "Cho biết kết quả của công thức: =ROUND(147.415,-1)",
+    "options": [
+      {
+        "key": "a",
+        "text": "150"
+      },
+      {
+        "key": "b",
+        "text": "147"
+      },
+      {
+        "key": "c",
+        "text": "140"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 330,
+    "question": "Chọn phát biểu đúng về tập tin được đặt mật khẩu trong MS PowerPoint (.pptx):",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tập tin có mật khẩu 'Password to modify' chỉ cho phép mở và xem, không cho phép chỉnh sửa nội dung"
+      },
+      {
+        "key": "b",
+        "text": "Tập tin được đặt mật khẩu vẫn có thể sửa nếu lưu thành tên khác (Save As)"
+      },
+      {
+        "key": "c",
+        "text": "Khi tập tin bị đặt mật khẩu, chỉ có thể trình chiếu (Slide Show) nhưng không thể chỉnh sửa"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 331,
+    "question": "Trong Excel, cho biết kết quả của công thức: =MAX(3, ABS(-25), 5)",
+    "options": [
+      {
+        "key": "a",
+        "text": "25"
+      },
+      {
+        "key": "b",
+        "text": "14"
+      },
+      {
+        "key": "c",
+        "text": "5"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 332,
+    "question": "Cho biết kết quả của công thức: =YEAR(TODAY()) nếu máy tính đang ở năm hiện tại (ví dụ 2025).",
+    "options": [
+      {
+        "key": "a",
+        "text": "2025"
+      },
+      {
+        "key": "b",
+        "text": "1900"
+      },
+      {
+        "key": "c",
+        "text": "1"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 333,
+    "question": "Trong bài thuyết trình PowerPoint có các slide từ 1 đến 15, muốn in các slide 2, 5 và từ 11 đến 15, ta thực hiện như thế nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chọn Tab File → Print → trong mục Settings, nhập 2,5,11-15 vào ô Slides"
+      },
+      {
+        "key": "b",
+        "text": "Chọn Tab Home → Print → nhập số slide cần in vào phần Layout"
+      },
+      {
+        "key": "c",
+        "text": "Chọn Tab File → Options → chọn Print Current Slide"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 334,
+    "question": "Trong Windows, tổ hợp phím nào được dùng để chuyển qua lại giữa các cửa sổ đang mở?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Shift + Tab"
+      },
+      {
+        "key": "b",
+        "text": "Alt + Tab"
+      },
+      {
+        "key": "c",
+        "text": "Ctrl + F6"
+      },
+      {
+        "key": "d",
+        "text": "Ctrl + Tab"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 335,
+    "question": "Cho dữ liệu trong Excel: B1 = \"Toán\", B3 = \"Ngoại ngữ\", B4 = \"Tin học\". Kết quả của công thức =CHOOSE(3,B1,B3,B4) là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Toán"
+      },
+      {
+        "key": "b",
+        "text": "Ngoại ngữ"
+      },
+      {
+        "key": "c",
+        "text": "Tin học"
+      },
+      {
+        "key": "d",
+        "text": "Lỗi #VALUE!"
+      }
+    ],
+    "answer": "c"
+  },
+  {
+    "id": 336,
+    "question": "Cho biết kết quả của công thức: =IF(4>5,5)",
+    "options": [
+      {
+        "key": "a",
+        "text": "FALSE"
+      },
+      {
+        "key": "b",
+        "text": "TRUE"
+      },
+      {
+        "key": "c",
+        "text": "5"
+      },
+      {
+        "key": "d",
+        "text": "Lỗi do thiếu đối số trong hàm IF"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 337,
+    "question": "Trong PowerPoint, chọn câu phát biểu sai:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Trong chế độ Slide Sorter, có thể tạo hiệu ứng hoạt hình cho từng đối tượng trong slide"
+      },
+      {
+        "key": "b",
+        "text": "Trong chế độ Slide Sorter, có thể xóa slide bằng cách nhấp chuột phải → Delete Slide"
+      },
+      {
+        "key": "c",
+        "text": "Trong chế độ Slide Show, có thể trình chiếu toàn màn hình"
+      },
+      {
+        "key": "d",
+        "text": "Trong chế độ Normal, có thể thêm mới slide"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 338,
+    "question": "Trong MS Excel, để gộp nhiều ô thành một ô duy nhất, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chọn các ô cần gộp → Tab Home → nhóm Alignment → chọn Merge & Center"
+      },
+      {
+        "key": "b",
+        "text": "Tab Layout → nhóm Merge → chọn Merge Cells"
+      },
+      {
+        "key": "c",
+        "text": "Tab Insert → chọn Combine Cells"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 339,
+    "question": "Cho biết kết quả của công thức: =INT(123.56)",
+    "options": [
+      {
+        "key": "a",
+        "text": "123"
+      },
+      {
+        "key": "b",
+        "text": "124"
+      },
+      {
+        "key": "c",
+        "text": "123.5"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 340,
+    "question": "Khi đang ở chế độ trình chiếu (Slide Show) trong PowerPoint, muốn xem trước slide kế tiếp, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Nhấp chuột phải → chọn See Next Slide"
+      },
+      {
+        "key": "b",
+        "text": "Nhấn phím N hoặc mũi tên phải"
+      },
+      {
+        "key": "c",
+        "text": "Nhấn Esc để thoát rồi chọn slide kế tiếp"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 341,
+    "question": "Trong Excel, tại ô A2 có giá trị số 10. Nếu tại ô B2 gõ công thức =A2*2 thì kết quả là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "20"
+      },
+      {
+        "key": "b",
+        "text": "10"
+      },
+      {
+        "key": "c",
+        "text": "5"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 342,
+    "question": "Trong MS PowerPoint, nếu chỉ muốn trình chiếu một số slide nhất định trong bài thuyết trình, ta thực hiện như thế nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chọn Tab Slide Show → nhóm Start Slide Show → chọn Custom Slide Show → chọn Define Custom Show → chọn các slide cần trình chiếu"
+      },
+      {
+        "key": "b",
+        "text": "Chọn Tab View → Outline View"
+      },
+      {
+        "key": "c",
+        "text": "Chọn Tab Design → chọn các slide muốn hiển thị"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 343,
+    "question": "Cho biết kết quả của công thức Excel: =MATCH(5,{3,5,7,8},1)",
+    "options": [
+      {
+        "key": "a",
+        "text": "2"
+      },
+      {
+        "key": "b",
+        "text": "3"
+      },
+      {
+        "key": "c",
+        "text": "1"
+      },
+      {
+        "key": "d",
+        "text": "Lỗi #N/A"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 344,
+    "question": "Cho biết kết quả của công thức Excel: =MID(\"Dai hoc Can Tho\",7,LEN(\"hoc\"))",
+    "options": [
+      {
+        "key": "a",
+        "text": "hoc C"
+      },
+      {
+        "key": "b",
+        "text": "hoc"
+      },
+      {
+        "key": "c",
+        "text": "Can Tho"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 345,
+    "question": "Cho biết kết quả của công thức Excel: =MATCH(5,{3,7,5,8},0)",
+    "options": [
+      {
+        "key": "a",
+        "text": "3"
+      },
+      {
+        "key": "b",
+        "text": "1"
+      },
+      {
+        "key": "c",
+        "text": "2"
+      },
+      {
+        "key": "d",
+        "text": "Lỗi #N/A"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 346,
+    "question": "Chọn câu phát biểu sai về Slide Master trong PowerPoint:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Không thể tạo hiệu ứng hoạt hình cho các đối tượng trong Slide Master"
+      },
+      {
+        "key": "b",
+        "text": "Slide Master dùng để tạo định dạng thống nhất cho toàn bộ bài trình chiếu"
+      },
+      {
+        "key": "c",
+        "text": "Thay đổi trên Slide Master sẽ ảnh hưởng đến tất cả các slide trong bài trình chiếu"
+      },
+      {
+        "key": "d",
+        "text": "Slide Master có thể chứa hình nền, tiêu đề và logo dùng chung"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 347,
+    "question": "Khi đang ở chế độ trình chiếu (Slide Show), muốn xóa các nét vẽ hoặc chú thích đã vẽ lên slide, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Nhấp chuột phải → chọn Pointer Options → chọn Eraser"
+      },
+      {
+        "key": "b",
+        "text": "Nhấn phím Delete"
+      },
+      {
+        "key": "c",
+        "text": "Nhấp chuột phải → chọn Clear Slide"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 348,
+    "question": "Trong MS PowerPoint, muốn nhập dữ liệu dạng công thức toán học, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chọn Tab Insert → nhóm Text → chọn Object → chọn Microsoft Equation 3.0"
+      },
+      {
+        "key": "b",
+        "text": "Chọn Tab Home → chọn Equation trong nhóm Symbols"
+      },
+      {
+        "key": "c",
+        "text": "Chọn Tab Design → chọn Math Format"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 349,
+    "question": "Trong bảng tính Excel, tại ô A2 có giá trị 25. Nếu tại ô B2 nhập công thức =SQRT(A2), kết quả là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "5"
+      },
+      {
+        "key": "b",
+        "text": "25"
+      },
+      {
+        "key": "c",
+        "text": "#VALUE!"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 350,
+    "question": "Trong MS PowerPoint, để tạo hiệu ứng hoạt hình (Animation) cho đối tượng trên slide, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chọn đối tượng → Tab Animations → chọn hiệu ứng trong nhóm Animation"
+      },
+      {
+        "key": "b",
+        "text": "Chọn Tab Transitions → chọn hiệu ứng chuyển cảnh"
+      },
+      {
+        "key": "c",
+        "text": "Nhấp chuột phải → chọn Format Shape"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 351,
+    "question": "Cho biết kết quả của công thức Excel: =IF(OR(12>10, -15<-13), \"THI A\", \"THI B\")",
+    "options": [
+      {
+        "key": "a",
+        "text": "THI B"
+      },
+      {
+        "key": "b",
+        "text": "THI A"
+      },
+      {
+        "key": "c",
+        "text": "TRUE"
+      },
+      {
+        "key": "d",
+        "text": "FALSE"
+      }
+    ],
+    "answer": "b"
+  },
+  {
+    "id": 352,
+    "question": "Chọn câu phát biểu đúng về việc tạo hiệu ứng hoạt hình (Animations) cho các đối tượng trong Slide:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tạo hiệu ứng hoạt hình nhằm nhấn mạnh hoặc gây chú ý cho người xem"
+      },
+      {
+        "key": "b",
+        "text": "Tạo hiệu ứng hoạt hình giúp người xem hiểu được từng bước của một tiến trình"
+      },
+      {
+        "key": "c",
+        "text": "Tạo hiệu ứng hoạt hình giúp bài thuyết trình trở nên sinh động hơn"
+      },
+      {
+        "key": "d",
+        "text": "Tất cả các đáp án trên đều đúng"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 353,
+    "question": "Trong bảng tính Excel, hàm nào sau đây cho phép tính tổng các giá trị kiểu số thỏa mãn một điều kiện cho trước?",
+    "options": [
+      {
+        "key": "a",
+        "text": "SUMIF"
+      },
+      {
+        "key": "b",
+        "text": "COUNTIF"
+      },
+      {
+        "key": "c",
+        "text": "SUM"
+      },
+      {
+        "key": "d",
+        "text": "COUNT"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 354,
+    "question": "Khi nhập dữ liệu vào bảng tính Excel thì:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Dữ liệu kiểu văn bản mặc định căn lề trái"
+      },
+      {
+        "key": "b",
+        "text": "Dữ liệu kiểu số mặc định căn lề phải"
+      },
+      {
+        "key": "c",
+        "text": "Dữ liệu kiểu ngày tháng mặc định căn lề phải"
+      },
+      {
+        "key": "d",
+        "text": "Tất cả các đáp án trên đều đúng"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 355,
+    "question": "Virus tin học là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Là một chương trình máy tính do con người tạo ra"
+      },
+      {
+        "key": "b",
+        "text": "Có khả năng tự sao chép để lây lan"
+      },
+      {
+        "key": "c",
+        "text": "Có khả năng phá hoại các tệp hoặc chương trình"
+      },
+      {
+        "key": "d",
+        "text": "Tất cả các đáp án trên đều đúng"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 356,
+    "question": "Cho biết kết quả của công thức Excel: =INT(7*5/2)",
+    "options": [
+      {
+        "key": "a",
+        "text": "17"
+      },
+      {
+        "key": "b",
+        "text": "18"
+      },
+      {
+        "key": "c",
+        "text": "25"
+      },
+      {
+        "key": "d",
+        "text": "Lỗi #VALUE!"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 357,
+    "question": "Trong PowerPoint, để chèn một đoạn video có sẵn vào slide, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chọn Tab Insert → nhóm Media → chọn Video → chọn Video on My PC..."
+      },
+      {
+        "key": "b",
+        "text": "Chọn Tab Design → chọn Video trong nhóm Background"
+      },
+      {
+        "key": "c",
+        "text": "Chọn Tab View → chọn Object → chọn Video"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 358,
+    "question": "Cho dữ liệu ở các ô: A1=\"2\"; A2=\"A\"; A3=\"5\"; A4 trống; A5=\"B\"; A6=\"C\". Kết quả của công thức =COUNTBLANK(A1:A6) là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "1"
+      },
+      {
+        "key": "b",
+        "text": "2"
+      },
+      {
+        "key": "c",
+        "text": "3"
+      },
+      {
+        "key": "d",
+        "text": "0"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 359,
+    "question": "Trong MS PowerPoint, để tạo màu nền cho một slide trong bài thuyết trình đang mở, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chọn Tab Design → chọn Format Background trong nhóm Customize"
+      },
+      {
+        "key": "b",
+        "text": "Chọn Tab Home → chọn Theme màu nền"
+      },
+      {
+        "key": "c",
+        "text": "Chọn Tab View → chọn Background Style"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 360,
+    "question": "Muốn chuyển một tệp PowerPoint (.pptx) sang định dạng .pdf, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chọn Tab File → Export → Create PDF/XPS Document"
+      },
+      {
+        "key": "b",
+        "text": "Chọn Tab View → Create PDF"
+      },
+      {
+        "key": "c",
+        "text": "Chọn Tab File → Save As → chọn định dạng PDF"
+      },
+      {
+        "key": "d",
+        "text": "Không có đáp án phù hợp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 361,
+    "question": "Trong hệ điều hành Windows, muốn đóng cửa sổ chương trình ứng dụng đang làm việc, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Alt + F4"
+      },
+      {
+        "key": "b",
+        "text": "Ctrl + F4"
+      },
+      {
+        "key": "c",
+        "text": "Alt + F2"
+      },
+      {
+        "key": "d",
+        "text": "Ctrl + W"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 362,
+    "question": "Thiết bị nào sau đây của máy tính không thuộc nhóm thiết bị xuất dữ liệu?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Bàn phím"
+      },
+      {
+        "key": "b",
+        "text": "Màn hình"
+      },
+      {
+        "key": "c",
+        "text": "Máy in"
+      },
+      {
+        "key": "d",
+        "text": "Máy chiếu (Projector)"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 363,
+    "question": "Hệ điều hành nào dưới đây không phải là hệ điều hành đa nhiệm?",
+    "options": [
+      {
+        "key": "a",
+        "text": "MS-DOS"
+      },
+      {
+        "key": "b",
+        "text": "Windows 8"
+      },
+      {
+        "key": "c",
+        "text": "Unix"
+      },
+      {
+        "key": "d",
+        "text": "macOS"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 364,
+    "question": "Trong hệ điều hành Windows, thanh hiển thị tên chương trình và nằm trên cùng của cửa sổ được gọi là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thanh tiêu đề (Title Bar)"
+      },
+      {
+        "key": "b",
+        "text": "Thanh công cụ chuẩn (Standard Bar)"
+      },
+      {
+        "key": "c",
+        "text": "Thanh trạng thái (Status Bar)"
+      },
+      {
+        "key": "d",
+        "text": "Thanh menu (Menu Bar)"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 365,
+    "question": "Cho dữ liệu ở các ô: A1=\"Chào bạn\"; A2=\"A\"; A3 trống; A4 trống; A5=\"B\"; A6=\"C\". Kết quả của công thức =COUNTA(A1:A6) là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "4"
+      },
+      {
+        "key": "b",
+        "text": "3"
+      },
+      {
+        "key": "c",
+        "text": "2"
+      },
+      {
+        "key": "d",
+        "text": "6"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 366,
+    "question": "Các tập tin sau khi được chọn và xóa bằng tổ hợp phím Shift + Delete sẽ:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Bị xóa vĩnh viễn, không vào thùng rác"
+      },
+      {
+        "key": "b",
+        "text": "Vẫn có thể khôi phục trong Recycle Bin"
+      },
+      {
+        "key": "c",
+        "text": "Chỉ bị xóa nếu là tệp văn bản .DOC"
+      },
+      {
+        "key": "d",
+        "text": "Tự động nén lại thành file ZIP"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 367,
+    "question": "Muốn thay đổi định dạng tiền tệ, cách viết số trong hệ điều hành Windows, ta thực hiện:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Control Panel → chọn Region (hoặc Region and Language)"
+      },
+      {
+        "key": "b",
+        "text": "Control Panel → chọn Display"
+      },
+      {
+        "key": "c",
+        "text": "Control Panel → chọn Keyboard"
+      },
+      {
+        "key": "d",
+        "text": "Control Panel → chọn Power Options"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 368,
+    "question": "Ổ đĩa cứng là:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thiết bị lưu trữ trong vì nó nằm bên trong vỏ máy"
+      },
+      {
+        "key": "b",
+        "text": "Thiết bị lưu trữ ngoài"
+      },
+      {
+        "key": "c",
+        "text": "Thiết bị nhập dữ liệu"
+      },
+      {
+        "key": "d",
+        "text": "Thiết bị xuất dữ liệu"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 369,
+    "question": "Để chuyển đổi font chữ (ví dụ từ .VnTime sang Unicode), bạn dùng phần mềm nào sau đây?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Unikey Toolkit"
+      },
+      {
+        "key": "b",
+        "text": "MS Word"
+      },
+      {
+        "key": "c",
+        "text": "Notepad"
+      },
+      {
+        "key": "d",
+        "text": "MS Paint"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 370,
+    "question": "Cho biết kết quả của công thức sau trong Excel: =IF(\"m\" > \"a\", \"Lớn hơn\", \"Nhỏ hơn\")",
+    "options": [
+      {
+        "key": "a",
+        "text": "Lớn hơn"
+      },
+      {
+        "key": "b",
+        "text": "Nhỏ hơn"
+      },
+      {
+        "key": "c",
+        "text": "TRUE"
+      },
+      {
+        "key": "d",
+        "text": "FALSE"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 371,
+    "question": "Trong cửa sổ Windows Explorer, nhấn giữ phím nào khi muốn chọn nhiều đối tượng liền kề nhau?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Shift"
+      },
+      {
+        "key": "b",
+        "text": "Ctrl"
+      },
+      {
+        "key": "c",
+        "text": "Alt"
+      },
+      {
+        "key": "d",
+        "text": "Tab"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 372,
+    "question": "Chá»n cÃ¢u phÃ¡t biá»ƒu Ä‘Ãºng vá» viá»‡c tao hiá»‡u \ntiáº¿p nhau: á»©ng hoáº¡t hÃ¬nh (Animations) cho cÃ¡c Ä‘á»‘i tÆ°á»£ng",
+    "options": [
+      {
+        "key": "a",
+        "text": "Nháº¥n phÃ­m Tab _"
+      },
+      {
+        "key": "b",
+        "text": "Nháº¥n phÃ­m Enter trong Slide"
+      },
+      {
+        "key": "c",
+        "text": "Nháº¥n phÃ­m Ctrl"
+      },
+      {
+        "key": "d",
+        "text": "_"
+      }
+    ],
+    "answer": "a",
+    "_inferred": true
+  },
+  {
+    "id": 373,
+    "question": "Chá»¯ viáº¿t táº¯t MB thÆ°á»ng gáº·p trong cÃ¡c \ntÃ i liá»‡u vá» mÃ¡y tÃ­nh cÃ³ nghÄ©a lÃ : bÃ i thuyáº¿t trÃ¬nh trá»Ÿ nÃªn sinh Ä‘á»™ng hÆ¡n",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ladon vá»‹ Ä‘okHÃ£ RERE lÆ°u D@ v t c"
+      },
+      {
+        "key": "b",
+        "text": "Táº¡o hiá»‡u á»©ng hoáº¡t hÃ¬nh (Animations) nháº±m giÃºp"
+      },
+      {
+        "key": "c",
+        "text": "LÃ  Ä‘Æ¡n vá»‹ Ä‘o cÆ°á»ng Ä‘á»™ Ã¢m thanh Ã‘ . \n: 5%"
+      },
+      {
+        "key": "d",
+        "text": "Táº¡o hiá»‡u á»©ng hoáº¡t hÃ¬nh (Animations) nháº±m nháº¥n"
+      }
+    ],
+    "answer": "a",
+    "_inferred": true
+  },
+  {
+    "id": 374,
+    "question": "Cho biáº¿t káº¿t quáº£ cá»§a cÃ´ng thá»©c:",
+    "options": [
+      {
+        "key": "a",
+        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+      },
+      {
+        "key": "b",
+        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+      },
+      {
+        "key": "c",
+        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+      },
+      {
+        "key": "d",
+        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+      }
+    ],
+    "answer": "a",
+    "_inferred": true
+  },
+  {
+    "id": 375,
+    "question": "Trong cá»­a sá»• Windows, Menu bar lÃ : á»‚.áº¸(LEFT( Camauâ€™, 1)=\"A\", BACHEU\", VINHLON",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thanh tiÃªu Ä‘á»"
+      },
+      {
+        "key": "b",
+        "text": "Thanh Ä‘á»‹a chá»‰"
+      },
+      {
+        "key": "c",
+        "text": "ThÃ´ng bÃ¡o lá»—i"
+      },
+      {
+        "key": "d",
+        "text": "C \ne hanhthgedon@\" d Thanh tráº¡ng thi"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 376,
+    "question": "Cho biáº¿t kÃ©t quáº£ cá»§a cÃ´ng thá»©c sau: \n=IF(25 >= 0, SQRT(25), \"So am\")",
+    "options": [
+      {
+        "key": "a",
+        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+      },
+      {
+        "key": "b",
+        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+      },
+      {
+        "key": "c",
+        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+      },
+      {
+        "key": "d",
+        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+      }
+    ],
+    "answer": "a",
+    "_inferred": true
+  },
+  {
+    "id": 377,
+    "question": "Cho biáº¿t káº¿t quáº£ cá»§a cÃ´ng thá»©c sau: \n=MID(\"Dai hoc-Can Tho\",7,LEN(\"Dai hoc\")-10)",
+    "options": [
+      {
+        "key": "a",
+        "text": "hoc"
+      },
+      {
+        "key": "b",
+        "text": "Tho"
+      },
+      {
+        "key": "c",
+        "text": "-Ca"
+      },
+      {
+        "key": "d",
+        "text": ". ThÃ´ng bÃ¡o lá»—i"
+      }
+    ],
+    "answer": "d"
+  },
+  {
+    "id": 378,
+    "question": "Trong moi trÆ°á»ng Windows báº¡n cÃ³ thÃ© áº¨ â€” _- \nN â€ž",
+    "options": [
+      {
+        "key": "a",
+        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+      },
+      {
+        "key": "b",
+        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+      },
+      {
+        "key": "c",
+        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+      },
+      {
+        "key": "d",
+        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+      }
+    ],
+    "answer": "a",
+    "_inferred": true
+  },
+  {
+    "id": 379,
+    "question": "Trong MSExcel, Ä‘á»ƒ Ä‘áº·t tÃªn cho má»™t vÃ¹ng cháº¡y cÃ¹ng lÃºc: \ndá»¯ liá»‡u Ä‘Ã£ chá»n, ta sá»­ dá»¥ng chá»©c nÄƒng:",
+    "options": [
+      {
+        "key": "a",
+        "text": "ThÃ´ng bÃ¡o lá»—i"
+      },
+      {
+        "key": "b",
+        "text": "Soam"
+      },
+      {
+        "key": "c",
+        "text": "Cháº¡y Ä‘Æ°á»£c 2 chÆ°Æ¡ng trÃ¬nh"
+      },
+      {
+        "key": "d",
+        "text": "Label"
+      }
+    ],
+    "answer": "a",
+    "_inferred": true
+  },
+  {
+    "id": 380,
+    "question": "Trong MS PowerPoint, muá»‘n sá»­ dá»¥ng \nchá»©c nÄƒng thay tháº¿ má»™t sá»‘ kÃ½ tá»± nÃ y thÃ nh nhá»¯ng \nkÃ½ tá»± khÃ¡c, ta thá»±c hiá»‡n",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chá»n Tab View Chá»n Replace trong nhÃ³m Show"
+      },
+      {
+        "key": "b",
+        "text": "Chá»n Tab Insert Chá»n Replace trong nhÃ³m Text"
+      },
+      {
+        "key": "c",
+        "text": "Trong MS PowerPoint khÃ´ng cÃ³ chá»©c nÄƒng thay \ntháº¿ kÃ½ tá»±"
+      },
+      {
+        "key": "d",
+        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+      }
+    ],
+    "answer": "a",
+    "_inferred": true
+  },
+  {
+    "id": 381,
+    "question": "Trong MS Excel, muá»‘n chuyá»ƒn Ä‘á»•i nhanh \nqua láº¡i giá»¯a Ä‘á»‹a chá»‰ tÆ°Æ¡ng Ä‘á»‘i, tuyá»‡t Ä‘á»‘i vÃ  bÃ¡n \ntuyá»‡t Ä‘á»‘i trong cÃ´ng thá»©c, ta sá»­ dá»¥ng: \na PhÃ­m F4@",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tá»• há»£p phÃ­m Shift + F3"
+      },
+      {
+        "key": "b",
+        "text": "PhÃ­m F2"
+      },
+      {
+        "key": "c",
+        "text": "Tá»• há»£p phÃ­m Shift + F5 \n.'\\ \nA F"
+      },
+      {
+        "key": "d",
+        "text": "com/tailieuctump.ml 50"
+      }
+    ],
+    "answer": "a",
+    "_inferred": true
+  }
+]
