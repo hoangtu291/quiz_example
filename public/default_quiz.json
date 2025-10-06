@@ -8534,23 +8534,23 @@
   },
   {
     "id": 372,
-    "question": "Chá»n cÃ¢u phÃ¡t biá»ƒu Ä‘Ãºng vá» viá»‡c tao hiá»‡u \ntiáº¿p nhau: á»©ng hoáº¡t hÃ¬nh (Animations) cho cÃ¡c Ä‘á»‘i tÆ°á»£ng",
+    "question": "Chọn câu phát biểu đúng về việc tạo hiệu ứng hoạt hình (Animations) cho các đối tượng",
     "options": [
       {
         "key": "a",
-        "text": "Nháº¥n phÃ­m Tab _"
+        "text": "Nhấn phím Tab"
       },
       {
         "key": "b",
-        "text": "Nháº¥n phÃ­m Enter trong Slide"
+        "text": "Nhấn phím Enter trong Slide"
       },
       {
         "key": "c",
-        "text": "Nháº¥n phÃ­m Ctrl"
+        "text": "Nhấn phím Ctrl"
       },
       {
         "key": "d",
-        "text": "_"
+        "text": "(Trống)"
       }
     ],
     "answer": "a",
@@ -8558,23 +8558,23 @@
   },
   {
     "id": 373,
-    "question": "Chá»¯ viáº¿t táº¯t MB thÆ°á»ng gáº·p trong cÃ¡c \ntÃ i liá»‡u vá» mÃ¡y tÃ­nh cÃ³ nghÄ©a lÃ : bÃ i thuyáº¿t trÃ¬nh trá»Ÿ nÃªn sinh Ä‘á»™ng hÆ¡n",
+    "question": "Chữ viết tắt MB thường gặp trong các tài liệu về máy tính có nghĩa là:",
     "options": [
       {
         "key": "a",
-        "text": "Ladon vá»‹ Ä‘okHÃ£ RERE lÆ°u D@ v t c"
+        "text": "Là đơn vị đo dung lượng dữ liệu (Megabyte)"
       },
       {
         "key": "b",
-        "text": "Táº¡o hiá»‡u á»©ng hoáº¡t hÃ¬nh (Animations) nháº±m giÃºp"
+        "text": "Là đơn vị đo tốc độ xử lý"
       },
       {
         "key": "c",
-        "text": "LÃ  Ä‘Æ¡n vá»‹ Ä‘o cÆ°á»ng Ä‘á»™ Ã¢m thanh Ã‘ . \n: 5%"
+        "text": "Là đơn vị đo cường độ âm thanh"
       },
       {
         "key": "d",
-        "text": "Táº¡o hiá»‡u á»©ng hoáº¡t hÃ¬nh (Animations) nháº±m nháº¥n"
+        "text": "Không có đáp án phù hợp"
       }
     ],
     "answer": "a",
@@ -8582,23 +8582,23 @@
   },
   {
     "id": 374,
-    "question": "Cho biáº¿t káº¿t quáº£ cá»§a cÃ´ng thá»©c:",
+    "question": "Cho biết kết quả của công thức:",
     "options": [
       {
         "key": "a",
-        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+        "text": "Không có đáp án phù hợp."
       },
       {
         "key": "b",
-        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+        "text": "Không có đáp án phù hợp."
       },
       {
         "key": "c",
-        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+        "text": "Không có đáp án phù hợp."
       },
       {
         "key": "d",
-        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+        "text": "Không có đáp án phù hợp."
       }
     ],
     "answer": "a",
@@ -8606,46 +8606,46 @@
   },
   {
     "id": 375,
-    "question": "Trong cá»­a sá»• Windows, Menu bar lÃ : á»‚.áº¸(LEFT( Camauâ€™, 1)=\"A\", BACHEU\", VINHLON",
+    "question": "Trong cửa sổ Windows, Menu bar là:",
     "options": [
       {
         "key": "a",
-        "text": "Thanh tiÃªu Ä‘á»"
+        "text": "Thanh tiêu đề"
       },
       {
         "key": "b",
-        "text": "Thanh Ä‘á»‹a chá»‰"
+        "text": "Thanh địa chỉ"
       },
       {
         "key": "c",
-        "text": "ThÃ´ng bÃ¡o lá»—i"
+        "text": "Thông báo lỗi"
       },
       {
         "key": "d",
-        "text": "C \ne hanhthgedon@\" d Thanh tráº¡ng thi"
+        "text": "Thanh trạng thái"
       }
     ],
     "answer": "d"
   },
   {
     "id": 376,
-    "question": "Cho biáº¿t kÃ©t quáº£ cá»§a cÃ´ng thá»©c sau: \n=IF(25 >= 0, SQRT(25), \"So am\")",
+    "question": "Cho biết kết quả của công thức sau: =IF(25 >= 0, SQRT(25), \"Số âm\")",
     "options": [
       {
         "key": "a",
-        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+        "text": "Không có đáp án phù hợp."
       },
       {
         "key": "b",
-        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+        "text": "Không có đáp án phù hợp."
       },
       {
         "key": "c",
-        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+        "text": "Không có đáp án phù hợp."
       },
       {
         "key": "d",
-        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+        "text": "Không có đáp án phù hợp."
       }
     ],
     "answer": "a",
@@ -8653,7 +8653,7 @@
   },
   {
     "id": 377,
-    "question": "Cho biáº¿t káº¿t quáº£ cá»§a cÃ´ng thá»©c sau: \n=MID(\"Dai hoc-Can Tho\",7,LEN(\"Dai hoc\")-10)",
+    "question": "Cho biết kết quả của công thức sau: =MID(\"Đại học Cần Thơ\", 7, LEN(\"Đại học\") - 10)",
     "options": [
       {
         "key": "a",
@@ -8661,7 +8661,7 @@
       },
       {
         "key": "b",
-        "text": "Tho"
+        "text": "Thơ"
       },
       {
         "key": "c",
@@ -8669,30 +8669,30 @@
       },
       {
         "key": "d",
-        "text": ". ThÃ´ng bÃ¡o lá»—i"
+        "text": "Thông báo lỗi"
       }
     ],
     "answer": "d"
   },
   {
     "id": 378,
-    "question": "Trong moi trÆ°á»ng Windows báº¡n cÃ³ thÃ© áº¨ â€” _- \nN â€ž",
+    "question": "Trong môi trường Windows bạn có thể làm được:",
     "options": [
       {
         "key": "a",
-        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+        "text": "Không có đáp án phù hợp."
       },
       {
         "key": "b",
-        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+        "text": "Không có đáp án phù hợp."
       },
       {
         "key": "c",
-        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+        "text": "Không có đáp án phù hợp."
       },
       {
         "key": "d",
-        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+        "text": "Không có đáp án phù hợp."
       }
     ],
     "answer": "a",
@@ -8700,23 +8700,23 @@
   },
   {
     "id": 379,
-    "question": "Trong MSExcel, Ä‘á»ƒ Ä‘áº·t tÃªn cho má»™t vÃ¹ng cháº¡y cÃ¹ng lÃºc: \ndá»¯ liá»‡u Ä‘Ã£ chá»n, ta sá»­ dá»¥ng chá»©c nÄƒng:",
+    "question": "Trong MS Excel, để đặt tên cho một vùng dữ liệu đã chọn, ta sử dụng chức năng:",
     "options": [
       {
         "key": "a",
-        "text": "ThÃ´ng bÃ¡o lá»—i"
+        "text": "Thông báo lỗi"
       },
       {
         "key": "b",
-        "text": "Soam"
+        "text": "Sơ đồ"
       },
       {
         "key": "c",
-        "text": "Cháº¡y Ä‘Æ°á»£c 2 chÆ°Æ¡ng trÃ¬nh"
+        "text": "Chạy được 2 chương trình cùng lúc"
       },
       {
         "key": "d",
-        "text": "Label"
+        "text": "Label (Nhãn)"
       }
     ],
     "answer": "a",
@@ -8724,23 +8724,23 @@
   },
   {
     "id": 380,
-    "question": "Trong MS PowerPoint, muá»‘n sá»­ dá»¥ng \nchá»©c nÄƒng thay tháº¿ má»™t sá»‘ kÃ½ tá»± nÃ y thÃ nh nhá»¯ng \nkÃ½ tá»± khÃ¡c, ta thá»±c hiá»‡n",
+    "question": "Trong MS PowerPoint, muốn sử dụng chức năng thay thế một số ký tự này thành ký tự khác, ta thực hiện:",
     "options": [
       {
         "key": "a",
-        "text": "Chá»n Tab View Chá»n Replace trong nhÃ³m Show"
+        "text": "Chọn Tab View → Replace trong nhóm Show"
       },
       {
         "key": "b",
-        "text": "Chá»n Tab Insert Chá»n Replace trong nhÃ³m Text"
+        "text": "Chọn Tab Insert → Replace trong nhóm Text"
       },
       {
         "key": "c",
-        "text": "Trong MS PowerPoint khÃ´ng cÃ³ chá»©c nÄƒng thay \ntháº¿ kÃ½ tá»±"
+        "text": "Trong PowerPoint không có chức năng Replace ký tự"
       },
       {
         "key": "d",
-        "text": "KhÃ´ng cÃ³ Ä‘Ã¡p Ã¡n phÃ¹ há»£p."
+        "text": "Không có đáp án phù hợp."
       }
     ],
     "answer": "a",
@@ -8748,26 +8748,26 @@
   },
   {
     "id": 381,
-    "question": "Trong MS Excel, muá»‘n chuyá»ƒn Ä‘á»•i nhanh \nqua láº¡i giá»¯a Ä‘á»‹a chá»‰ tÆ°Æ¡ng Ä‘á»‘i, tuyá»‡t Ä‘á»‘i vÃ  bÃ¡n \ntuyá»‡t Ä‘á»‘i trong cÃ´ng thá»©c, ta sá»­ dá»¥ng: \na PhÃ­m F4@",
+    "question": "Trong MS Excel, muốn chuyển đổi nhanh giữa địa chỉ tương đối, tuyệt đối và bán tuyệt đối trong công thức, ta sử dụng phím nào?",
     "options": [
       {
         "key": "a",
-        "text": "Tá»• há»£p phÃ­m Shift + F3"
+        "text": "Tổ hợp phím Shift + F3"
       },
       {
         "key": "b",
-        "text": "PhÃ­m F2"
+        "text": "Phím F2"
       },
       {
         "key": "c",
-        "text": "Tá»• há»£p phÃ­m Shift + F5 \n.'\\ \nA F"
+        "text": "Tổ hợp phím Shift + F5"
       },
       {
         "key": "d",
-        "text": "com/tailieuctump.ml 50"
+        "text": "Phím F4"
       }
     ],
-    "answer": "a",
+    "answer": "d",
     "_inferred": true
   }
 ]

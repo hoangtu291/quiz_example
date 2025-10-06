@@ -1,692 +1,1624 @@
 <!doctype html>
 <html lang="vi">
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Quiz Viewer — Hiển thị câu hỏi</title>
-<style>
-  :root {
-    --bg: #f5f5f5;
-    --card: #ffffff;
-    --muted: #6b7280;
-    --accent: #3b82f6;
-    --accent-2: #2563eb;
-    --glass: rgba(0, 0, 0, 0.03);
-    --success: #10b981;
-    --maxw: 1100px;
-    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quiz Viewer — Hiển thị câu hỏi</title>
+  <link href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f5f5f5;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --accent: #3b82f6;
+      --accent-2: #2563eb;
+      --glass: rgba(0, 0, 0, 0.03);
+      --success: #10b981;
+      --maxw: 1100px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
 
-  * {
-    box-sizing: border-box
-  }
+    * {
+      box-sizing: border-box
+    }
 
-  body {
-    margin: 0;
-    background: linear-gradient(180deg, #f0f4f8 0%, #ffffff 60%);
-    color: #111827;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    padding: 28px;
-    display: flex;
-    justify-content: center;
-  }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #f0f4f8 0%, #ffffff 60%);
+      color: #111827;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding: 28px;
+      display: flex;
+      justify-content: center;
+    }
 
-  .app {
-    width: 100%;
-    max-width: var(--maxw);
-  }
+    .app {
+      width: 100%;
+      max-width: var(--maxw);
+    }
 
-  header {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    margin-bottom: 18px;
-  }
+    header {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 18px;
+    }
 
-  .brand {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-  }
+    .brand {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
 
-  .logo {
-    width: 56px;
-    height: 56px;
-    border-radius: 12px;
-    background: linear-gradient(135deg, var(--accent), var(--accent-2));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-weight: 700;
-    font-size: 20px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-  }
+    .logo {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    }
 
-  h1 {
-    margin: 0;
-    font-size: 20px
-  }
+    h1 {
+      margin: 0;
+      font-size: 20px
+    }
 
-  p.lead {
-    margin: 0;
-    color: var(--muted);
-    font-size: 13px
-  }
-
-  .controls {
-    margin-left: auto;
-    display: flex;
-    gap: 8px;
-    align-items: center;
-  }
-
-  .btn {
-    background: var(--glass);
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    color: var(--accent);
-    padding: 8px 12px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 13px;
-  }
-
-  .btn.alt {
-    color: var(--muted);
-    background: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.05)
-  }
-
-  .searchbar {
-    flex: 1;
-    max-width: 420px;
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    background: #e5e7eb;
-    padding: 8px;
-    border-radius: 10px;
-  }
-
-  .searchbar input {
-    flex: 1;
-    border: 0;
-    outline: none;
-    background: transparent;
-    color: #111827
-  }
-
-  main {
-    display: grid;
-    grid-template-columns: 1fr 360px;
-    gap: 18px;
-    align-items: start;
-  }
-
-  .left {
-    background: #fefefe;
-    padding: 18px;
-    border-radius: 12px;
-    border: 1px solid #e5e7eb;
-  }
-
-  .card {
-    background: var(--card);
-    padding: 14px;
-    border-radius: 10px;
-    margin-bottom: 12px;
-    border: 1px solid #e5e7eb;
-  }
-
-  .qheader {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-    margin-bottom: 8px;
-  }
-
-  .qid {
-    min-width: 48px;
-    height: 48px;
-    background: #e5e7eb;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    color: var(--accent);
-  }
-
-  .qtext {
-    font-size: 15px;
-    color: #111827
-  }
-
-  .options {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-top: 10px;
-  }
-
-  .opt {
-    padding: 10px 12px;
-    background: #f3f4f6;
-    border-radius: 8px;
-    border: 1px solid #e5e7eb;
-    cursor: pointer;
-    transition: all .12s;
-    display: flex;
-    gap: 12px;
-    align-items: center;
-  }
-
-  .opt:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-
-  .opt .label {
-    width: 28px;
-    height: 28px;
-    border-radius: 6px;
-    display: inline-grid;
-    place-items: center;
-    font-weight: 700;
-    color: #fff;
-    background: linear-gradient(180deg, var(--accent), var(--accent-2));
-  }
-
-  .opt.correct {
-    background: #10b981;
-    border-color: #10b981;
-    color: #fff;
-  }
-
-  .opt.wrong {
-    opacity: 0.6;
-    filter: grayscale(.2)
-  }
-
-  .meta {
-    display: flex;
-    gap: 10px;
-    color: var(--muted);
-    font-size: 13px;
-    margin-top: 8px;
-  }
-
-  .pager {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-    margin-top: 8px;
-    align-items: center;
-  }
-
-  .side {
-    padding: 18px;
-    border-radius: 12px;
-    background: #fefefe;
-    border: 1px solid #e5e7eb;
-  }
-
-  .stat {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-    margin-bottom: 12px;
-  }
-
-  .stat .big {
-    font-size: 22px;
-    font-weight: 800;
-    color: var(--accent)
-  }
-
-  .tools {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .small {
-    font-size: 13px;
-    color: var(--muted)
-  }
-
-  .page-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-top: 8px;
-  }
-
-  .page-btn {
-    padding: 8px 10px;
-    border-radius: 8px;
-    background: transparent;
-    border: 1px solid #e5e7eb;
-    cursor: pointer;
-    color: var(--muted)
-  }
-
-  .page-btn.active {
-    background: linear-gradient(90deg, var(--accent), var(--accent-2));
-    color: #fff;
-    font-weight: 700;
-    box-shadow: 0 8px 20px rgba(8, 20, 40, 0.2)
-  }
-
-  .footer-note {
-    margin-top: 10px;
-    color: var(--muted);
-    font-size: 13px;
-    text-align: center
-  }
-
-  @media (max-width:980px) {
-    main {
-      grid-template-columns: 1fr;
+    p.lead {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px
     }
 
     .controls {
-      flex-wrap: wrap
+      margin-left: auto;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .btn {
+      background: var(--glass);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      color: var(--accent);
+      padding: 8px 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 13px;
+    }
+
+    .btn.alt {
+      color: var(--muted);
+      background: transparent;
+      border: 1px solid rgba(0, 0, 0, 0.05)
+    }
+
+    .searchbar {
+      flex: 1;
+      max-width: 420px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      background: #e5e7eb;
+      padding: 8px;
+      border-radius: 10px;
+    }
+
+    .searchbar input {
+      flex: 1;
+      border: 0;
+      outline: none;
+      background: transparent;
+      color: #111827
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .left {
+      background: #fefefe;
+      padding: 18px;
+      border-radius: 12px;
+      border: 1px solid #e5e7eb;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 14px;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #e5e7eb;
+    }
+
+    .qheader {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .qid {
+      min-width: 48px;
+      height: 48px;
+      background: #e5e7eb;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .qtext {
+      font-size: 15px;
+      color: #111827
+    }
+
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .opt {
+      padding: 10px 12px;
+      background: #f3f4f6;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+      cursor: pointer;
+      transition: all .12s;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .opt:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .opt .label {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      display: inline-grid;
+      place-items: center;
+      font-weight: 700;
+      color: #fff;
+      background: linear-gradient(180deg, var(--accent), var(--accent-2));
+    }
+
+    .opt.correct {
+      background: #10b981;
+      border-color: #10b981;
+      color: #fff;
+    }
+
+    .opt.selected {
+      background: #40c7f04b;
+      border-width: 2px;
+    }
+
+    .opt.wrong {
+      opacity: 0.6;
+      filter: grayscale(.2)
+    }
+
+    .meta {
+      display: flex;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 8px;
+    }
+
+    .pager {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      margin-top: 8px;
+      align-items: center;
     }
 
     .side {
-      order: 2
+      padding: 18px;
+      border-radius: 12px;
+      background: #fefefe;
+      border: 1px solid #e5e7eb;
     }
-  }
-</style>
+
+    .stat {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .stat .big {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--accent)
+    }
+
+    .tools {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .small {
+      font-size: 13px;
+      color: var(--muted)
+    }
+
+    .page-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 8px;
+    }
+
+    .ques-btn ,.page-btn {
+      padding: 8px 10px;
+      border-radius: 8px;
+      background: transparent;
+      border: 1px solid #e5e7eb;
+      cursor: pointer;
+      color: var(--muted)
+    }
+
+    .page-btn.active {
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      color: #fff;
+      font-weight: 700;
+      box-shadow: 0 8px 20px rgba(8, 20, 40, 0.2)
+    }
+
+    .footer-note {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center
+    }
+
+    @media (max-width:980px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      .controls {
+        flex-wrap: wrap
+      }
+
+      .side {
+        order: 2
+      }
+    }
+  </style>
 
 </head>
+
 <body>
-<div class="app" id="app">
-  <header>
-    <div class="brand">
-      <div class="logo">QZ</div>
-      <div>
-        <h1>Quiz Viewer</h1>
-        <p class="lead">Hiển thị & duyệt câu hỏi — tìm kiếm, phân trang, chế độ Quiz</p>
-      </div>
-    </div>
-
-    <div class="controls">
-      <div class="searchbar" title="Tìm theo nội dung">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-        <input id="search" placeholder="Tìm kiếm câu hỏi hoặc từ khóa..." />
-        <button class="btn alt" id="clearSearch" title="Xóa tìm kiếm">✕</button>
-      </div>
-
-      <button class="btn" id="quizModeBtn" title="Bật chế độ quiz">Bắt đầu Quiz</button>
-      <button class="btn alt" id="loadJsonBtn" title="Nếu không có file, dán JSON">Dán JSON</button>
-    </div>
-  </header>
-
-  <main>
-    <div class="left">
-      <div id="questionsContainer"></div>
-
-      <div class="pager" id="pagerArea">
-        <button class="btn alt" id="prevPage">&larr; Trước</button>
-        <div id="pageNumbers" style="display:flex;gap:6px;"></div>
-        <button class="btn" id="nextPage">Tiếp &rarr;</button>
-      </div>
-
-      <div class="footer-note">Mở rộng: Sắp xếp / export / in có thể thêm theo yêu cầu.</div>
-    </div>
-
-    <aside class="side">
-      <div class="stat">
+  <div class="app" id="app">
+    <header id="header">
+      <div class="brand">
+        <div class="logo">QZ</div>
         <div>
-          <div class="small">Tổng câu hỏi</div>
-          <div class="big" id="totalCount">0</div>
-        </div>
-        <div>
-          <div class="small">Câu hiện tại</div>
-          <div class="big" id="currentIndex">0</div>
+          <h1 id="logo-title">Quiz Viewer</h1>
+          <div id="quiz-timer" style="display:none;"></div>
+          <p class="lead">©️lhtu - Hiển thị & duyệt câu hỏi — tìm kiếm, phân trang, chế độ Quiz</p>
         </div>
       </div>
 
-      <div class="tools">
-        <div>
-          <label class="small">Hiển thị mỗi trang:</label>
-          <div style="margin-top:8px; display:flex; gap:8px;">
-            <button class="page-btn" data-per="5">5</button>
-            <button class="page-btn active" data-per="10">10</button>
-            <button class="page-btn" data-per="20">20</button>
-            <button class="page-btn" data-per="50">50</button>
+      <div class="controls">
+        <div class="searchbar" title="Tìm theo nội dung">
+          <i class="ph ph-magnifying-glass" width="16" height="16"></i>
+          <input id="search" placeholder="Tìm kiếm câu hỏi hoặc từ khóa..." />
+          <button class="btn alt" id="clearSearch" title="Xóa tìm kiếm">✕</button>
+        </div>
+
+
+        <button class="btn" id="quizModeBtn" title="Bật chế độ quiz">Bắt đầu Quiz</button>
+        <button class="btn alt" id="loadJsonBtn" title="Nếu không có file, dán JSON">Dán JSON</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="left">
+        <div id="questionsContainer"></div>
+
+        <div class="pager" id="pagerArea">
+          <button class="btn alt" id="prevPage">&larr; Trước</button>
+          <div id="pageNumbers" style="display:flex;gap:6px;"></div>
+          <button class="btn" id="nextPage">Tiếp &rarr;</button>
+        </div>
+
+        <div class="footer-note">Mở rộng: Sắp xếp / export / in có thể thêm theo yêu cầu.</div>
+      </div>
+
+      <aside class="side">
+        <div class="stat">
+          <div>
+            <div class="small">Tổng câu hỏi</div>
+            <div class="big" id="totalCount">0</div>
+          </div>
+          <div>
+            <div class="small">Câu hiện tại</div>
+            <div class="big" id="currentIndex">0</div>
           </div>
         </div>
 
-        <div>
-          <label class="small">Đi tới câu:</label>
-          <div style="display:flex; gap:8px; margin-top:8px;">
-            <input id="gotoInput" type="number" min="1" placeholder="số" style="flex:1; padding:8px; border-radius:8px; border:1px solid rgba(255,255,255,0.04); background:transparent; color:var(--muted)" />
-            <button class="btn" id="gotoBtn">Đi</button>
+        <div id="questionPanel" style="display:none; margin-bottom:12px;">
+          <label class="small">Câu hỏi</label>
+          <div style="margin-top:8px; display:flex; gap:8px;" id="questionInGrids">   
+
           </div>
         </div>
 
-        <div>
-          <label class="small">Tùy chọn</label>
-          <div style="display:flex; flex-direction:column; gap:8px; margin-top:8px;">
-            <button class="btn alt" id="shuffleBtn">Xáo câu hỏi</button>
-            <button class="btn alt" id="showAnswersBtn">Hiện đáp án</button>
-            <button class="btn" id="exportBtn">Tải JSON hiển thị</button>
+        <div class="tools" id="tools">
+          <div>
+            <label class="small">Hiển thị mỗi trang:</label>
+            <div style="margin-top:8px; display:flex; gap:8px;">
+              <button class="page-btn" data-per="5">5</button>
+              <button class="page-btn active" data-per="10">10</button>
+              <button class="page-btn" data-per="20">20</button>
+              <button class="page-btn" data-per="40">40</button>
+              <button class="page-btn" data-per="50">50</button>
+            </div>
           </div>
-        </div>
 
-        <div>
-          <label class="small">Trạng thái</label>
-          <div style="margin-top:8px; color:var(--muted); font-size:13px;">
-            <div id="statusLine">Đang chờ load file...</div>
+          <div>
+            <label class="small">Đi tới câu:</label>
+            <div style="display:flex; gap:8px; margin-top:8px;">
+              <input id="gotoInput" type="number" min="1" placeholder="số"
+                style="flex:1; padding:8px; border-radius:8px; border:1px solid rgba(255,255,255,0.04); background:transparent; color:var(--muted)" />
+              <button class="btn" id="gotoBtn">Đi</button>
+            </div>
+          </div>
+
+          <div>
+            <label class="small">Tùy chọn</label>
+            <div style="display:flex; flex-direction:column; gap:8px; margin-top:8px;">
+              <button class="btn alt" id="shuffleBtn">Xáo câu hỏi</button>
+              <button class="btn alt" id="showAnswersBtn">Hiện đáp án</button>
+              <button class="btn" id="exportBtn">Tải JSON hiển thị</button>
+            </div>
+          </div>
+
+          <div>
+            <label class="small">Trạng thái</label>
+            <div style="margin-top:8px; color:var(--muted); font-size:13px;">
+              <div id="statusLine">Đang chờ load file...</div>
+            </div>
           </div>
         </div>
+      </aside>
+    </main>
+  </div>
+
+  <!-- Modal paste JSON -->
+  <div id="jsonModal"
+    style="display:none; position:fixed; inset:0; background:rgba(2,6,12,0.6); align-items:center; justify-content:center;">
+    <div style="width:90%; max-width:900px; background:#071426; padding:16px; border-radius:10px;">
+      <h3 style="margin:0 0 8px 0">Dán JSON ở đây</h3>
+      <textarea id="jsonPaste"
+        style="width:100%; height:320px; background:#001022; color:#dbeafe; border-radius:8px; padding:12px; border:1px solid rgba(255,255,255,0.03)"></textarea>
+      <div style="display:flex; gap:8px; justify-content:flex-end; margin-top:8px;">
+        <button class="btn alt" id="cancelJson">Hủy</button>
+        <button class="btn" id="loadPastedJson">Load JSON</button>
       </div>
-    </aside>
-  </main>
-</div>
-
-<!-- Modal paste JSON -->
-<div id="jsonModal" style="display:none; position:fixed; inset:0; background:rgba(2,6,12,0.6); align-items:center; justify-content:center;">
-  <div style="width:90%; max-width:900px; background:#071426; padding:16px; border-radius:10px;">
-    <h3 style="margin:0 0 8px 0">Dán JSON ở đây</h3>
-    <textarea id="jsonPaste" style="width:100%; height:320px; background:#001022; color:#dbeafe; border-radius:8px; padding:12px; border:1px solid rgba(255,255,255,0.03)"></textarea>
-    <div style="display:flex; gap:8px; justify-content:flex-end; margin-top:8px;">
-      <button class="btn alt" id="cancelJson">Hủy</button>
-      <button class="btn" id="loadPastedJson">Load JSON</button>
     </div>
   </div>
-</div>
+  <script src="./scripts/variables.js"></script>
+  <script src="./scripts/utils.js"></script>
+  <script src="./scripts/doQuiz.js"></script>
+  <script>
+    /*
+      Quiz Viewer JS
+      - expects questions.json in same folder: an array of objects with:
+        { id: number, question: string, options: [{key: 'a', text:'..'}, ...], answer: 'a' }
+      - If file missing, click "Dán JSON" and paste the questions JSON.
+    */
+    
+    function setStatus(s) { statusLine.textContent = s; }
 
-<script>
-/*
-  Quiz Viewer JS
-  - expects questions.json in same folder: an array of objects with:
-    { id: number, question: string, options: [{key: 'a', text:'..'}, ...], answer: 'a' }
-  - If file missing, click "Dán JSON" and paste the questions JSON.
-*/
+    async function loadJSON() {
+      const fileList = ["./default_quiz.json", "./questions.json"];
+      let loaded = false;
 
-let questions = [];
-let filtered = [];
-let perPage = 10;
-let currentPage = 1;
-let showAnswers = false;
-let quizMode = false;
-const statusLine = document.getElementById('statusLine');
+      for (const file of fileList) {
+        try {
+          setStatus(`Đang tải ${file}...`);
+          const resp = await fetch(file, { cache: 'no-cache' });
+          if (!resp.ok) throw new Error(`Không tìm thấy ${file} (HTTP ${resp.status})`);
+          questions = await resp.json();
+          setStatus(`Đã load file ${file}`);
+          loaded = true;
+          break;
+        } catch (err) {
+          console.warn(err);
+        }
+      }
 
-function setStatus(s){ statusLine.textContent = s; }
+      if (!loaded) {
+        setStatus('Không tìm thấy default_quiz.json hoặc questions.json. Bạn có thể bấm "Dán JSON" để dán thủ công.');
+        questions = [];
+      }
+      if (!questions.length) {
+        questions = [
+          {
+            "id": 1,
+            "question": "Trong bảng tính MS Excel, tại ô A2 có giá trị chuỗi \"a\", tại ô B2 gõ công thức =5/A2 cho kết quả:",
+            "options": [
+              {
+                "key": "a",
+                "text": "#DIV/0!"
+              },
+              {
+                "key": "b",
+                "text": "5"
+              },
+              {
+                "key": "c",
+                "text": "#VALUE!"
+              },
+              {
+                "key": "d",
+                "text": "0"
+              }
+            ],
+            "answer": "c"
+          },
+          {
+            "id": 2,
+            "question": "Dưới góc độ địa lý, mạng máy tính được phân biệt thành:",
+            "options": [
+              {
+                "key": "a",
+                "text": "Mạng diện rộng, mạng toàn cầu, mạng toàn cục"
+              },
+              {
+                "key": "b",
+                "text": "Mạng cục bộ, mạng toàn cục, mạng toàn cầu"
+              },
+              {
+                "key": "c",
+                "text": "Mạng cục bộ, mạng diện rộng, mạng toàn cầu"
+              },
+              {
+                "key": "d",
+                "text": "Mạng cục bộ, mạng diện rộng, mạng toàn cục"
+              }
+            ],
+            "answer": "c"
+          },
+          {
+            "id": 3,
+            "question": "Muốn tính trung bình của hàng hay cột, ta sử dụng hàm nào trong số các hàm dưới đây?",
+            "options": [
+              {
+                "key": "a",
+                "text": "Hàm SUM()"
+              },
+              {
+                "key": "b",
+                "text": "Hàm AVERAGE()"
+              },
+              {
+                "key": "c",
+                "text": "Hàm COUNT()"
+              },
+              {
+                "key": "d",
+                "text": "Hàm MEDIAN()"
+              }
+            ],
+            "answer": "b"
+          },
+          {
+            "id": 4,
+            "question": "Công thức INT(123/2) cho kết quả là:",
+            "options": [
+              {
+                "key": "a",
+                "text": "61"
+              },
+              {
+                "key": "b",
+                "text": "62"
+              },
+              {
+                "key": "c",
+                "text": "60"
+              },
+              {
+                "key": "d",
+                "text": "Công thức sai"
+              }
+            ],
+            "answer": "b"
+          },
+          {
+            "id": 5,
+            "question": "Phương pháp nào nhanh nhất cho phép bạn xem hai hoặc nhiều website trên trình duyệt của bạn?",
+            "options": [
+              {
+                "key": "a",
+                "text": "Mở tab mới trên trình duyệt để truy cập website khác"
+              },
+              {
+                "key": "b",
+                "text": "Nhập địa chỉ mới của website vào thanh địa chỉ hiện tại"
+              },
+              {
+                "key": "c",
+                "text": "Thiết lập cửa sổ riêng biệt để mở thêm trang web khác"
+              },
+              {
+                "key": "d",
+                "text": "Sử dụng tính năng chia màn hình của hệ điều hành"
+              }
+            ],
+            "answer": "a"
+          },
+          {
+            "id": 6,
+            "question": "Trong bảng tính Excel, tại ô A2 có giá trị là chuỗi '25/', tại ô B2 gõ công thức =SQRT(A2) thì nhận được kết quả:",
+            "options": [
+              {
+                "key": "a",
+                "text": "#VALUE!"
+              },
+              {
+                "key": "b",
+                "text": "5"
+              },
+              {
+                "key": "c",
+                "text": "25"
+              },
+              {
+                "key": "d",
+                "text": "#NAME?"
+              }
+            ],
+            "answer": "a"
+          },
+          {
+            "id": 7,
+            "question": "Công thức MOD(8*3/2,7) cho kết quả:",
+            "options": [
+              {
+                "key": "a",
+                "text": "5"
+              },
+              {
+                "key": "b",
+                "text": "6"
+              },
+              {
+                "key": "c",
+                "text": "4"
+              },
+              {
+                "key": "d",
+                "text": "1"
+              }
+            ],
+            "answer": "a"
+          },
+          {
+            "id": 8,
+            "question": "Trong soạn thảo Word, muốn trình bày văn bản theo hướng ngang (landscape) ta chọn mục:",
+            "options": [
+              {
+                "key": "a",
+                "text": "Page Layout → Orientation → Landscape"
+              },
+              {
+                "key": "b",
+                "text": "File → Page Setup → Portrait"
+              },
+              {
+                "key": "c",
+                "text": "View → Orientation → Landscape"
+              },
+              {
+                "key": "d",
+                "text": "Insert → Layout → Landscape"
+              }
+            ],
+            "answer": "a"
+          },
+          {
+            "id": 9,
+            "question": "Trên màn hình Desktop, ta có thể thực hiện:",
+            "options": [
+              {
+                "key": "a",
+                "text": "Tạo hoặc xóa Shortcut"
+              },
+              {
+                "key": "b",
+                "text": "Tạo hoặc xóa tập tin"
+              },
+              {
+                "key": "c",
+                "text": "Tạo hoặc xóa thư mục"
+              },
+              {
+                "key": "d",
+                "text": "Cả ba phương án trên đều đúng"
+              }
+            ],
+            "answer": "d"
+          },
+          {
+            "id": 10,
+            "question": "Công thức INT(7*5/2) cho kết quả là:",
+            "options": [
+              {
+                "key": "a",
+                "text": "17"
+              },
+              {
+                "key": "b",
+                "text": "17.5"
+              },
+              {
+                "key": "c",
+                "text": "18"
+              },
+              {
+                "key": "d",
+                "text": "Công thức sai"
+              }
+            ],
+            "answer": "a"
+          },
+          {
+            "id": 11,
+            "question": "Công thức INT(123.56,1) cho kết quả là:",
+            "options": [
+              {
+                "key": "a",
+                "text": "123"
+              },
+              {
+                "key": "b",
+                "text": "123.5"
+              },
+              {
+                "key": "c",
+                "text": "124"
+              },
+              {
+                "key": "d",
+                "text": "Công thức sai"
+              }
+            ],
+            "answer": "a"
+          },
+          {
+            "id": 12,
+            "question": "Trong PowerPoint, để chèn một bảng vào trong slide, bạn có thể:",
+            "options": [
+              {
+                "key": "a",
+                "text": "Chọn Insert → Table → Insert Table"
+              },
+              {
+                "key": "b",
+                "text": "Chọn Layout → Table → Insert Table"
+              },
+              {
+                "key": "c",
+                "text": "Chọn Home → New Slide"
+              },
+              {
+                "key": "d",
+                "text": "Không có đáp án phù hợp"
+              }
+            ],
+            "answer": "a"
+          },
+          {
+            "id": 13,
+            "question": "Người và máy tính giao tiếp thông qua:",
+            "options": [
+              {
+                "key": "a",
+                "text": "Bàn phím và màn hình"
+              },
+              {
+                "key": "b",
+                "text": "Cả ba đều đúng"
+              },
+              {
+                "key": "c",
+                "text": "RAM"
+              },
+              {
+                "key": "d",
+                "text": "Hệ điều hành"
+              }
+            ],
+            "answer": "b"
+          },
+          {
+            "id": 14,
+            "question": "Trong MS Word 2013, để chèn hình vào văn bản, ta thực hiện:",
+            "options": [
+              {
+                "key": "a",
+                "text": "Thẻ Insert → Picture"
+              },
+              {
+                "key": "b",
+                "text": "Thẻ Review → Picture"
+              },
+              {
+                "key": "c",
+                "text": "Thẻ Data → Picture"
+              },
+              {
+                "key": "d",
+                "text": "Không có đáp án phù hợp"
+              }
+            ],
+            "answer": "a"
+          },
+          {
+            "id": 15,
+            "question": "Trong MS Word, để mở một tệp có dạng *.docx hoặc *.xlsx, ta thực hiện:",
+            "options": [
+              {
+                "key": "a",
+                "text": "File → Open"
+              },
+              {
+                "key": "b",
+                "text": "File → Save"
+              },
+              {
+                "key": "c",
+                "text": "Insert → Object"
+              },
+              {
+                "key": "d",
+                "text": "Không có đáp án phù hợp"
+              }
+            ],
+            "answer": "a"
+          },
+          {
+            "id": 16,
+            "question": "An đã truy cập đến một website vào thứ Ba tuần trước, trong đó có công thức làm bánh mì thịt mà An đang muốn thử lại nhưng không nhớ địa chỉ trang. An nên làm gì?",
+            "options": [
+              {
+                "key": "a",
+                "text": "Mở lại lịch sử trình duyệt (History) để tìm website"
+              },
+              {
+                "key": "b",
+                "text": "Nhấn nút Refresh để tải lại trang"
+              },
+              {
+                "key": "c",
+                "text": "Thực hiện tìm kiếm lại công thức trên công cụ tìm kiếm"
+              },
+              {
+                "key": "d",
+                "text": "Không có đáp án phù hợp"
+              }
+            ],
+            "answer": "a"
+          },
+          {
+            "id": 17,
+            "question": "Phần mở rộng nào sau đây là phần mở rộng của tập tin hình ảnh?",
+            "options": [
+              {
+                "key": "a",
+                "text": ".BMP"
+              },
+              {
+                "key": "b",
+                "text": ".DOCX"
+              },
+              {
+                "key": "c",
+                "text": ".EXE"
+              },
+              {
+                "key": "d",
+                "text": ".XLSX"
+              }
+            ],
+            "answer": "a"
+          },
+          {
+            "id": 18,
+            "question": "Trong MS Word, tổ hợp phím Ctrl + V dùng để:",
+            "options": [
+              {
+                "key": "a",
+                "text": "Dán nội dung trong Clipboard vào vị trí con trỏ"
+              },
+              {
+                "key": "b",
+                "text": "Sao chép nội dung đã chọn vào Clipboard"
+              },
+              {
+                "key": "c",
+                "text": "Cắt nội dung đã chọn và lưu vào Clipboard"
+              },
+              {
+                "key": "d",
+                "text": "Không có đáp án phù hợp"
+              }
+            ],
+            "answer": "a"
+          },
+          {
+            "id": 19,
+            "question": "Để tạo một slide giống hệt như slide hiện hành mà không phải thiết kế lại, người dùng thực hiện:",
+            "options": [
+              {
+                "key": "a",
+                "text": "Insert → Duplicate Slide"
+              },
+              {
+                "key": "b",
+                "text": "Insert → New Slide"
+              },
+              {
+                "key": "c",
+                "text": "Home → Layout"
+              },
+              {
+                "key": "d",
+                "text": "Không có đáp án phù hợp"
+              }
+            ],
+            "answer": "a"
+          },
+          {
+            "id": 20,
+            "question": "Trong PowerPoint, để thiết kế trình chiếu, ta dùng:",
+            "options": [
+              {
+                "key": "a",
+                "text": "Vào tab Slide Show → chọn Set Up Slide Show"
+              },
+              {
+                "key": "b",
+                "text": "Vào tab View → chọn Slide Master"
+              },
+              {
+                "key": "c",
+                "text": "Vào tab Animations → thiết lập hiệu ứng"
+              },
+              {
+                "key": "d",
+                "text": "Không có đáp án phù hợp"
+              }
+            ],
+            "answer": "a"
+          },
+          {
+            "id": 21,
+            "question": "Trong Word, để di chuyển về đầu tài liệu, nhấn:",
+            "options": [
+              {
+                "key": "a",
+                "text": "End"
+              },
+              {
+                "key": "b",
+                "text": "Ctrl + Home"
+              },
+              {
+                "key": "c",
+                "text": "Ctrl + Page Down"
+              },
+              {
+                "key": "d",
+                "text": "Page Down"
+              }
+            ],
+            "answer": "b"
+          },
+          {
+            "id": 22,
+            "question": "Cho biết kết quả của công thức sau đây: =AND(OR(12>=10,73>=50,48>=6),(32<3))",
+            "options": [
+              {
+                "key": "a",
+                "text": "Công thức sai"
+              },
+              {
+                "key": "b",
+                "text": "TRUE"
+              },
+              {
+                "key": "c",
+                "text": "FALSE"
+              },
+              {
+                "key": "d",
+                "text": "Không có đáp án phù hợp"
+              }
+            ],
+            "answer": "c"
+          },
+          {
+            "id": 23,
+            "question": "Trong Windows, để thay đổi thiết lập hệ thống, ta chọn chức năng:",
+            "options": [
+              {
+                "key": "a",
+                "text": "Control Panel"
+              },
+              {
+                "key": "b",
+                "text": "Control Desktop"
+              },
+              {
+                "key": "c",
+                "text": "Control Windows"
+              },
+              {
+                "key": "d",
+                "text": "System Settings"
+              }
+            ],
+            "answer": "a"
+          },
+          {
+            "id": 24,
+            "question": "Trong PowerPoint, hãy liệt kê các phương pháp có thể sử dụng để chèn biểu đồ vào trong slide:",
+            "options": [
+              {
+                "key": "a",
+                "text": "Thay đổi bố cục slide thành Title and Content, chọn biểu tượng Insert Chart"
+              },
+              {
+                "key": "b",
+                "text": "Trên thẻ Insert, trong nhóm Illustrations, chọn Chart → Insert Chart"
+              },
+              {
+                "key": "c",
+                "text": "Chèn biểu đồ bằng cách sao chép từ Excel sang PowerPoint"
+              },
+              {
+                "key": "d",
+                "text": "Cả ba phương án trên đều đúng"
+              }
+            ],
+            "answer": "d"
+          },
+          {
+            "id": 25,
+            "question": "Anh (chị) hiểu virus tin học là gì?",
+            "options": [
+              {
+                "key": "a",
+                "text": "Là chương trình có khả năng phá hoại các sản phẩm tin học"
+              },
+              {
+                "key": "b",
+                "text": "Có khả năng tự sao chép để lây lan"
+              },
+              {
+                "key": "c",
+                "text": "Là chương trình máy tính do con người tạo ra"
+              },
+              {
+                "key": "d",
+                "text": "Tất cả các đáp án trên đều đúng"
+              }
+            ],
+            "answer": "d"
+          },
+          {
+            "id": 26,
+            "question": "Trong MS Word, muốn tạo số thứ tự tự động ở đầu mỗi đoạn văn bản, ta chọn chức năng:",
+            "options": [
+              {
+                "key": "a",
+                "text": "Symbol"
+              },
+              {
+                "key": "b",
+                "text": "Bullets"
+              },
+              {
+                "key": "c",
+                "text": "Numbering and Bullets"
+              },
+              {
+                "key": "d",
+                "text": "Numbering"
+              }
+            ],
+            "answer": "d"
+          },
+          {
+            "id": 27,
+            "question": "Trong MS Word 2013, để tìm và thay thế những định dạng đặc biệt, ta thực hiện:",
+            "options": [
+              {
+                "key": "a",
+                "text": "Thẻ Page Layout → Edit → Find/Replace → More → Format"
+              },
+              {
+                "key": "b",
+                "text": "Thẻ Home → Editing → Replace → More → Format"
+              },
+              {
+                "key": "c",
+                "text": "Thẻ Insert → Editing → Replace"
+              },
+              {
+                "key": "d",
+                "text": "Không có đáp án phù hợp"
+              }
+            ],
+            "answer": "b"
+          },
+          {
+            "id": 28,
+            "question": "Khi đang làm việc với Word hoặc Excel, nếu lưu tệp tin vào đĩa, thì tệp đó:",
+            "options": [
+              {
+                "key": "a",
+                "text": "Có thể lưu vào bất kỳ thư mục nào người dùng chọn"
+              },
+              {
+                "key": "b",
+                "text": "Luôn nằm trong thư mục My Documents (mặc định)"
+              },
+              {
+                "key": "c",
+                "text": "Bắt buộc ở trong thư mục cài đặt phần mềm"
+              },
+              {
+                "key": "d",
+                "text": "Không có đáp án phù hợp"
+              }
+            ],
+            "answer": "a"
+          },
+          {
+            "id": 29,
+            "question": "Công thức MOD(6*3/2,5) cho kết quả:",
+            "options": [
+              {
+                "key": "a",
+                "text": "4"
+              },
+              {
+                "key": "b",
+                "text": "5"
+              },
+              {
+                "key": "c",
+                "text": "1"
+              },
+              {
+                "key": "d",
+                "text": "Không có đáp án phù hợp"
+              }
+            ],
+            "answer": "c"
+          },
+          {
+            "id": 30,
+            "question": "Cái gì dưới đây là sự kết hợp giữa phần cứng và phần mềm, cho phép các máy tính sử dụng chung tài nguyên trong một tổ chức?",
+            "options": [
+              {
+                "key": "a",
+                "text": "Mạng máy tính"
+              },
+              {
+                "key": "b",
+                "text": "Hệ điều hành"
+              },
+              {
+                "key": "c",
+                "text": "Cơ sở dữ liệu quan hệ"
+              },
+              {
+                "key": "d",
+                "text": "Không có đáp án phù hợp"
+              }
+            ],
+            "answer": "a"
+          },
+          {
+            "id": 31,
+            "question": "Trong MS Word, bôi đen một cụm từ trong văn bản rồi lần lượt thực hiện thao tác: nhấn tổ hợp phím Ctrl + B tiếp đến Ctrl + I, cụm từ được bôi đen sẽ:",
+            "options": [
+              {
+                "key": "a",
+                "text": "Được in đậm và in nghiêng"
+              },
+              {
+                "key": "b",
+                "text": "Được in đậm"
+              },
+              {
+                "key": "c",
+                "text": "Được gạch dưới"
+              },
+              {
+                "key": "d",
+                "text": "Không có thay đổi nào"
+              }
+            ],
+            "answer": "a"
+          },
+          {
+            "id": 32,
+            "question": "Trong MS PowerPoint, muốn chèn thêm một slide mới ta nhấn tổ hợp phím:",
+            "options": [
+              {
+                "key": "a",
+                "text": "Ctrl + M"
+              },
+              {
+                "key": "b",
+                "text": "Ctrl + N"
+              },
+              {
+                "key": "c",
+                "text": "Ctrl + D"
+              },
+              {
+                "key": "d",
+                "text": "Ctrl + O"
+              }
+            ],
+            "answer": "a"
+          },
+          {
+            "id": 33,
+            "question": "Trong MS Word, phím hoặc tổ hợp phím nào cho phép di chuyển con trỏ về đầu tài liệu:",
+            "options": [
+              {
+                "key": "a",
+                "text": "Ctrl + Page Up"
+              },
+              {
+                "key": "b",
+                "text": "Home"
+              },
+              {
+                "key": "c",
+                "text": "Ctrl + Home"
+              },
+              {
+                "key": "d",
+                "text": "Ctrl + End"
+              }
+            ],
+            "answer": "c"
+          },
+          {
+            "id": 34,
+            "question": "Trong Excel, hàm MIN(-52, 20, 15) cho kết quả:",
+            "options": [
+              {
+                "key": "a",
+                "text": "-52"
+              },
+              {
+                "key": "b",
+                "text": "15"
+              },
+              {
+                "key": "c",
+                "text": "20"
+              },
+              {
+                "key": "d",
+                "text": "0"
+              }
+            ],
+            "answer": "a"
+          },
+          {
+            "id": 35,
+            "question": "Phím Page Up trong Windows hoặc các trình soạn thảo có tác dụng gì?",
+            "options": [
+              {
+                "key": "a",
+                "text": "Di chuyển con trỏ lên trên một trang"
+              },
+              {
+                "key": "b",
+                "text": "Di chuyển con trỏ xuống dưới một trang"
+              },
+              {
+                "key": "c",
+                "text": "Xóa trang hiện tại"
+              },
+              {
+                "key": "d",
+                "text": "Không có đáp án phù hợp"
+              }
+            ],
+            "answer": "a"
+          },
+          {
+            "id": 36,
+            "question": "Trong MS Word 2013, để định dạng văn bản theo kiểu danh sách, ta thực hiện:",
+            "options": [
+              {
+                "key": "a",
+                "text": "Format → Bullets and Numbering"
+              },
+              {
+                "key": "b",
+                "text": "Tools → Bullets and Numbering"
+              },
+              {
+                "key": "c",
+                "text": "Home → Paragraph → Bullets/Numbering"
+              },
+              {
+                "key": "d",
+                "text": "Insert → Numbering"
+              }
+            ],
+            "answer": "c"
+          },
+          {
+            "id": 37,
+            "question": "Trong Excel, để chọn vùng dữ liệu từ ô B1 đến ô D10, ta nhập vào thanh công thức:",
+            "options": [
+              {
+                "key": "a",
+                "text": "B1:D10"
+              },
+              {
+                "key": "b",
+                "text": "B$1:D$10"
+              },
+              {
+                "key": "c",
+                "text": "=$B$1:$D$10"
+              },
+              {
+                "key": "d",
+                "text": "Không có đáp án phù hợp"
+              }
+            ],
+            "answer": "a"
+          },
+          {
+            "id": 38,
+            "question": "Phần mềm gián điệp (Spyware) là gì?",
+            "options": [
+              {
+                "key": "a",
+                "text": "Phần mềm tự động theo dõi và thu thập thông tin người dùng mà không có sự cho phép"
+              },
+              {
+                "key": "b",
+                "text": "Phần mềm sao chép chính nó để lây lan"
+              },
+              {
+                "key": "c",
+                "text": "Phần mềm quản lý hệ thống mạng"
+              },
+              {
+                "key": "d",
+                "text": "Không có đáp án phù hợp"
+              }
+            ],
+            "answer": "a"
+          },
+          {
+            "id": 39,
+            "question": "Thiết bị lưu trữ nào thường được dùng để sao lưu dữ liệu?",
+            "options": [
+              {
+                "key": "a",
+                "text": "Ổ đĩa cứng (Hard Disk)"
+              },
+              {
+                "key": "b",
+                "text": "Đĩa CD/DVD"
+              },
+              {
+                "key": "c",
+                "text": "USB hoặc ổ lưu trữ di động"
+              },
+              {
+                "key": "d",
+                "text": "Cả ba phương án trên đều đúng"
+              }
+            ],
+            "answer": "d"
+          },
+          {
+            "id": 40,
+            "question": "Trong Windows, từ 'Shortcut' có ý nghĩa là gì?",
+            "options": [
+              {
+                "key": "a",
+                "text": "Đường dẫn nhanh đến một tệp hoặc thư mục"
+              },
+              {
+                "key": "b",
+                "text": "Đường dẫn tạm thời"
+              },
+              {
+                "key": "c",
+                "text": "Liên kết ảo không thể mở"
+              },
+              {
+                "key": "d",
+                "text": "Không có đáp án phù hợp"
+              }
+            ],
+            "answer": "a"
+          }
+        ]
+      }
 
-  async function loadJSON() {
-    const fileList = ["./default_quiz.json", "./questions.json"]; 
-    let loaded = false;
+      initData();
+    }
 
-    for (const file of fileList) {
-      try {
-        setStatus(`Đang tải ${file}...`);
-        const resp = await fetch(file, { cache: 'no-cache' });
-        if (!resp.ok) throw new Error(`Không tìm thấy ${file} (HTTP ${resp.status})`);
-        questions = await resp.json();
-        setStatus(`Đã load file ${file}`);
-        loaded = true;
-        break;
-      } catch (err) {
-        console.warn(err);
+    function initData() {
+      questions = (questions || []).map(q => {
+        const opts = Array.isArray(q.options) ? q.options : (q.choices || []);
+        return {
+          id: q.id ?? q.question?.slice(0, 6) ?? Math.random(),
+          question: (q.question || q.text || q.q || '').toString().trim(),
+          options: opts.map(o => ({ key: (o.key || '').toString().trim(), text: (o.text || o).toString().trim() })),
+          answer: q.answer ?? null,
+          raw: q
+        };
+      });
+      filtered = [...questions];
+      document.getElementById('totalCount').textContent = questions.length;
+      renderPage();
+      renderPager();
+      setStatus(`Sẵn sàng — ${questions.length} câu hỏi`);
+    }
+
+    function renderPage() {
+      const container = document.getElementById('questionsContainer');
+      container.innerHTML = '';
+      const start = (currentPage - 1) * perPage;
+      const pageItems = filtered.slice(start, start + perPage);
+      document.getElementById('currentIndex').textContent = (pageItems.length ? start + 1 : 0);
+
+      pageItems.forEach((q, idx) => {
+        const card = document.createElement('div'); card.className = 'card';
+        const qnum = start + idx + 1;
+        const header = document.createElement('div'); header.className = 'qheader';
+        header.id = "qheader-"  + qnum
+        header.innerHTML = `<div class="qid">${qnum}</div><div style="flex:1"><div class="qtext">${escapeHtml(q.question)}</div></div>`;
+        card.appendChild(header);
+
+        const opts = document.createElement('div'); opts.className = 'options';
+        if (!q.options || q.options.length === 0) {
+          // fallback: try to detect options from raw
+          opts.innerHTML = '<div class="small" style="color:var(--muted)">Không có lựa chọn (dữ liệu thô)</div>';
+        } else {
+          q.options.forEach(o => {
+            const opt = document.createElement('div');
+            opt.className = 'opt';
+            opt.id = `qopt-${q.id}_${o.key}`
+            opt.setAttribute('data-key', o.key);
+            opt.innerHTML = `<div class="label">${escapeHtml(o.key)}</div><div style="flex:1">${escapeHtml(o.text)}</div>`;
+            // click handler (if quiz mode, mark selected)
+            opt.addEventListener('click', () => {
+              if (quizMode) {
+                // mark selected and show correct/wrong
+                const siblings = opt.parentNode.querySelectorAll('.opt');
+                // siblings.forEach(s => s.classList.remove('selected', 'wrong', 'correct'));
+                // opt.classList.add('selected');
+                // if (q.answer && o.key === q.answer) {
+                //   opt.classList.add('correct');
+                // } else {
+                //   opt.classList.add('wrong');
+                //   // highlight correct
+                //   const corr = opt.parentNode.querySelector('.opt[data-key="' + q.answer + '"]');
+                //   if (corr) corr.classList.add('correct');
+                // }
+                console.log(o.key);
+                
+                setQuizUserAnswer(q.id, o.key)
+              }
+            });
+            opts.appendChild(opt);
+          });
+        }
+        card.appendChild(opts);
+
+        const meta = document.createElement('div'); meta.className = 'meta';
+        meta.innerHTML = `<div class="small">ID: ${escapeHtml(String(q.id))}</div>
+                      <div class="small">Opts: ${q.options?.length ?? 0}</div>
+                      <div class="small">${q.answer ? 'Has answer' : 'No answer'}</div>`;
+        card.appendChild(meta);
+
+        if (showAnswers && q.answer) {
+          // show answer note
+          const note = document.createElement('div');
+          note.style.marginTop = '8px';
+          note.style.fontSize = '13px';
+          note.style.color = 'var(--muted)';
+          note.innerHTML = `<strong>Đáp án:</strong> ${escapeHtml(String(q.answer))}`;
+          card.appendChild(note);
+          // mark correct option visually
+          const corr = opts.querySelector('.opt[data-key="' + q.answer + '"]');
+          if (corr) corr.classList.add('correct');
+        }
+
+        container.appendChild(card);
+      });
+
+      // if none
+      if (pageItems.length === 0) {
+        container.innerHTML = '<div style="padding:18px; color:var(--muted)">Không có câu hỏi để hiển thị.</div>';
       }
     }
 
-    if (!loaded) {
-      setStatus('Không tìm thấy default_quiz.json hoặc questions.json. Bạn có thể bấm "Dán JSON" để dán thủ công.');
-      questions = [];
+    function renderPager() {
+      const pageNumbers = document.getElementById('pageNumbers');
+      pageNumbers.innerHTML = '';
+      const pageCount = Math.max(1, Math.ceil(filtered.length / perPage));
+      // show window of pages
+      const maxButtons = 7;
+      let start = Math.max(1, currentPage - Math.floor(maxButtons / 2));
+      let end = Math.min(pageCount, start + maxButtons - 1);
+      if (end - start < maxButtons - 1) start = Math.max(1, end - maxButtons + 1);
+
+      for (let i = start; i <= end; i++) {
+        const b = document.createElement('button');
+        b.className = 'page-btn' + (i === currentPage ? ' active' : '');
+        b.textContent = i;
+        b.addEventListener('click', () => { currentPage = i; renderPage(); renderPager(); });
+        pageNumbers.appendChild(b);
+      }
     }
 
-    initData();
-  }
+    function escapeHtml(s) {
+      if (!s) return '';
+      return s.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
+    }
 
-  function initData() {
-    questions = (questions || []).map(q => {
-      const opts = Array.isArray(q.options) ? q.options : (q.choices || []);
-      return {
-        id: q.id ?? q.question?.slice(0, 6) ?? Math.random(),
-        question: (q.question || q.text || q.q || '').toString().trim(),
-        options: opts.map(o => ({ key: (o.key || '').toString().trim(), text: (o.text || o).toString().trim() })),
-        answer: q.answer ?? null,
-        raw: q
-      };
+    // controls
+    document.getElementById('prevPage').addEventListener('click', () => {
+      if (currentPage > 1) currentPage--; renderPage(); renderPager();
     });
-    filtered = [...questions];
-    document.getElementById('totalCount').textContent = questions.length;
-    renderPage();
-    renderPager();
-    setStatus(`Sẵn sàng — ${questions.length} câu hỏi`);
-  }
-
-function renderPage(){
-  const container = document.getElementById('questionsContainer');
-  container.innerHTML = '';
-  const start = (currentPage-1)*perPage;
-  const pageItems = filtered.slice(start, start+perPage);
-  document.getElementById('currentIndex').textContent = (pageItems.length ? start+1 : 0);
-
-  pageItems.forEach((q, idx) => {
-    const card = document.createElement('div'); card.className='card';
-    const qnum = start + idx + 1;
-    const header = document.createElement('div'); header.className='qheader';
-    header.innerHTML = `<div class="qid">${qnum}</div><div style="flex:1"><div class="qtext">${escapeHtml(q.question)}</div></div>`;
-    card.appendChild(header);
-
-    const opts = document.createElement('div'); opts.className='options';
-    if(!q.options || q.options.length===0){
-      // fallback: try to detect options from raw
-      opts.innerHTML = '<div class="small" style="color:var(--muted)">Không có lựa chọn (dữ liệu thô)</div>';
-    } else {
-      q.options.forEach(o=>{
-        const opt = document.createElement('div');
-        opt.className = 'opt';
-        opt.setAttribute('data-key', o.key);
-        opt.innerHTML = `<div class="label">${escapeHtml(o.key)}</div><div style="flex:1">${escapeHtml(o.text)}</div>`;
-        // click handler (if quiz mode, mark selected)
-        opt.addEventListener('click', ()=>{
-          if(quizMode){
-            // mark selected and show correct/wrong
-            const siblings = opt.parentNode.querySelectorAll('.opt');
-            siblings.forEach(s=>s.classList.remove('selected','wrong','correct'));
-            opt.classList.add('selected');
-            if(q.answer && o.key === q.answer){
-              opt.classList.add('correct');
-            } else {
-              opt.classList.add('wrong');
-              // highlight correct
-              const corr = opt.parentNode.querySelector('.opt[data-key="'+q.answer+'"]');
-              if(corr) corr.classList.add('correct');
-            }
-          }
-        });
-        opts.appendChild(opt);
+    document.getElementById('nextPage').addEventListener('click', () => {
+      const pageCount = Math.max(1, Math.ceil(filtered.length / perPage));
+      if (currentPage < pageCount) currentPage++; renderPage(); renderPager();
+    });
+    document.querySelectorAll('.page-btn[data-per]').forEach(b => {
+      b.addEventListener('click', () => {
+        document.querySelectorAll('.page-btn[data-per]').forEach(x => x.classList.remove('active'));
+        b.classList.add('active');
+        perPage = Number(b.dataset.per);
+        currentPage = 1;
+        renderPage(); renderPager();
       });
-    }
-    card.appendChild(opts);
-
-    const meta = document.createElement('div'); meta.className='meta';
-    meta.innerHTML = `<div class="small">ID: ${escapeHtml(String(q.id))}</div>
-                      <div class="small">Opts: ${q.options?.length ?? 0}</div>
-                      <div class="small">${q.answer ? 'Has answer' : 'No answer'}</div>`;
-    card.appendChild(meta);
-
-    if(showAnswers && q.answer){
-      // show answer note
-      const note = document.createElement('div');
-      note.style.marginTop='8px';
-      note.style.fontSize='13px';
-      note.style.color='var(--muted)';
-      note.innerHTML = `<strong>Đáp án:</strong> ${escapeHtml(String(q.answer))}`;
-      card.appendChild(note);
-      // mark correct option visually
-      const corr = opts.querySelector('.opt[data-key="'+q.answer+'"]');
-      if(corr) corr.classList.add('correct');
-    }
-
-    container.appendChild(card);
-  });
-
-  // if none
-  if(pageItems.length===0){
-    container.innerHTML = '<div style="padding:18px; color:var(--muted)">Không có câu hỏi để hiển thị.</div>';
-  }
-}
-
-function renderPager(){
-  const pageNumbers = document.getElementById('pageNumbers');
-  pageNumbers.innerHTML = '';
-  const pageCount = Math.max(1, Math.ceil(filtered.length / perPage));
-  // show window of pages
-  const maxButtons = 7;
-  let start = Math.max(1, currentPage - Math.floor(maxButtons/2));
-  let end = Math.min(pageCount, start + maxButtons -1);
-  if(end - start < maxButtons -1) start = Math.max(1, end - maxButtons + 1);
-
-  for(let i=start;i<=end;i++){
-    const b = document.createElement('button');
-    b.className = 'page-btn' + (i===currentPage ? ' active':'');
-    b.textContent = i;
-    b.addEventListener('click', ()=>{ currentPage = i; renderPage(); renderPager(); });
-    pageNumbers.appendChild(b);
-  }
-}
-
-function escapeHtml(s){
-  if(!s) return '';
-  return s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
-}
-
-// controls
-document.getElementById('prevPage').addEventListener('click', ()=>{
-  if(currentPage>1) currentPage--; renderPage(); renderPager();
-});
-document.getElementById('nextPage').addEventListener('click', ()=>{
-  const pageCount = Math.max(1, Math.ceil(filtered.length / perPage));
-  if(currentPage<pageCount) currentPage++; renderPage(); renderPager();
-});
-document.querySelectorAll('.page-btn[data-per]').forEach(b=>{
-  b.addEventListener('click', ()=>{
-    document.querySelectorAll('.page-btn[data-per]').forEach(x=>x.classList.remove('active'));
-    b.classList.add('active');
-    perPage = Number(b.dataset.per);
-    currentPage = 1;
-    renderPage(); renderPager();
-  });
-});
-
-document.getElementById('gotoBtn').addEventListener('click', ()=>{
-  const v = Number(document.getElementById('gotoInput').value);
-  if(!v || v<1) return;
-  const idx = v - 1;
-  const page = Math.floor(idx / perPage) + 1;
-  currentPage = Math.min(Math.max(1,page), Math.ceil(filtered.length / perPage));
-  renderPage(); renderPager();
-});
-
-document.getElementById('search').addEventListener('input', (e)=>{
-  const q = e.target.value.trim().toLowerCase();
-  if(!q){
-    filtered = [...questions];
-  } else {
-    filtered = questions.filter(it=>{
-      return (it.question || '').toLowerCase().includes(q)
-             || (it.options||[]).some(o=> (o.text||'').toLowerCase().includes(q) || (o.key||'').toLowerCase().includes(q))
-             || String(it.id || '').includes(q);
     });
-  }
-  currentPage = 1;
-  renderPage(); renderPager();
-});
 
-document.getElementById('clearSearch').addEventListener('click', ()=>{
-  document.getElementById('search').value=''; document.getElementById('search').dispatchEvent(new Event('input'));
-});
+    document.getElementById('gotoBtn').addEventListener('click', () => {
+      const v = Number(document.getElementById('gotoInput').value);
+      scrollToQuestion(v)
+    });
 
-document.getElementById('shuffleBtn').addEventListener('click', ()=>{
-  questions = shuffleArray(questions);
-  filtered = [...questions];
-  currentPage = 1;
-  renderPage(); renderPager();
-  setStatus('Đã xáo câu hỏi');
-});
+    document.getElementById('search').addEventListener('input', (e) => {
+      const q = e.target.value.trim().toLowerCase();
+      if (!q) {
+        filtered = [...questions];
+      } else {
+        filtered = questions.filter(it => {
+          return (it.question || '').toLowerCase().includes(q)
+            || (it.options || []).some(o => (o.text || '').toLowerCase().includes(q) || (o.key || '').toLowerCase().includes(q))
+            || String(it.id || '').includes(q);
+        });
+      }
+      currentPage = 1;
+      renderPage(); renderPager();
+    });
 
-document.getElementById('showAnswersBtn').addEventListener('click', ()=>{
-  showAnswers = !showAnswers;
-  document.getElementById('showAnswersBtn').textContent = showAnswers ? 'Ẩn đáp án' : 'Hiện đáp án';
-  renderPage();
-});
+    document.getElementById('clearSearch').addEventListener('click', () => {
+      document.getElementById('search').value = ''; document.getElementById('search').dispatchEvent(new Event('input'));
+    });
 
-document.getElementById('exportBtn').addEventListener('click', ()=>{
-  const start = (currentPage-1)*perPage;
-  const slice = filtered.slice(start, start+perPage);
-  const blob = new Blob([JSON.stringify(slice, null, 2)], {type:'application/json;charset=utf-8'});
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a'); a.href=url; a.download = `questions-page-${currentPage}.json`; a.click();
-  URL.revokeObjectURL(url);
-});
+    document.getElementById('shuffleBtn').addEventListener('click', () => {
+      questions = shuffleArray(questions);
+      filtered = [...questions];
+      currentPage = 1;
+      renderPage(); renderPager();
+      setStatus('Đã xáo câu hỏi');
+    });
 
-document.getElementById('quizModeBtn').addEventListener('click', ()=>{
-  quizMode = !quizMode;
-  document.getElementById('quizModeBtn').textContent = quizMode ? 'Thoát Quiz' : 'Bắt đầu Quiz';
-  // in quiz mode hide answers by default and remove previous selected classes
-  document.querySelectorAll('.opt').forEach(o=>o.classList.remove('selected','wrong','correct'));
-  showAnswers = false;
-  document.getElementById('showAnswersBtn').textContent = 'Hiện đáp án';
-  setStatus(quizMode ? 'Chế độ Quiz: chọn đáp án để kiểm tra' : 'Thoát chế độ Quiz');
-});
+    document.getElementById('showAnswersBtn').addEventListener('click', () => {
+      showAnswers = !showAnswers;
+      document.getElementById('showAnswersBtn').textContent = showAnswers ? 'Ẩn đáp án' : 'Hiện đáp án';
+      renderPage();
+    });
 
-function shuffleArray(a){
-  for(let i=a.length-1;i>0;i--){
-    const j = Math.floor(Math.random()*(i+1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
+    document.getElementById('exportBtn').addEventListener('click', () => {
+      const start = (currentPage - 1) * perPage;
+      const slice = filtered.slice(start, start + perPage);
+      const blob = new Blob([JSON.stringify(slice, null, 2)], { type: 'application/json;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a'); a.href = url; a.download = `questions-page-${currentPage}.json`; a.click();
+      URL.revokeObjectURL(url);
+    });
 
-/* JSON paste modal */
-const modal = document.getElementById('jsonModal');
-document.getElementById('loadJsonBtn').addEventListener('click', ()=>{ modal.style.display='flex'; });
-document.getElementById('cancelJson').addEventListener('click', ()=>{ modal.style.display='none'; });
-document.getElementById('loadPastedJson').addEventListener('click', ()=>{
-  const txt = document.getElementById('jsonPaste').value.trim();
-  if(!txt) return alert('Chưa dán JSON');
-  try{
-    const arr = JSON.parse(txt);
-    if(!Array.isArray(arr)) throw new Error('JSON phải là mảng các câu hỏi');
-    questions = arr;
-    modal.style.display='none';
-    document.getElementById('jsonPaste').value='';
-    initData();
-  } catch(err){
-    alert('JSON không hợp lệ: ' + err.message);
-  }
-});
 
-/* keyboard navigation */
-document.addEventListener('keydown', (e)=>{
-  if(e.key === 'ArrowRight') { document.getElementById('nextPage').click(); }
-  if(e.key === 'ArrowLeft') { document.getElementById('prevPage').click(); }
-});
+    function shuffleArray(a) {
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
 
-/* initial load */
-loadJSON();
+    /* JSON paste modal */
+    const modal = document.getElementById('jsonModal');
+    document.getElementById('loadJsonBtn').addEventListener('click', () => { modal.style.display = 'flex'; });
+    document.getElementById('cancelJson').addEventListener('click', () => { modal.style.display = 'none'; });
+    document.getElementById('loadPastedJson').addEventListener('click', () => {
+      const txt = document.getElementById('jsonPaste').value.trim();
+      if (!txt) return alert('Chưa dán JSON');
+      try {
+        const arr = JSON.parse(txt);
+        if (!Array.isArray(arr)) throw new Error('JSON phải là mảng các câu hỏi');
+        questions = arr;
+        modal.style.display = 'none';
+        document.getElementById('jsonPaste').value = '';
+        initData();
+      } catch (err) {
+        alert('JSON không hợp lệ: ' + err.message);
+      }
+    });
 
-/* helpers */
-function download(filename, text) {
-  const pom = document.createElement('a');
-  pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-  pom.setAttribute('download', filename);
-  pom.style.display = 'none';
-  document.body.appendChild(pom);
-  pom.click();
-  document.body.removeChild(pom);
-}
-</script>
+    /* keyboard navigation */
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') { document.getElementById('nextPage').click(); }
+      if (e.key === 'ArrowLeft') { document.getElementById('prevPage').click(); }
+    });
+
+    /* initial load */
+    loadJSON();
+
+    /* helpers */
+    function download(filename, text) {
+      const pom = document.createElement('a');
+      pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+      pom.setAttribute('download', filename);
+      pom.style.display = 'none';
+      document.body.appendChild(pom);
+      pom.click();
+      document.body.removeChild(pom);
+    }
+  </script>
 </body>
+
 </html>
