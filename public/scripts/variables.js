@@ -5,6 +5,7 @@ let currentPage = 1;
 let showAnswers = false;
 let quizMode = false;
 
+let submited = false;
 let quizInfo = quizMode ? filtered.map(item => {
     return {
         id: item.id,

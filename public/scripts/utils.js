@@ -14,3 +14,9 @@ function scrollToQuestion(qnum) {
         setTimeout(() => questionElement.classList.remove('highlight'), 2000);
     }
 }
+
+function toggleShowAnswers() {
+    showAnswers = !showAnswers;
+    document.getElementById('showAnswersBtn').textContent = showAnswers ? 'Ẩn đáp án' : 'Hiện đáp án';
+    renderPage();
+}

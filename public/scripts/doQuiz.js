@@ -3,12 +3,17 @@ let timePerQuestion = 60;
 document.getElementById('quizModeBtn').addEventListener('click', () => {
     quizMode = !quizMode;
     totalQuizTime = quizMode ? perPage * timePerQuestion : 0;
+    submited = false
     updateQuizInfo()
     updateViewerForQuizMode();
     document.getElementById('quizModeBtn').textContent = quizMode ? 'Thoát Quiz' : 'Bắt đầu Quiz';
     document.querySelectorAll('.opt').forEach(o => o.classList.remove('selected', 'wrong', 'correct'));
     showAnswers = false;
     setStatus(quizMode ? 'Chế độ Quiz: chọn đáp án để kiểm tra' : 'Thoát chế độ Quiz');
+});
+
+document.getElementById('submitQuizBtn').addEventListener('click', () => {
+    handleSubmitQuiz()
 });
 
 
@@ -20,21 +25,25 @@ function updateViewerForQuizMode() {
         document.getElementById('header').style.top = '0';
         document.getElementById('header').style.left = '0';
         document.getElementById('header').style.right = '0';
-        document.getElementById('logo-title').textContent = `Quiz mode - ${Math.ceil(totalQuizTime / 60)} phút`;
         document.getElementById('quiz-timer').style.display = 'block';
         document.getElementById('tools').style.display = 'none';
         document.getElementById('questionPanel').style.display = 'block';
+        document.getElementById('submitQuizBtn').style.display = 'block';
+        document.getElementById('loadJsonBtn').style.display = 'none';
+        document.getElementById('header-searchbar').style.display = 'none';
         renderQuestionInGrid();
         startQuizTimer(totalQuizTime);
     } else {
         document.getElementById('header').style.position = 'relative';
         document.getElementById('quiz-timer').style.display = 'none';
         clearInterval(window.quizTimerInterval);
-        document.getElementById('logo-title').textContent = 'Quiz Viewer';
         document.getElementById('header').style.backdropFilter = 'none';
         document.getElementById('header').style.backgroundColor = 'var(--header-bg)';
         document.getElementById('questionInGrids').style.display = 'none';
         document.getElementById('tools').style.display = 'flex';
+        document.getElementById('submitQuizBtn').style.display = 'none';
+        document.getElementById('loadJsonBtn').style.display = 'block';
+        document.getElementById('header-searchbar').style.display = 'block';
     }
 }
 function startQuizTimer(duration) {
@@ -44,7 +53,7 @@ function startQuizTimer(duration) {
     window.quizTimerInterval = setInterval(() => {
         minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
-        timerElement.textContent = `Thời gian còn lại: ${minutes} phút ${seconds} giây`;
+        timerElement.textContent = `${minutes} phút ${seconds} giây`;
         if (--timer < 0) {
             clearInterval(window.quizTimerInterval);
             alert('Hết thời gian làm bài!');
@@ -69,7 +78,7 @@ function renderQuestionInGrid() {
         const q = quizInfo[i];
         const btn = document.createElement('button');
         btn.textContent = q.id;
-        btn.className = 'btn small ' + (q.userAnswer ? (q.userAnswer === q.answer ? 'correct' : 'wrong') : '' + (!!q.userAnswer ? '' : 'ques-btn'));
+        btn.className = 'btn small ' + ((quizMode && !!submited) ? (q.userAnswer === q.answer ? 'success' : 'error') : '') + (!!q.userAnswer ? '' : 'ques-btn');
         btn.title = `Câu ${q.id}\n${q.userAnswer || 'Chưa trả lời'}`;
         btn.onclick = () => {
             scrollToQuestion(i+1)
@@ -96,8 +105,23 @@ function setQuizUserAnswer(id, userAnswer) {
     const index = quizInfo.findIndex(item => item.id == id)
     if (index >= 0) {
         quizInfo[index].userAnswer = userAnswer
-        opt = document.getElementById(`qopt-${id}_${userAnswer}`)
-        opt.classList.add('selected')
+        let opts = document.getElementById(`qopts-${id}`)
+        if (opts) {
+            opts.querySelectorAll('.opt').forEach(el => el.classList.remove('selected'));
+            let opt = document.getElementById(`qopt-${id}_${userAnswer}`)
+            opt.classList.add('selected')
+        }
+    }
+    renderQuestionInGrid()
+}
+
+
+function handleSubmitQuiz() {
+    const result = confirm("Bạn có chắc chắn muốn nộp bài?")
+    if (result) {
+        submited = true
+        document.getElementById('submitQuizBtn').style.display = 'none';
+        toggleShowAnswers()
         renderQuestionInGrid()
     }
 }
