@@ -2,14 +2,21 @@ let totalQuizTime = 0
 let timePerQuestion = 60;
 document.getElementById('quizModeBtn').addEventListener('click', () => {
     quizMode = !quizMode;
-    totalQuizTime = quizMode ? perPage * timePerQuestion : 0;
-    submited = false
+    if (quizMode) {
+        totalQuizTime = perPage * timePerQuestion
+        submited = false
+        document.getElementById('quizModeBtn').textContent = 'Thoát Quiz';
+        document.querySelectorAll('.opt').forEach(o => o.classList.remove('selected', 'wrong', 'correct', 'disabled'));
+        setStatus('Chế độ Quiz: chọn đáp án để kiểm tra');
+    } else {
+        clearInterval(window.quizTimerInterval);
+        document.getElementById('quizModeBtn').textContent = 'Bắt đầu Quiz';
+        document.querySelectorAll('.opt').forEach(o => o.classList.remove('selected', 'wrong', 'correct', 'disabled'));
+        setStatus('Thoát chế độ Quiz');
+    }
+    showAnswers = false;
     updateQuizInfo()
     updateViewerForQuizMode();
-    document.getElementById('quizModeBtn').textContent = quizMode ? 'Thoát Quiz' : 'Bắt đầu Quiz';
-    document.querySelectorAll('.opt').forEach(o => o.classList.remove('selected', 'wrong', 'correct'));
-    showAnswers = false;
-    setStatus(quizMode ? 'Chế độ Quiz: chọn đáp án để kiểm tra' : 'Thoát chế độ Quiz');
 });
 
 document.getElementById('submitQuizBtn').addEventListener('click', () => {
@@ -121,6 +128,7 @@ function handleSubmitQuiz() {
     if (result) {
         submited = true
         document.getElementById('submitQuizBtn').style.display = 'none';
+        clearInterval(window.quizTimerInterval);
         toggleShowAnswers()
         renderQuestionInGrid()
     }

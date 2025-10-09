@@ -3,7 +3,7 @@ function scrollToQuestion(qnum) {
     const idx = qnum - 1;
     const page = Math.floor(idx / perPage) + 1;
     currentPage = Math.min(Math.max(1, page), Math.ceil(filtered.length / perPage));
-    renderPage(); renderPager();
+    renderPage();
 
     const questionElement = document.getElementById("qheader-" + qnum)
     console.log(questionElement);
@@ -19,4 +19,8 @@ function toggleShowAnswers() {
     showAnswers = !showAnswers;
     document.getElementById('showAnswersBtn').textContent = showAnswers ? 'Ẩn đáp án' : 'Hiện đáp án';
     renderPage();
+}
+
+function getQuizInfoById(id) {
+    return quizInfo.find(item => item.id == id)
 }

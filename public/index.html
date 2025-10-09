@@ -218,6 +218,7 @@
       border-color: #10b981;
       color: #fff;
     }
+    
 
     .opt.selected {
       background: #40c7f04b;
@@ -226,7 +227,7 @@
 
     .opt.wrong {
       opacity: 0.6;
-      filter: grayscale(.2)
+      background-color: #fa9d51;
     }
 
     .meta {
@@ -304,6 +305,9 @@
       color: var(--muted);
       font-size: 13px;
       text-align: center
+    }
+    .disabled {
+      pointer-events: none;
     }
 
     @media (max-width:980px) {

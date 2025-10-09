@@ -1025,6 +1025,12 @@ function renderPage() {
                       <div class="small">${q.answer ? 'Has answer' : 'No answer'}</div>`;
         card.appendChild(meta);
 
+        if (!showAnswers) {
+            const elements = document.getElementsByClassName('opt')
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].classList.remove('disabled', 'correct', 'wrong', 'selected');   
+            }
+        }
         if (showAnswers && q.answer) {
             // show answer note
             const note = document.createElement('div');
@@ -1036,6 +1042,17 @@ function renderPage() {
             // mark correct option visually
             const corr = opts.querySelector('.opt[data-key="' + q.answer + '"]');
             if (corr) corr.classList.add('correct');
+            const quizInfo = getQuizInfoById(q.id)
+            if (quizMode && !!submited && !!quizInfo.userAnswer) {
+                const userOpt = opts.querySelector('.opt[data-key="' + quizInfo.userAnswer + '"]');
+                console.log(userOpt);
+                
+                if (userOpt && userOpt !== corr) userOpt.classList.add('wrong');
+            }
+            const elements = document.getElementsByClassName('opt')
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].classList.add('disabled');
+            }
         }
 
         container.appendChild(card);
