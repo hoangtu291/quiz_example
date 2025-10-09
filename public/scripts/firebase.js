@@ -14,7 +14,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-// ❌ Không export nữa
 async function handleStoreExam(quizInfo, totalTime) {
     if (!quizInfo) return;
     const submittedTime = new Date().toLocaleString("vi-VN", { timeZone: "Asia/Ho_Chi_Minh" });
@@ -23,24 +22,21 @@ async function handleStoreExam(quizInfo, totalTime) {
 
     const quizRecord = {
         submittedTime,
-        data: quizInfo,
         statistic: {
             total: quizInfo.length,
             correct: correctCount,
             answered: answeredCount,
             timeTaken: totalTime || null
-        }
+        },
+        data: quizInfo,
     };
 
     try {
         await addDoc(collection(db, "quiz_submissions"), quizRecord);
-        alert("✅ Đã nộp bài! Dữ liệu lưu vào Firestore.");
         document.getElementById('submitQuizBtn').disabled = true;
     } catch (error) {
         console.error(error);
-        alert("❌ Lỗi khi lưu dữ liệu. Xem console để biết chi tiết.");
     }
 }
 
-// ✅ Gắn global để file khác gọi được
 window.handleStoreExam = handleStoreExam;
