@@ -13,5 +13,4 @@ let quizInfo = quizMode ? filtered.map(item => {
         answer: item.answer
     }
 }) : []
-
 const statusLine = document.getElementById('statusLine');

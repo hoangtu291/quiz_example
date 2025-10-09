@@ -1,5 +1,6 @@
 let totalQuizTime = 0
 let timePerQuestion = 60;
+let remaningTime = 0;
 document.getElementById('quizModeBtn').addEventListener('click', () => {
     quizMode = !quizMode;
     if (quizMode) {
@@ -61,6 +62,7 @@ function startQuizTimer(duration) {
         minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
         timerElement.textContent = `${minutes} phút ${seconds} giây`;
+        remaningTime = timer;
         if (--timer < 0) {
             clearInterval(window.quizTimerInterval);
             alert('Hết thời gian làm bài!');
@@ -131,5 +133,7 @@ function handleSubmitQuiz() {
         clearInterval(window.quizTimerInterval);
         toggleShowAnswers()
         renderQuestionInGrid()
+        const totalTime = totalQuizTime - remaningTime;
+        window.handleStoreExam(quizInfo, totalTime)
     }
 }

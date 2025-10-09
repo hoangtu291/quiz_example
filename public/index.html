@@ -66,6 +66,7 @@
       font-size: 20px;
       box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
     }
+
     .btn-submit {
       background: linear-gradient(135deg, var(--accent), var(--accent-2)) !important;
       color: #fff !important;
@@ -120,6 +121,7 @@
     .btn.success {
       background-color: var(--success);
     }
+
     .btn.error {
       background-color: var(--error);
     }
@@ -218,7 +220,7 @@
       border-color: #10b981;
       color: #fff;
     }
-    
+
 
     .opt.selected {
       background: #40c7f04b;
@@ -284,7 +286,8 @@
       margin-top: 8px;
     }
 
-    .ques-btn ,.page-btn {
+    .ques-btn,
+    .page-btn {
       padding: 8px 10px;
       border-radius: 8px;
       background: transparent;
@@ -306,6 +309,7 @@
       font-size: 13px;
       text-align: center
     }
+
     .disabled {
       pointer-events: none;
     }
@@ -380,7 +384,7 @@
 
         <div id="questionPanel" style="display:none; margin-bottom:12px;">
           <label class="small">Câu hỏi</label>
-          <div style="margin-top:8px; display:flex; gap:8px;" id="questionInGrids">   
+          <div style="margin-top:8px; display:flex; gap:8px;" id="questionInGrids">
 
           </div>
         </div>
@@ -441,7 +445,8 @@
   </div>
   <script src="./scripts/variables.js"></script>
   <script src="./scripts/utils.js"></script>
-  <script src="./scripts/doQuiz.js"></script>
+  <script src="./scripts/firebase.js" type="module"></script>
+  <script defer src="./scripts/doQuiz.js"></script>
   <script src="./scripts/script.js"></script>
 </body>
 
