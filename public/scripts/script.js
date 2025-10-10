@@ -973,7 +973,7 @@ function renderPage() {
     container.innerHTML = '';
     const start = (currentPage - 1) * perPage;
     const pageItems = filtered.slice(start, start + perPage);
-    document.getElementById('currentIndex').textContent = (pageItems.length ? start + 1 : 0);
+    // document.getElementById('currentIndex').textContent = (pageItems.length ? start + 1 : 0);
 
     pageItems.forEach((q, idx) => {
         const card = document.createElement('div'); card.className = 'card';
@@ -1111,24 +1111,24 @@ document.getElementById('gotoBtn').addEventListener('click', () => {
     scrollToQuestion(v)
 });
 
-document.getElementById('search').addEventListener('input', (e) => {
-    const q = e.target.value.trim().toLowerCase();
-    if (!q) {
-        filtered = [...questions];
-    } else {
-        filtered = questions.filter(it => {
-            return (it.question || '').toLowerCase().includes(q)
-                || (it.options || []).some(o => (o.text || '').toLowerCase().includes(q) || (o.key || '').toLowerCase().includes(q))
-                || String(it.id || '').includes(q);
-        });
-    }
-    currentPage = 1;
-    renderPage(); renderPager();
-});
+// document.getElementById('search').addEventListener('input', (e) => {
+//     const q = e.target.value.trim().toLowerCase();
+//     if (!q) {
+//         filtered = [...questions];
+//     } else {
+//         filtered = questions.filter(it => {
+//             return (it.question || '').toLowerCase().includes(q)
+//                 || (it.options || []).some(o => (o.text || '').toLowerCase().includes(q) || (o.key || '').toLowerCase().includes(q))
+//                 || String(it.id || '').includes(q);
+//         });
+//     }
+//     currentPage = 1;
+//     renderPage(); renderPager();
+// });
 
-document.getElementById('clearSearch').addEventListener('click', () => {
-    document.getElementById('search').value = ''; document.getElementById('search').dispatchEvent(new Event('input'));
-});
+// document.getElementById('clearSearch').addEventListener('click', () => {
+//     document.getElementById('search').value = ''; document.getElementById('search').dispatchEvent(new Event('input'));
+// });
 
 document.getElementById('shuffleBtn').addEventListener('click', () => {
     questions = shuffleArray(questions);
@@ -1161,23 +1161,23 @@ function shuffleArray(a) {
 }
 
 /* JSON paste modal */
-const modal = document.getElementById('jsonModal');
-document.getElementById('loadJsonBtn').addEventListener('click', () => { modal.style.display = 'flex'; });
-document.getElementById('cancelJson').addEventListener('click', () => { modal.style.display = 'none'; });
-document.getElementById('loadPastedJson').addEventListener('click', () => {
-    const txt = document.getElementById('jsonPaste').value.trim();
-    if (!txt) return alert('Chưa dán JSON');
-    try {
-        const arr = JSON.parse(txt);
-        if (!Array.isArray(arr)) throw new Error('JSON phải là mảng các câu hỏi');
-        questions = arr;
-        modal.style.display = 'none';
-        document.getElementById('jsonPaste').value = '';
-        initData();
-    } catch (err) {
-        alert('JSON không hợp lệ: ' + err.message);
-    }
-});
+// const modal = document.getElementById('jsonModal');
+// document.getElementById('loadJsonBtn').addEventListener('click', () => { modal.style.display = 'flex'; });
+// document.getElementById('cancelJson').addEventListener('click', () => { modal.style.display = 'none'; });
+// document.getElementById('loadPastedJson').addEventListener('click', () => {
+//     const txt = document.getElementById('jsonPaste').value.trim();
+//     if (!txt) return alert('Chưa dán JSON');
+//     try {
+//         const arr = JSON.parse(txt);
+//         if (!Array.isArray(arr)) throw new Error('JSON phải là mảng các câu hỏi');
+//         questions = arr;
+//         modal.style.display = 'none';
+//         document.getElementById('jsonPaste').value = '';
+//         initData();
+//     } catch (err) {
+//         alert('JSON không hợp lệ: ' + err.message);
+//     }
+// });
 
 /* keyboard navigation */
 document.addEventListener('keydown', (e) => {

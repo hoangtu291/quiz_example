@@ -6,11 +6,13 @@ document.getElementById('quizModeBtn').addEventListener('click', () => {
     if (quizMode) {
         totalQuizTime = perPage * timePerQuestion
         submited = false
+        document.getElementById('quizModeBtn').classList.remove('btn-primary');
         document.getElementById('quizModeBtn').textContent = 'Thoát Quiz';
         document.querySelectorAll('.opt').forEach(o => o.classList.remove('selected', 'wrong', 'correct', 'disabled'));
         setStatus('Chế độ Quiz: chọn đáp án để kiểm tra');
     } else {
         clearInterval(window.quizTimerInterval);
+        document.getElementById('quizModeBtn').classList.add('btn-primary');
         document.getElementById('quizModeBtn').textContent = 'Bắt đầu Quiz';
         document.querySelectorAll('.opt').forEach(o => o.classList.remove('selected', 'wrong', 'correct', 'disabled'));
         setStatus('Thoát chế độ Quiz');
@@ -37,8 +39,7 @@ function updateViewerForQuizMode() {
         document.getElementById('tools').style.display = 'none';
         document.getElementById('questionPanel').style.display = 'block';
         document.getElementById('submitQuizBtn').style.display = 'block';
-        document.getElementById('loadJsonBtn').style.display = 'none';
-        document.getElementById('header-searchbar').style.display = 'none';
+        document.getElementById('flashCardsBtn').style.display = 'none';
         renderQuestionInGrid();
         startQuizTimer(totalQuizTime);
     } else {
@@ -50,8 +51,7 @@ function updateViewerForQuizMode() {
         document.getElementById('questionInGrids').style.display = 'none';
         document.getElementById('tools').style.display = 'flex';
         document.getElementById('submitQuizBtn').style.display = 'none';
-        document.getElementById('loadJsonBtn').style.display = 'block';
-        document.getElementById('header-searchbar').style.display = 'block';
+        document.getElementById('flashCardsBtn').style.display = 'block';
     }
 }
 function startQuizTimer(duration) {

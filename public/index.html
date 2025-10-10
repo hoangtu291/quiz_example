@@ -99,12 +99,25 @@
       cursor: pointer;
       font-weight: 600;
       font-size: 13px;
+      transition: transform .12s ease, box-shadow .12s ease, background-color .12s ease;
     }
 
     .btn.alt {
       color: var(--muted);
       background: transparent;
       border: 1px solid rgba(0, 0, 0, 0.05)
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(8, 20, 40, 0.1);
+      background: var(--glass);
+    }
+
+    .btn.btn-primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(8, 20, 40, 0.2)
     }
 
     .searchbar {
@@ -154,6 +167,7 @@
       border-radius: 10px;
       margin-bottom: 12px;
       border: 1px solid #e5e7eb;
+      transition: box-shadow .12s ease, transform .12s ease;
     }
 
     .qheader {
@@ -193,7 +207,7 @@
       border-radius: 8px;
       border: 1px solid #e5e7eb;
       cursor: pointer;
-      transition: all .12s;
+      transition: transform .12s ease, box-shadow .12s ease, background-color .12s ease, opacity .12s ease;
       display: flex;
       gap: 12px;
       align-items: center;
@@ -202,6 +216,19 @@
     .opt:hover {
       transform: translateY(-2px);
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Accessibility: visible focus state */
+    .btn:focus-visible,
+    .opt:focus-visible {
+      outline: 3px solid rgba(59, 130, 246, 0.18);
+      outline-offset: 2px;
+      border-radius: 10px;
+    }
+
+    .card:hover {
+      box-shadow: 0 10px 30px rgba(8, 20, 40, 0.06);
+      transform: translateY(-4px);
     }
 
     .opt .label {
@@ -314,6 +341,245 @@
       pointer-events: none;
     }
 
+    /* Responsive polish: make UI friendlier on small screens */
+    @media (max-width: 1280px) {
+      :root {
+        --maxw: 960px;
+      }
+
+      .logo {
+        width: 48px;
+        height: 48px;
+        font-size: 18px
+      }
+
+      header {
+        gap: 12px
+      }
+    }
+
+    @media (max-width: 860px) {
+      body {
+        padding: 18px
+      }
+
+      :root {
+        --maxw: 720px
+      }
+
+      header {
+        align-items: flex-start
+      }
+
+      .brand {
+        gap: 10px
+      }
+
+      .logo {
+        width: 48px;
+        height: 48px
+      }
+
+      .controls {
+        width: 100%;
+        margin-left: 0;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        gap: 8px
+      }
+
+      .controls .btn {
+        padding: 10px 14px;
+        font-size: 14px
+      }
+
+      .searchbar {
+        max-width: none;
+        width: 100%;
+        order: 3
+      }
+
+      main {
+        grid-template-columns: 1fr;
+        gap: 14px
+      }
+
+      .side {
+        order: 2
+      }
+
+      .left {
+        order: 1
+      }
+
+      .card {
+        padding: 12px
+      }
+
+      .qid {
+        min-width: 40px;
+        height: 40px
+      }
+
+      .qtext {
+        font-size: 15px
+      }
+
+      .opt {
+        padding: 12px;
+        gap: 10px
+      }
+
+      .opt .label {
+        width: 34px;
+        height: 34px;
+        border-radius: 8px
+      }
+
+      .page-list {
+        justify-content: center
+      }
+    }
+
+    @media (max-width:480px) {
+      :root {
+        --maxw: 420px
+      }
+
+      body {
+        padding: 12px
+      }
+
+      header {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px
+      }
+
+      .brand {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+      }
+
+      .logo {
+        width: 44px;
+        height: 44px;
+        font-size: 16px
+      }
+
+      .controls {
+        justify-content: flex-start
+      }
+
+      .controls .btn {
+        flex: 1;
+        padding: 12px;
+        font-size: 15px
+      }
+
+      .controls .btn+.btn {
+        margin-left: 0
+      }
+
+      .qid {
+        min-width: 36px;
+        height: 36px;
+        font-size: 13px
+      }
+
+      .qheader {
+        align-items: flex-start
+      }
+
+      .options {
+        gap: 10px
+      }
+
+      .opt {
+        flex-direction: row;
+        align-items: center
+      }
+
+      .opt .label {
+        width: 30px;
+        height: 30px
+      }
+
+      .pager {
+        flex-wrap: wrap;
+        gap: 6px
+      }
+
+      .page-btn,
+      .ques-btn {
+        padding: 8px 10px;
+        font-size: 13px
+      }
+
+      #questionInGrids {
+        gap: 6px
+      }
+
+      .small {
+        font-size: 12px
+      }
+
+      .big {
+        font-size: 20px
+      }
+    }
+
+    /* Overlay styles for side panel when toggled on mobile */
+    .side.overlay {
+      position: fixed;
+      right: 12px;
+      top: 80px;
+      width: calc(100% - 32px);
+      max-width: 420px;
+      height: calc(100% - 96px);
+      overflow: auto;
+      z-index: 50;
+      box-shadow: 0 30px 60px rgba(2, 6, 23, 0.5);
+      transform: translateY(0);
+      border-radius: 12px;
+      background: #fff;
+      display: block;
+    }
+
+    /* show the small toggle button on small screens */
+    @media (max-width:860px) {
+
+      /* hide side by default on small screens; show only when overlay is toggled */
+      .side {
+        display: none;
+      }
+
+      #sideBackdrop {
+        display: none;
+      }
+
+      #sideOverlayHeader {
+        display: none;
+      }
+
+      .side.overlay {
+        display: block;
+      }
+
+      .side.overlay #sideOverlayHeader {
+        display: block;
+      }
+    }
+
+    @media (min-width:861px) {
+      #sideToggleBtn {
+        display: none !important
+      }
+    }
+
     @media (max-width:980px) {
       main {
         grid-template-columns: 1fr;
@@ -327,6 +593,161 @@
         order: 2
       }
     }
+
+    /* When flash mode is active, hide side panel and let main take full width */
+    .app.flash-active main {
+      grid-template-columns: 1fr;
+    }
+
+    .app.flash-active .side {
+      display: none;
+    }
+
+    /* Flashcard overlay styles */
+    #flashOverlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(2, 6, 12, 0.6);
+      z-index: 120;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .flash-wrap {
+      width: 100%;
+      max-width: 820px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .flash-card {
+      width: 100%;
+      max-width: 720px;
+    .wrong-answers { display:block; border-top:1px dashed rgba(0,0,0,0.06); padding-top:8px; color:var(--muted); }
+  .wrong-answers { display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-top:8px; }
+  .wrong-badge { background: #f3f4f6; padding:8px 10px; border-radius:8px; color:#374151; font-size:13px; border:1px solid #e5e7eb }
+      height: 320px;
+      perspective: 1200px;
+      cursor: pointer;
+      outline: none;
+      position: relative;
+    }
+
+    .flash-card>.front,
+    .flash-card>.back {
+      position: absolute;
+      inset: 0;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 20px 50px rgba(2, 6, 23, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      backface-visibility: hidden;
+      transform-origin: center;
+    }
+
+    .flash-card>.front {
+      transform: rotateY(0deg);
+    }
+
+    .flash-card>.back {
+      transform: rotateY(180deg);
+    }
+
+    .flash-card.flip>.front {
+      transform: rotateY(-180deg);
+    }
+
+    .flash-card.flip>.back {
+      transform: rotateY(0deg);
+    }
+
+    .flash-card>.front,
+    .flash-card>.back {
+      transition: transform .5s cubic-bezier(.2, .9, .3, 1);
+    }
+
+    .flash-controls {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    #flashOverlay .btn {
+      padding: 8px 12px
+    }
+
+    @media (max-width:480px) {
+      .flash-card {
+        height: 260px
+      }
+
+      .flash-wrap {
+        padding: 8px
+      }
+    }
+
+    /* Inline flashcard in questionsContainer */
+    #flashInline {
+      width: 100%;
+    }
+
+    #flashInline .flash-card {
+      width: 100%;
+      max-width: 100%;
+      height: 320px;
+      margin: 0 auto;
+      perspective: 1200px;
+    }
+
+    #flashInline .front,
+    #flashInline .back {
+      position: absolute;
+      inset: 0;
+      border-radius: 10px;
+      padding: 16px;
+      box-shadow: 0 12px 30px rgba(2, 6, 23, 0.08);
+      background: #fff
+    }
+
+    @media (max-width:480px) {
+      #flashInline .flash-card {
+        height: 260px
+      }
+    }
+
+    .flash-qnum {
+      min-width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #fff;
+      display: inline-grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 16px;
+      box-shadow: 0 6px 18px rgba(8, 20, 40, 0.12);
+    }
+
+    .flash-qnum-correct {
+      min-width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: var(--success);
+      color: #fff;
+      display: inline-grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 16px;
+      box-shadow: 0 6px 18px rgba(8, 20, 40, 0.12);
+    }
+    
   </style>
 
 </head>
@@ -344,15 +765,19 @@
       </div>
 
       <div class="controls">
-        <div class="searchbar" id="header-searchbar" title="Tìm theo nội dung">
+        <button class="btn alt" id="sideToggleBtn" aria-controls="side" aria-expanded="false" title="Hiện công cụ"
+          style="display:none">☰</button>
+        <!-- <div class="searchbar" id="header-searchbar" title="Tìm theo nội dung">
           <i class="ph ph-magnifying-glass" width="16" height="16"></i>
           <input id="search" placeholder="Tìm kiếm câu hỏi hoặc từ khóa..." />
           <button class="btn alt" id="clearSearch" title="Xóa tìm kiếm">✕</button>
-        </div>
+        </div> -->
 
 
-        <button class="btn" id="quizModeBtn" title="Bật chế độ quiz">Bắt đầu Quiz</button>
-        <button class="btn alt" id="loadJsonBtn" title="Nếu không có file, dán JSON">Dán JSON</button>
+        <button class="btn btn-primary" id="quizModeBtn" title="Bật chế độ quiz">Bắt đầu Quiz</button>
+        <!-- <button class="btn alt" id="loadJsonBtn" title="Nếu không có file, dán JSON">Dán JSON</button> -->
+        <button class="btn" id="flashCardsBtn" title="Chế độ flash cards"
+          style="display: flex; gap: 4px; align-items: center;"><i class="ph ph-cards"></i>Flash cards</button>
         <button class="btn btn-submit" id="submitQuizBtn" title="Nộp bài" style="display: none;">Nộp bài</button>
       </div>
     </header>
@@ -367,19 +792,18 @@
           <button class="btn" id="nextPage">Tiếp &rarr;</button>
         </div>
 
-        <div class="footer-note">Mở rộng: Sắp xếp / export / in có thể thêm theo yêu cầu.</div>
       </div>
 
-      <aside class="side">
+      <aside class="side" id="sidePanel">
         <div class="stat">
           <div>
             <div class="small">Tổng câu hỏi</div>
             <div class="big" id="totalCount">0</div>
           </div>
-          <div>
+          <!-- <div>
             <div class="small">Câu hiện tại</div>
             <div class="big" id="currentIndex">0</div>
-          </div>
+          </div> -->
         </div>
 
         <div id="questionPanel" style="display:none; margin-bottom:12px;">
@@ -398,6 +822,8 @@
               <button class="page-btn" data-per="20">20</button>
               <button class="page-btn" data-per="40">40</button>
               <button class="page-btn" data-per="50">50</button>
+              <button class="page-btn" data-per="70">70</button>
+              <button class="page-btn" data-per="100">100</button>
             </div>
           </div>
 
@@ -430,6 +856,9 @@
     </main>
   </div>
 
+  <!-- side panel backdrop for mobile overlay -->
+  <div id="sideBackdrop" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.4); z-index:40;"></div>
+
   <!-- Modal paste JSON -->
   <div id="jsonModal"
     style="display:none; position:fixed; inset:0; background:rgba(2,6,12,0.6); align-items:center; justify-content:center;">
@@ -447,7 +876,61 @@
   <script src="./scripts/utils.js"></script>
   <script src="./scripts/firebase.js" type="module"></script>
   <script defer src="./scripts/doQuiz.js"></script>
+  <script src="./scripts/flashCard.js"></script>
   <script src="./scripts/script.js"></script>
+  <script>
+    // Side panel toggle behavior for small screens
+    (function () {
+      const side = document.querySelector('.side');
+      const sideToggle = document.getElementById('sideToggleBtn');
+      const backdrop = document.getElementById('sideBackdrop');
+      const closeBtnHtml = '<button id="sideCloseBtn" class="btn alt" style="margin-bottom:8px;">Đóng</button>';
+
+      function showSideOverlay() {
+        side.classList.add('overlay');
+        side.setAttribute('aria-hidden', 'false');
+        sideToggle.setAttribute('aria-expanded', 'true');
+        backdrop.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function hideSideOverlay() {
+        side.classList.remove('overlay');
+        side.setAttribute('aria-hidden', 'true');
+        sideToggle.setAttribute('aria-expanded', 'false');
+        backdrop.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+
+      // show the toggle button when viewport is small
+      function updateToggleVisibility() {
+        const small = window.matchMedia('(max-width:860px)').matches;
+        sideToggle.style.display = small ? 'inline-block' : 'none';
+        // when small, keep side hidden as normal block (it will be below content) but allow overlay open
+        if (!small) {
+          hideSideOverlay();
+        }
+      }
+
+      sideToggle.addEventListener('click', () => {
+        if (side.classList.contains('overlay')) hideSideOverlay(); else showSideOverlay();
+      });
+
+      backdrop.addEventListener('click', hideSideOverlay);
+
+      window.addEventListener('resize', updateToggleVisibility);
+      document.addEventListener('DOMContentLoaded', () => {
+        // inject close button at top of side panel for overlay mode
+        const headerEl = document.createElement('div');
+        headerEl.id = 'sideOverlayHeader';
+        headerEl.innerHTML = closeBtnHtml;
+        headerEl.style.display = 'none';
+        side.insertBefore(headerEl, side.firstChild);
+        document.getElementById('sideCloseBtn').addEventListener('click', hideSideOverlay);
+        updateToggleVisibility();
+      });
+    })();
+  </script>
 </body>
 
 </html>
