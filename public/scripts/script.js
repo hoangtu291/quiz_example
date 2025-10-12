@@ -1039,12 +1039,18 @@ function renderPage(items) {
             note.style.color = 'var(--muted)';
             note.innerHTML = `<strong>Đáp án:</strong> ${escapeHtml(String(q.answer))}`;
             card.appendChild(note);
-            // mark correct option visually
             const corr = opts.querySelector('.opt[data-key="' + q.answer + '"]');
             if (corr) corr.classList.add('correct');
-            const quizInfo = getQuizInfoById(q.id)
-            if (quizMode && !!submited && !!quizInfo?.userAnswer) {
-                const userOpt = opts.querySelector('.opt[data-key="' + quizInfo.userAnswer + '"]');
+            
+            const quizData = getQuizInfoById(q.id)
+            console.log('================');
+            console.log(quizInfo);
+            
+            console.log(q);
+            console.log(quizData);
+            
+            if (quizMode && !!submited && !!quizData?.userAnswer) {
+                const userOpt = opts.querySelector('.opt[data-key="' + quizData.userAnswer + '"]');
                 if (userOpt && userOpt !== corr) userOpt.classList.add('wrong');
             }
             const elements = document.getElementsByClassName('opt')
@@ -1137,7 +1143,7 @@ document.getElementById('shuffleBtn').addEventListener('click', () => {
 });
 
 document.getElementById('showAnswersBtn').addEventListener('click', () => {
-    toggleShowAnswers()
+    toggleShowAnswers(!showAnswers)
 });
 
 document.getElementById('exportBtn').addEventListener('click', () => {

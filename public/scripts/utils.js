@@ -6,8 +6,6 @@ function scrollToQuestion(qnum) {
     renderPage();
 
     const questionElement = document.getElementById("qheader-" + qnum)
-    console.log(questionElement);
-    
     if (questionElement) {
         questionElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
         questionElement.classList.add('highlight');
@@ -15,8 +13,8 @@ function scrollToQuestion(qnum) {
     }
 }
 
-function toggleShowAnswers() {
-    showAnswers = !showAnswers;
+function toggleShowAnswers(value) {
+    showAnswers = !!value;
     document.getElementById('showAnswersBtn').textContent = showAnswers ? 'Ẩn đáp án' : 'Hiện đáp án';
     renderPage();
 }

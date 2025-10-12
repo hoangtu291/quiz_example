@@ -125,10 +125,17 @@ document.getElementById('quizModeBtn').addEventListener('click', () => {
             showAnswers = false;
             perPage = count;
             currentPage = 1;
-            updateQuizInfo();
-            updateViewerForQuizMode();
             document.getElementById('pagerArea').style.display = 'none';
-            renderPage(questions.slice(finalStart - 1, finalStart - 1 + count));
+            quizInfo = questions.slice(finalStart - 1, finalStart - 1 + count).map(item => {
+                return {
+                    id: item.id,
+                    userAnswer: null,
+                    answer: item.answer
+                };
+            });
+            filtered = questions.slice(finalStart - 1, finalStart - 1 + count);
+            updateViewerForQuizMode();
+            renderPage(filtered);
         });
         
     } else {
@@ -141,7 +148,9 @@ document.getElementById('quizModeBtn').addEventListener('click', () => {
         document.getElementById('pagerArea').style.display = 'flex';
         setStatus('Thoát chế độ Quiz');
         updateViewerForQuizMode();
-        renderPage()
+        quizInfo = [];
+        renderPage();
+        toggleShowAnswers();
         // keep quizSelection if you want to resume later
     }
 });
@@ -222,23 +231,23 @@ function renderQuestionInGrid() {
 }
 
 
-function updateQuizInfo () {
-    const source = (Array.isArray(filtered) && filtered.length) ? filtered : (Array.isArray(questions) ? questions : []);
-    if (!quizMode) {
-        quizInfo = [];
-        return;
-    }
-    // if quizSelection provided, slice from that range (1-based startIndex)
-    let items = [];
-    if (quizSelection && typeof quizSelection.startIndex === 'number' && typeof quizSelection.count === 'number') {
-        const s = Math.max(1, quizSelection.startIndex) - 1;
-        items = source.slice(s, s + quizSelection.count);
-    } else {
-        const start = (currentPage - 1) * perPage;
-        items = source.slice(start, start + perPage);
-    }
-    quizInfo = items.map(item => ({ id: item.id, userAnswer: null, answer: item.answer }));
-}
+// function updateQuizInfo () {
+//     const source = (Array.isArray(filtered) && filtered.length) ? filtered : (Array.isArray(questions) ? questions : []);
+//     if (!quizMode) {
+//         quizInfo = [];
+//         return;
+//     }
+//     // if quizSelection provided, slice from that range (1-based startIndex)
+//     let items = [];
+//     if (quizSelection && typeof quizSelection.startIndex === 'number' && typeof quizSelection.count === 'number') {
+//         const s = Math.max(1, quizSelection.startIndex) - 1;
+//         items = source.slice(s, s + quizSelection.count);
+//     } else {
+//         const start = (currentPage - 1) * perPage;
+//         items = source.slice(start, start + perPage);
+//     }
+//     quizInfo = items.map(item => ({ id: item.id, userAnswer: null, answer: item.answer }));
+// }
 
 function setQuizUserAnswer(id, userAnswer) {
     const index = quizInfo.findIndex(item => item.id == id)
@@ -260,8 +269,9 @@ function handleSubmitQuiz() {
     if (result) {
         submited = true
         document.getElementById('submitQuizBtn').style.display = 'none';
+        renderPage(filtered);
         clearInterval(window.quizTimerInterval);
-        toggleShowAnswers()
+        toggleShowAnswers(true)
         renderQuestionInGrid()
         const totalTime = totalQuizTime - remaningTime;
         window.handleStoreExam(quizInfo, totalTime)
