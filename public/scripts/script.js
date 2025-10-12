@@ -1043,10 +1043,8 @@ function renderPage(items) {
             const corr = opts.querySelector('.opt[data-key="' + q.answer + '"]');
             if (corr) corr.classList.add('correct');
             const quizInfo = getQuizInfoById(q.id)
-            if (quizMode && !!submited && !!quizInfo.userAnswer) {
+            if (quizMode && !!submited && !!quizInfo?.userAnswer) {
                 const userOpt = opts.querySelector('.opt[data-key="' + quizInfo.userAnswer + '"]');
-                console.log(userOpt);
-                
                 if (userOpt && userOpt !== corr) userOpt.classList.add('wrong');
             }
             const elements = document.getElementsByClassName('opt')
