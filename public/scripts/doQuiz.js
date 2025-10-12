@@ -1,25 +1,149 @@
 let totalQuizTime = 0
 let timePerQuestion = 60;
 let remaningTime = 0;
+let quizSelection = null; // { startIndex: 1-based, count }
 document.getElementById('quizModeBtn').addEventListener('click', () => {
-    quizMode = !quizMode;
-    if (quizMode) {
-        totalQuizTime = perPage * timePerQuestion
-        submited = false
-        document.getElementById('quizModeBtn').classList.remove('btn-primary');
-        document.getElementById('quizModeBtn').textContent = 'Thoát Quiz';
-        document.querySelectorAll('.opt').forEach(o => o.classList.remove('selected', 'wrong', 'correct', 'disabled'));
-        setStatus('Chế độ Quiz: chọn đáp án để kiểm tra');
+    // If not currently in quizMode, show modal to pick number of questions and starting index
+    if (!quizMode) {
+        const source = (Array.isArray(filtered) && filtered.length) ? filtered : (Array.isArray(questions) ? questions : []);
+        const totalAvailable = source.length;
+        if (totalAvailable === 0) {
+            alert('Không có câu hỏi để bắt đầu Quiz.');
+            return;
+        }
+
+        const modal = document.createElement('div');
+        modal.id = 'quizSelectModal';
+        modal.setAttribute('role', 'dialog');
+        modal.setAttribute('aria-modal', 'true');
+        modal.style.position = 'fixed';
+        modal.style.inset = '0';
+        modal.style.display = 'flex';
+        modal.style.alignItems = 'center';
+        modal.style.justifyContent = 'center';
+        modal.style.background = 'rgba(0,0,0,0.4)';
+        modal.style.zIndex = '200';
+
+        const box = document.createElement('div');
+        box.style.background = '#fff';
+        box.style.padding = '18px';
+        box.style.borderRadius = '10px';
+        box.style.width = '320px';
+        box.style.boxShadow = '0 12px 40px rgba(2,6,23,0.4)';
+
+        const title = document.createElement('h3');
+        title.textContent = 'Cấu hình Quiz';
+        title.style.marginTop = '0';
+        title.style.marginBottom = '8px';
+
+        const info = document.createElement('div');
+        info.style.marginBottom = '10px';
+        info.style.color = 'var(--muted)';
+        info.textContent = `Tổng câu khả dụng: ${totalAvailable}`;
+
+        const form = document.createElement('div');
+        form.style.display = 'flex';
+        form.style.flexDirection = 'column';
+        form.style.gap = '8px';
+
+        const countLabel = document.createElement('label');
+        countLabel.textContent = 'Số câu hỏi';
+        const countInput = document.createElement('input');
+        countInput.type = 'number';
+        countInput.min = '1';
+        countInput.max = String(totalAvailable);
+        countInput.value = String(Math.min(perPage, totalAvailable));
+        countInput.style.padding = '8px';
+        countInput.style.borderRadius = '6px';
+        countInput.style.border = '1px solid #e5e7eb';
+
+        const startLabel = document.createElement('label');
+        startLabel.textContent = 'Bắt đầu từ câu';
+        const startInput = document.createElement('input');
+        startInput.type = 'number';
+        startInput.min = '1';
+        startInput.max = String(totalAvailable);
+        startInput.value = '1';
+        startInput.style.padding = '8px';
+        startInput.style.borderRadius = '6px';
+        startInput.style.border = '1px solid #e5e7eb';
+
+        const actions = document.createElement('div');
+        actions.style.display = 'flex';
+        actions.style.justifyContent = 'flex-end';
+        actions.style.gap = '8px';
+        actions.style.marginTop = '8px';
+
+        const cancelBtn = document.createElement('button');
+        cancelBtn.className = 'btn alt';
+        cancelBtn.textContent = 'Hủy';
+        const startBtn = document.createElement('button');
+        startBtn.className = 'btn';
+        startBtn.textContent = 'Bắt đầu';
+
+        actions.appendChild(cancelBtn);
+        actions.appendChild(startBtn);
+
+        form.appendChild(countLabel);
+        form.appendChild(countInput);
+        form.appendChild(startLabel);
+        form.appendChild(startInput);
+
+        box.appendChild(title);
+        box.appendChild(info);
+        box.appendChild(form);
+        box.appendChild(actions);
+        modal.appendChild(box);
+        document.body.appendChild(modal);
+
+        countInput.focus();
+
+        function closeModal() {
+            modal.remove();
+        }
+
+        cancelBtn.addEventListener('click', () => { closeModal(); });
+        modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+
+        startBtn.addEventListener('click', () => {
+            const count = Math.min(totalAvailable, Math.max(1, parseInt(countInput.value, 10) || 1));
+            const start = Math.min(totalAvailable, Math.max(1, parseInt(startInput.value, 10) || 1));
+            if (isNaN(count) || count < 1) { alert('Số câu không hợp lệ'); return; }
+            if (isNaN(start) || start < 1) { alert('Số bắt đầu không hợp lệ'); return; }
+            const maxStart = Math.max(1, totalAvailable - count + 1);
+            const finalStart = Math.min(start, maxStart);
+
+            quizSelection = { startIndex: finalStart, count };
+            quizMode = true;
+            totalQuizTime = count * timePerQuestion;
+            submited = false;
+            document.getElementById('quizModeBtn').classList.remove('btn-primary');
+            document.getElementById('quizModeBtn').textContent = 'Thoát Quiz';
+            document.querySelectorAll('.opt').forEach(o => o.classList.remove('selected', 'wrong', 'correct', 'disabled'));
+            setStatus('Chế độ Quiz: chọn đáp án để kiểm tra');
+            closeModal();
+            showAnswers = false;
+            perPage = count;
+            currentPage = 1;
+            updateQuizInfo();
+            updateViewerForQuizMode();
+            document.getElementById('pagerArea').style.display = 'none';
+            renderPage(questions.slice(finalStart - 1, finalStart - 1 + count));
+        });
+        
     } else {
+        // exiting quiz
+        quizMode = false;
         clearInterval(window.quizTimerInterval);
         document.getElementById('quizModeBtn').classList.add('btn-primary');
         document.getElementById('quizModeBtn').textContent = 'Bắt đầu Quiz';
         document.querySelectorAll('.opt').forEach(o => o.classList.remove('selected', 'wrong', 'correct', 'disabled'));
+        document.getElementById('pagerArea').style.display = 'flex';
         setStatus('Thoát chế độ Quiz');
+        updateViewerForQuizMode();
+        renderPage()
+        // keep quizSelection if you want to resume later
     }
-    showAnswers = false;
-    updateQuizInfo()
-    updateViewerForQuizMode();
 });
 
 document.getElementById('submitQuizBtn').addEventListener('click', () => {
@@ -99,15 +223,21 @@ function renderQuestionInGrid() {
 
 
 function updateQuizInfo () {
-    const start = (currentPage - 1) * perPage;
-    const pageItems = filtered.slice(start, start + perPage);
-    quizInfo = quizMode ? pageItems.map(item => {
-        return {
-            id: item.id,
-            userAnswer: null,
-            answer: item.answer
-        }
-    }) : []
+    const source = (Array.isArray(filtered) && filtered.length) ? filtered : (Array.isArray(questions) ? questions : []);
+    if (!quizMode) {
+        quizInfo = [];
+        return;
+    }
+    // if quizSelection provided, slice from that range (1-based startIndex)
+    let items = [];
+    if (quizSelection && typeof quizSelection.startIndex === 'number' && typeof quizSelection.count === 'number') {
+        const s = Math.max(1, quizSelection.startIndex) - 1;
+        items = source.slice(s, s + quizSelection.count);
+    } else {
+        const start = (currentPage - 1) * perPage;
+        items = source.slice(start, start + perPage);
+    }
+    quizInfo = items.map(item => ({ id: item.id, userAnswer: null, answer: item.answer }));
 }
 
 function setQuizUserAnswer(id, userAnswer) {

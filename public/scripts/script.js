@@ -968,11 +968,11 @@ function initData() {
     setStatus(`Sẵn sàng — ${questions.length} câu hỏi`);
 }
 
-function renderPage() {
+function renderPage(items) {
     const container = document.getElementById('questionsContainer');
     container.innerHTML = '';
     const start = (currentPage - 1) * perPage;
-    const pageItems = filtered.slice(start, start + perPage);
+    const pageItems = items || filtered.slice(start, start + perPage);
     // document.getElementById('currentIndex').textContent = (pageItems.length ? start + 1 : 0);
 
     pageItems.forEach((q, idx) => {
@@ -980,7 +980,7 @@ function renderPage() {
         const qnum = start + idx + 1;
         const header = document.createElement('div'); header.className = 'qheader';
         header.id = "qheader-" + qnum
-        header.innerHTML = `<div class="qid">${qnum}</div><div style="flex:1"><div class="qtext">${escapeHtml(q.question)}</div></div>`;
+        header.innerHTML = `<div class="qid">${q.id}</div><div style="flex:1"><div class="qtext">${escapeHtml(q.question)}</div></div>`;
         card.appendChild(header);
 
         const opts = document.createElement('div'); opts.className = 'options';
