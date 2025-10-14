@@ -46,7 +46,7 @@
         document.getElementById('flashFlipInline').addEventListener('click', toggleFlip);
         document.getElementById('flashStartBtn').addEventListener('click', () => {
             const v = Number(document.getElementById('flashStartInput').value) || 1;
-            const idx = Math.max(0, Math.min(v - 1, (pageItems || []).length - 1));
+            const idx = Math.max(0, Math.min(v - 1, (questions || []).length - 1));
             show(idx);
         });
 
