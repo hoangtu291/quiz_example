@@ -2002,11 +2002,11 @@
     },
     {
         "id": 87,
-        "question": "Trong MS Excel, giả sử tại ô B5 có công thức = A1 + $B2 + C$3. Sau khi sao chép công thức đó từ ô B5 đến ô B8, ô B8 sẽ có công thức:",
+        "question": "Trong MS Excel, giả sử tại ô B5 có công thức = A1 + $B$2 + C$3. Sau khi sao chép công thức đó từ ô B5 đến ô D8, ô B8 sẽ có công thức:",
         "options": [
             {
                 "key": "a",
-                "text": "= A4 + $B2 + C$3"
+                "text": "= A4 + $B$2 + C$3"
             },
             {
                 "key": "b",
@@ -2014,14 +2014,14 @@
             },
             {
                 "key": "c",
-                "text": "= C1 + $B2 + E$3"
+                "text": "= C1 + $B$2 + E$3"
             },
             {
                 "key": "d",
-                "text": "= A4 + $B2 + E$3"
+                "text": "= C4 + $B$2 + E$3"
             }
         ],
-        "answer": "a"
+        "answer": "d"
     },
     {
         "id": 88,
