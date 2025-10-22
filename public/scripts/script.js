@@ -52,20 +52,20 @@ async function loadJSON() {
                 "question": "Dưới góc độ địa lý, mạng máy tính được phân biệt thành:",
                 "options": [
                     {
-                        "key": "a",
-                        "text": "Mạng diện rộng, mạng toàn cầu, mạng toàn cục"
-                    },
-                    {
                         "key": "b",
-                        "text": "Mạng cục bộ, mạng toàn cục, mạng toàn cầu"
+                        "text": "Bàn phím và màn hình"
                     },
                     {
                         "key": "c",
-                        "text": "Mạng cục bộ, mạng diện rộng, mạng toàn cầu"
+                        "text": "Cả ba đều đúng"
                     },
                     {
                         "key": "d",
-                        "text": "Mạng cục bộ, mạng diện rộng, mạng toàn cục"
+                        "text": "RAM"
+                    },
+                    {
+                        "key": "a",
+                        "text": "Hệ điều hành"
                     }
                 ],
                 "answer": "c"
