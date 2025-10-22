@@ -985,7 +985,7 @@ function renderPage(items) {
         const qnum = start + idx + 1;
         const header = document.createElement('div'); header.className = 'qheader';
         header.id = "qheader-" + qnum
-        header.innerHTML = `<div class="qid">${q.id}</div><div style="flex:1"><div class="qtext">${escapeHtml(q.question)}</div></div>`;
+        header.innerHTML = `<div class="qid">${q.id}</div><div style="flex:1"><div class="qtext">${escapeHtmlAllowTags(q.question)}</div></div>`;
         card.appendChild(header);
 
         const opts = document.createElement('div'); opts.className = 'options';
@@ -999,7 +999,7 @@ function renderPage(items) {
                 opt.className = 'opt';
                 opt.id = `qopt-${q.id}_${o.key}`
                 opt.setAttribute('data-key', o.key);
-                opt.innerHTML = `<div class="label">${escapeHtml(o.key)}</div><div style="flex:1">${escapeHtml(o.text)}</div>`;
+                opt.innerHTML = `<div class="label">${escapeHtml(o.key)}</div><div style="flex:1">${escapeHtmlAllowTags(o.text)}</div>`;
                 // click handler (if quiz mode, mark selected)
                 opt.addEventListener('click', () => {
                     if (quizMode) {
@@ -1095,6 +1095,17 @@ function renderPager() {
 function escapeHtml(s) {
     if (!s) return '';
     return s.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
+}
+function escapeHtmlAllowTags(s) {
+    if (!s) return '';
+
+    // Danh sách các thẻ được phép
+    const allowedTags = ['b', 'i', 'u', 'em', 'strong', 'sup', 'sub', 'br', 'span', 'div'];
+
+    // Loại bỏ các thẻ không hợp lệ
+    return s.replace(/<\/?([a-z][a-z0-9]*)\b[^>]*>/gi, (match, tag) => {
+        return allowedTags.includes(tag.toLowerCase()) ? match : '';
+    });
 }
 
 // controls
