@@ -92,21 +92,21 @@
         front.innerHTML = `
 				<div style="display:flex;gap:12px;align-items:center;">
 					<div class="flash-qnum">${escapeHtml(String(qNumber))}</div>
-					<div style="font-size:15px; color:#111827;">${escapeHtml(item.question || '')}</div>
+					<div style="font-size:15px; color:#111827;">${escapeHtmlAllowTags(item.question || '')}</div>
 				</div>
 			`;
         let answerText = '';
         if (item.options && item.options.length) {
             answerText = item.options.filter(option => option.key === item.answer).map(o => `<div style="display:flex;gap:12px;align-items:center; width:100%; justify-content:center;">
 					<div class="flash-qnum-correct">${escapeHtml(o.key || '')}</div>
-					<strong style="font-size:15px; color:#111827;">${escapeHtml(o.text || '')}</strong>
+					<strong style="font-size:15px; color:#111827;">${escapeHtmlAllowTags(o.text || '')}</strong>
 				</div>`).join('');
         } else {
-            answerText = `<div>${escapeHtml(item.answer || '')}</div>`;
+            answerText = `<div>${escapeHtmlAllowTags(item.answer || '')}</div>`;
         }
         let wrongAnswersText = '';
         if (item.options && item.options.length) {
-            wrongAnswersText = item.options.filter(option => option.key !== item.answer).map(o => `<div style="margin-bottom:6px"><strong>${escapeHtml(o.key || '')}.</strong> ${escapeHtml(o.text || '')}</div>`).join('');
+            wrongAnswersText = item.options.filter(option => option.key !== item.answer).map(o => `<div style="margin-bottom:6px"><strong>${escapeHtml(o.key || '')}.</strong> ${escapeHtmlAllowTags(o.text || '')}</div>`).join('');
         }
         back.innerHTML = `<div style="font-size:14px; color:#111827; width:100%;">${answerText} <div style="display:flex; justify-content:space-around; opacity:0.6; margin-top:20px;gap:12px">${wrongAnswersText}</div></div>`;
         document.getElementById('flashPrevInline').disabled = (currentIndex <= 0);
