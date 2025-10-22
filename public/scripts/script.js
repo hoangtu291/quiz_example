@@ -946,8 +946,13 @@ async function loadJSON() {
             }
         ]
     }
-
+    questions = questions.map(sortOptionsByKey);
     initData();
+}
+
+function sortOptionsByKey(questionObj) {
+    questionObj.options.sort((a, b) => a.key.localeCompare(b.key));
+    return questionObj;
 }
 
 function initData() {
