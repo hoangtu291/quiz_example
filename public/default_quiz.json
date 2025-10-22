@@ -89,7 +89,7 @@
         "text": "Công thức sai"
       }
     ],
-    "answer": "b"
+    "answer": "a"
   },
   {
     "id": 5,
@@ -97,45 +97,45 @@
     "options": [
       {
         "key": "a",
-        "text": "Mở tab mới trên trình duyệt để truy cập website khác"
-      },
-      {
-        "key": "b",
         "text": "Nhập địa chỉ mới của website vào thanh địa chỉ hiện tại"
       },
       {
+        "key": "b",
+        "text": "Bắt đầu một phiên làm việc khác trên trình duyệt"
+      },
+      {
         "key": "c",
-        "text": "Thiết lập cửa sổ riêng biệt để mở thêm trang web khác"
+        "text": "Mở một thẻ mới và nhập địa chỉ của Website"
       },
       {
         "key": "d",
-        "text": "Sử dụng tính năng chia màn hình của hệ điều hành"
+        "text": "Thiết lập một màn hình riêng rẽ để mở một của sổ mới cho trình duyệt Web"
       }
     ],
-    "answer": "a"
+    "answer": "c"
   },
   {
     "id": 6,
-    "question": "Trong bảng tính Excel, tại ô A2 có giá trị là chuỗi '25/', tại ô B2 gõ công thức =SQRT(A2) thì nhận được kết quả:",
+    "question": "Trong bảng tính Excel, tại ô A2 có sẵn giá trị số 25 ; tại ô B2 gõ công thức =SQRT(A2) thì nhận được kết quả:",
     "options": [
       {
         "key": "a",
-        "text": "#VALUE!"
+        "text": "0"
       },
       {
         "key": "b",
-        "text": "5"
+        "text": "#VALUE!"
       },
       {
         "key": "c",
-        "text": "25"
+        "text": "#NAME!"
       },
       {
         "key": "d",
-        "text": "#NAME?"
+        "text": "5"
       }
     ],
-    "answer": "a"
+    "answer": "d"
   },
   {
     "id": 7,
@@ -143,45 +143,45 @@
     "options": [
       {
         "key": "a",
+        "text": "2"
+      },
+      {
+        "key": "b",
+        "text": "1"
+      },
+      {
+        "key": "c",
         "text": "5"
       },
       {
-        "key": "b",
-        "text": "6"
-      },
-      {
-        "key": "c",
-        "text": "4"
-      },
-      {
         "key": "d",
-        "text": "1"
+        "text": "3"
       }
     ],
-    "answer": "a"
+    "answer": "c"
   },
   {
     "id": 8,
-    "question": "Trong soạn thảo Word, muốn trình bày văn bản theo hướng ngang (landscape) ta chọn mục:",
+    "question": "Trong soạn thảo Word, muốn trình bày văn bản theo hướng ngang ta chọn mục:",
     "options": [
       {
         "key": "a",
-        "text": "Page Layout → Orientation → Landscape"
+        "text": "Left"
       },
       {
         "key": "b",
-        "text": "File → Page Setup → Portrait"
+        "text": "Portrait"
       },
       {
         "key": "c",
-        "text": "View → Orientation → Landscape"
+        "text": "Right"
       },
       {
         "key": "d",
-        "text": "Insert → Layout → Landscape"
+        "text": "Landscape"
       }
     ],
-    "answer": "a"
+    "answer": "d"
   },
   {
     "id": 9,
@@ -189,22 +189,22 @@
     "options": [
       {
         "key": "a",
-        "text": "Tạo hoặc xóa Shortcut"
+        "text": "Tạo / xóa tập tin."
       },
       {
         "key": "b",
-        "text": "Tạo hoặc xóa tập tin"
+        "text": "Tất cả đều đúng"
       },
       {
         "key": "c",
-        "text": "Tạo hoặc xóa thư mục"
+        "text": "Tạo / xóa thư mục"
       },
       {
         "key": "d",
-        "text": "Cả ba phương án trên đều đúng"
+        "text": "Tạo / xóa shortcut"
       }
     ],
-    "answer": "d"
+    "answer": "b"
   },
   {
     "id": 10,
@@ -212,22 +212,22 @@
     "options": [
       {
         "key": "a",
-        "text": "17"
-      },
-      {
-        "key": "b",
         "text": "17.5"
       },
       {
-        "key": "c",
+        "key": "b",
         "text": "18"
       },
       {
-        "key": "d",
+        "key": "c",
         "text": "Công thức sai"
+      },
+      {
+        "key": "d",
+        "text": "17"
       }
     ],
-    "answer": "a"
+    "answer": "d"
   },
   {
     "id": 11,
@@ -235,7 +235,7 @@
     "options": [
       {
         "key": "a",
-        "text": "123"
+        "text": "124"
       },
       {
         "key": "b",
@@ -243,14 +243,14 @@
       },
       {
         "key": "c",
-        "text": "124"
+        "text": "123.6"
       },
       {
         "key": "d",
         "text": "Công thức sai"
       }
     ],
-    "answer": "a"
+    "answer": "d"
   },
   {
     "id": 12,
@@ -258,19 +258,19 @@
     "options": [
       {
         "key": "a",
-        "text": "Chọn Insert → Table → Insert Table"
+        "text": "Trên thẻ Insert, trong nhóm Tables, chọn Table → Insert Table"
       },
       {
         "key": "b",
-        "text": "Chọn Layout → Table → Insert Table"
+        "text": "Bất kỳ đáp án nào trên"
       },
       {
         "key": "c",
-        "text": "Chọn Home → New Slide"
+        "text": "Thay đổi bố cục slide thành bố cục Title and Table"
       },
       {
         "key": "d",
-        "text": "Không có đáp án phù hợp"
+        "text": "Trên thẻ Insert, trong nhóm Tables, chọn Table."
       }
     ],
     "answer": "a"
@@ -280,19 +280,19 @@
     "question": "Người và máy tính giao tiếp thông qua:",
     "options": [
       {
-        "key": "a",
+        "key": "b",
         "text": "Bàn phím và màn hình"
       },
       {
-        "key": "b",
+        "key": "c",
         "text": "Cả ba đều đúng"
       },
       {
-        "key": "c",
+        "key": "d",
         "text": "RAM"
       },
       {
-        "key": "d",
+        "key": "a",
         "text": "Hệ điều hành"
       }
     ],
