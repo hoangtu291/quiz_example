@@ -1,102 +1,1102 @@
 [
-  { "id": 1, "question": "Đối tượng nghiên cứu của xã hội học về dư luận xã hội là gì?", "options": { "a": "Các quy luật xã hội trong hoạt động của DLXH" }, "answer": "a" },
-  { "id": 2, "question": "Hướng tiếp cận của Mỹ trong nghiên cứu dư luận xã hội là gì?", "options": { "a": "Nhấn mạnh điều tra xã hội học thực nghiệm" }, "answer": "a" },
-  { "id": 3, "question": "Theo quan điểm của Durkheim, dư luận xã hội được xem là gì?", "options": { "a": "Một sự kiện xã hội khách quan" }, "answer": "a" },
-  { "id": 4, "question": "Theo Weber, nghiên cứu dư luận xã hội cần điều gì?", "options": { "a": "Thấu hiểu bản chất bên trong và ý nghĩa ẩn sau hành vi" }, "answer": "a" },
-  { "id": 5, "question": "Ý nghĩa của nghiên cứu dư luận xã hội trong quản lý xã hội là gì?", "options": { "a": "Là cơ sở để ra quyết định quản lý sáng suốt và hợp lòng dân" }, "answer": "a" },
-  { "id": 6, "question": "Dư luận xã hội có quan hệ gần gũi nhất với lĩnh vực nào?", "options": { "a": "Xã hội học chính trị và tâm lý học xã hội" }, "answer": "a" },
-  { "id": 7, "question": "Theo phương pháp trưng cầu (polls), yếu tố quan trọng nhất là gì?", "options": { "a": "Tính đại diện của mẫu" }, "answer": "a" },
-  { "id": 8, "question": "Tiếp cận lý thuyết trong nghiên cứu dư luận xã hội chủ yếu nhằm để?", "options": { "a": "Giải thích bản chất của DLXH và thái độ" }, "answer": "a" },
-  { "id": 9, "question": "Theo Kant, “ý kiến” có vị trí như thế nào trong nhận thức?", "options": { "a": "Ở mức thấp hơn kiến thức và niềm tin" }, "answer": "a" },
-  { "id": 10, "question": "Theo Young (1923), dư luận xã hội hình thành khi nào?", "options": { "a": "Sau thảo luận công cộng và hợp lý hoá" }, "answer": "a" },
-  { "id": 11, "question": "Chủ thể của dư luận xã hội theo Habermas là ai?", "options": { "a": "Những người có học vấn, mức sống cao, tích cực xã hội" }, "answer": "a" },
-  { "id": 12, "question": "Khách thể của dư luận xã hội là gì?", "options": { "a": "Sự kiện hoặc vấn đề xã hội được chú ý" }, "answer": "a" },
-  { "id": 13, "question": "Một đặc tính cơ bản của dư luận xã hội là gì?", "options": { "a": "Khuynh hướng đánh giá (đồng tình/ phản đối)" }, "answer": "a" },
-  { "id": 14, "question": "Khác biệt giữa tin đồn và dư luận xã hội là gì?", "options": { "a": "DLXH có tính kiểm chứng cao và ổn định hơn tin đồn" }, "answer": "a" },
-  { "id": 15, "question": "Chuẩn mực xã hội là gì?", "options": { "a": "Quy tắc điều chỉnh hành vi được xã hội chia sẻ" }, "answer": "a" },
-  { "id": 16, "question": "Mối quan hệ giữa chuẩn mực và dư luận xã hội là gì?", "options": { "a": "Chuẩn mực là căn cứ để DLXH đánh giá hành vi" }, "answer": "a" },
-  { "id": 17, "question": "Tác phẩm “Public Opinion” của Walter Lippmann ra đời năm nào?", "options": { "a": "1922" }, "answer": "a" },
-  { "id": 18, "question": "Theo Lippmann, yếu tố định hướng dư luận xã hội là gì?", "options": { "a": "Truyền thông đại chúng" }, "answer": "a" },
-  { "id": 19, "question": "Tönnies chia dư luận xã hội thành mấy dạng?", "options": { "a": "3 dạng: rắn chắc – lỏng – khí" }, "answer": "a" },
-  { "id": 20, "question": "Theo Habermas, điều kiện của “tình huống phát biểu lý tưởng” là gì?", "options": { "a": "Mọi người được tự do tham gia và không bị ép buộc" }, "answer": "a" },
-  { "id": 21, "question": "Theo Noelle-Neumann, hiện tượng “vòng xoắn im lặng” xuất phát từ đâu?", "options": { "a": "Thiểu số sợ bị cô lập nên im lặng" }, "answer": "a" },
-  { "id": 22, "question": "Theo Luhmann, giá trị của dư luận xã hội nằm ở đâu?", "options": { "a": "Nằm ở chủ đề, không phải người phát ngôn" }, "answer": "a" },
-  { "id": 23, "question": "Theo Hovland, yếu tố nào không ảnh hưởng mạnh đến thay đổi thái độ?", "options": { "a": "Yếu tố sợ hãi trung bình" }, "answer": "a" },
-  { "id": 24, "question": "Theo quan điểm Mác-xít, dư luận xã hội là gì?", "options": { "a": "Bộ phận của ý thức xã hội, mang tính giai cấp" }, "answer": "a" },
-  { "id": 25, "question": "Hồ Chí Minh coi “dân là gốc” vì lý do gì?", "options": { "a": "Mọi quyền lực và lợi ích đều thuộc về nhân dân" }, "answer": "a" },
-  { "id": 26, "question": "Hadley Cantril xem dư luận xã hội là gì?", "options": { "a": "Hiện tượng có thể đo lường và dự báo" }, "answer": "a" },
-  { "id": 27, "question": "Quy luật 1 của Cantril cho rằng DLXH nhạy cảm với gì?", "options": { "a": "Các sự kiện quan trọng" }, "answer": "a" },
-  { "id": 28, "question": "Quy luật 3 của Cantril nhấn mạnh điều gì?", "options": { "a": "Sự kiện tác động mạnh hơn lời nói" }, "answer": "a" },
-  { "id": 29, "question": "Khi DLXH chưa định hình, công chúng dễ bị ảnh hưởng bởi gì?", "options": { "a": "Người có uy tín phát biểu" }, "answer": "a" },
-  { "id": 30, "question": "Theo Doob, hành vi “tuân theo” thể hiện điều gì?", "options": { "a": "Áp lực đi theo ý kiến số đông" }, "answer": "a" },
-  { "id": 31, "question": "“Phóng chiếu” trong DLXH là gì?", "options": { "a": "Gán suy nghĩ của mình cho người khác" }, "answer": "a" },
-  { "id": 32, "question": "“Đơn giản hóa” trong DLXH là gì?", "options": { "a": "Công chúng đơn giản hoá vấn đề phức tạp để dễ hiểu" }, "answer": "a" },
-  { "id": 33, "question": "Quy luật 12 của Cantril khẳng định điều gì?", "options": { "a": "Dư luận dễ đồng thuận khi được tham gia quyết định" }, "answer": "a" },
-  { "id": 34, "question": "Theo Parsons, chức năng xã hội giúp điều gì?", "options": { "a": "Duy trì trật tự và ổn định xã hội" }, "answer": "a" },
-  { "id": 35, "question": "Merton phân biệt chức năng DLXH như thế nào?", "options": { "a": "Tích cực và phản chức năng" }, "answer": "a" },
-  { "id": 36, "question": "DLXH tác động trực tiếp khi nào?", "options": { "a": "Khi được biểu hiện rõ ràng qua truyền thông" }, "answer": "a" },
-  { "id": 37, "question": "Một yếu tố làm giảm sức ép DLXH là gì?", "options": { "a": "Ý kiến trái chiều làm giảm hiệu lực dư luận" }, "answer": "a" },
-  { "id": 38, "question": "Chức năng kiểm soát xã hội của DLXH thực hiện qua?", "options": { "a": "Khen ngợi hoặc lên án hành vi" }, "answer": "a" },
-  { "id": 39, "question": "DLXH giúp “giải tỏa xã hội” bằng cách nào?", "options": { "a": "Giảm căng thẳng tập thể và ngăn ngừa xung đột" }, "answer": "a" },
-  { "id": 40, "question": "Chức năng giáo dục của DLXH thể hiện như thế nào?", "options": { "a": "Cung cấp giá trị và định hướng hành vi" }, "answer": "a" },
-  { "id": 41, "question": "DLXH giúp dự báo xã hội bằng cách nào?", "options": { "a": "Phản ánh xu hướng suy nghĩ của công chúng" }, "answer": "a" },
-  { "id": 42, "question": "Thành phần nào không thể thiếu trong cơ chế hình thành DLXH?", "options": { "a": "Thảo luận xã hội" }, "answer": "a" },
-  { "id": 43, "question": "Điều kiện hình thành DLXH là gì?", "options": { "a": "Sự kiện xã hội gây chú ý" }, "answer": "a" },
-  { "id": 44, "question": "Yếu tố khiến DLXH biến đổi nhanh là gì?", "options": { "a": "Tác động mạnh của truyền thông" }, "answer": "a" },
-  { "id": 45, "question": "Tính hai mặt của DLXH là gì?", "options": { "a": "Vừa tích cực vừa tiêu cực" }, "answer": "a" },
-  { "id": 46, "question": "Một ví dụ của chức năng tiêu cực của DLXH là gì?", "options": { "a": "Gây áp lực quá mức lên cá nhân" }, "answer": "a" },
-  { "id": 47, "question": "Khác biệt giữa thái độ và ý kiến trong DLXH là gì?", "options": { "a": "Thái độ mang tính ổn định hơn" }, "answer": "a" },
-  { "id": 48, "question": "Theo thang đo Likert, yếu tố được đo là gì?", "options": { "a": "Mức độ đồng ý hoặc phản đối" }, "answer": "a" },
-  { "id": 49, "question": "Kỹ thuật phỏng vấn sâu giúp hiểu điều gì?", "options": { "a": "Động cơ và lý do ẩn sau ý kiến" }, "answer": "a" },
-  { "id": 50, "question": "Một hạn chế của khảo sát trực tuyến là gì?", "options": { "a": "Mẫu không đại diện cho toàn bộ dân số" }, "answer": "a" },
-  { "id": 51, "question": "Điểm mạnh của phương pháp bảng hỏi là gì?", "options": { "a": "Thu thập dữ liệu từ mẫu lớn" }, "answer": "a" },
-  { "id": 52, "question": "Trong điều tra xã hội học, độ tin cậy phản ánh điều gì?", "options": { "a": "Tính ổn định của kết quả khi lặp lại" }, "answer": "a" },
-  { "id": 53, "question": "Độ giá trị trong nghiên cứu đo điều gì?", "options": { "a": "Mức độ đo đúng khái niệm cần đo" }, "answer": "a" },
-  { "id": 54, "question": "DLXH tác động mạnh nhất trong bối cảnh nào?", "options": { "a": "Khi xã hội có sự kiện gây chú ý lớn" }, "answer": "a" },
-  { "id": 55, "question": "Chức năng truyền thông của DLXH thể hiện qua gì?", "options": { "a": "Lan tỏa thông tin và quan điểm" }, "answer": "a" },
-  { "id": 56, "question": "Nguyên nhân dẫn đến mâu thuẫn DLXH là gì?", "options": { "a": "Khác biệt về giá trị và lợi ích" }, "answer": "a" },
-  { "id": 57, "question": "Theo Habermas, truyền thông có vai trò gì trong DLXH?", "options": { "a": "Tạo không gian thảo luận công cộng" }, "answer": "a" },
-  { "id": 58, "question": "Yếu tố nào giúp DLXH mang tính ổn định hơn?", "options": { "a": "Dựa trên kinh nghiệm xã hội lâu dài" }, "answer": "a" },
-  { "id": 59, "question": "Trong chính trị, DLXH có vai trò gì?", "options": { "a": "Định hướng chính sách và quyết sách" }, "answer": "a" },
-  { "id": 60, "question": "DLXH khác với tin đồn ở điểm nào?", "options": { "a": "DLXH thường có cơ sở thực tế rõ ràng" }, "answer": "a" },
-  { "id": 61, "question": "DLXH đóng vai trò gì trong bầu cử?", "options": { "a": "Tác động đến lựa chọn ứng cử viên" }, "answer": "a" },
-  { "id": 62, "question": "Một yếu tố thúc đẩy hình thành DLXH mạnh là gì?", "options": { "a": "Sự kiện gây ảnh hưởng đến quyền lợi công chúng" }, "answer": "a" },
-  { "id": 63, "question": "Trong kinh tế, DLXH ảnh hưởng đến điều gì?", "options": { "a": "Hành vi tiêu dùng và đầu tư" }, "answer": "a" },
-  { "id": 64, "question": "Phản ứng DLXH mạnh thường xảy ra khi nào?", "options": { "a": "Khi vấn đề chạm đến giá trị đạo đức" }, "answer": "a" },
-  { "id": 65, "question": "Một biểu hiện của DLXH tích cực là gì?", "options": { "a": "Khuyến khích hành vi tốt trong cộng đồng" }, "answer": "a" },
-  { "id": 66, "question": "DLXH có thể gây hại khi nào?", "options": { "a": "Khi bị thao túng bởi tin giả" }, "answer": "a" },
-  { "id": 67, "question": "Vai trò của mạng xã hội trong DLXH là gì?", "options": { "a": "Tăng tốc độ lan truyền ý kiến" }, "answer": "a" },
-  { "id": 68, "question": "DLXH thường thể hiện qua hình thức nào?", "options": { "a": "Thảo luận, bình luận và phản hồi" }, "answer": "a" },
-  { "id": 69, "question": "Theo nhìn nhận xã hội học, thái độ gồm mấy thành phần?", "options": { "a": "3 thành phần: nhận thức, cảm xúc, hành vi" }, "answer": "a" },
-  { "id": 70, "question": "Trong nhóm nhỏ, DLXH dễ ảnh hưởng vì sao?", "options": { "a": "Quan hệ gần gũi và tương tác trực tiếp" }, "answer": "a" },
-  { "id": 71, "question": "Một ví dụ về sự điều chỉnh chuẩn mực nhờ DLXH là?", "options": { "a": "Phản ứng xã hội với hành vi sai trái" }, "answer": "a" },
-  { "id": 72, "question": "Vai trò của sự kiện truyền thông tiêu cực là gì?", "options": { "a": "Gây biến động mạnh trong DLXH" }, "answer": "a" },
-  { "id": 73, "question": "DLXH có thể đo bằng cách nào?", "options": { "a": "Khảo sát ý kiến công chúng" }, "answer": "a" },
-  { "id": 74, "question": "Một yếu tố làm sai lệch kết quả khảo sát DLXH là gì?", "options": { "a": "Cách đặt câu hỏi dẫn dắt" }, "answer": "a" },
-  { "id": 75, "question": "DLXH thay đổi mạnh nhất trong giai đoạn nào?", "options": { "a": "Thời điểm khủng hoảng xã hội" }, "answer": "a" },
-  { "id": 76, "question": "Tác động của nhóm tham chiếu trong DLXH là gì?", "options": { "a": "Ảnh hưởng đến quan điểm cá nhân" }, "answer": "a" },
-  { "id": 77, "question": "Trong xung đột xã hội, DLXH có thể giúp gì?", "options": { "a": "Giảm căng thẳng thông qua thảo luận" }, "answer": "a" },
-  { "id": 78, "question": "Một chức năng quan trọng của DLXH trong giáo dục là?", "options": { "a": "Định hướng giá trị cho thế hệ trẻ" }, "answer": "a" },
-  { "id": 79, "question": "DLXH thường đạt độ ổn định khi nào?", "options": { "a": "Khi ý kiến được nhiều người chia sẻ" }, "answer": "a" },
-  { "id": 80, "question": "Một biểu hiện của DLXH không chính thức là gì?", "options": { "a": "Bàn tán trong cộng đồng" }, "answer": "a" },
-  { "id": 81, "question": "DLXH có thể được củng cố nhờ yếu tố nào?", "options": { "a": "Thông tin chính xác từ nguồn uy tín" }, "answer": "a" },
-  { "id": 82, "question": "Phản ứng xã hội trước sai phạm thường là gì?", "options": { "a": "Lên án, yêu cầu xử lý" }, "answer": "a" },
-  { "id": 83, "question": "DLXH giúp nhà nước điều chỉnh chính sách bằng cách nào?", "options": { "a": "Phản ánh nhu cầu và mong muốn của dân" }, "answer": "a" },
-  { "id": 84, "question": "Trong nghiên cứu, biến phụ thuộc của DLXH thường là gì?", "options": { "a": "Mức độ đồng thuận của công chúng" }, "answer": "a" },
-  { "id": 85, "question": "Một sự kiện gây chia rẽ DLXH là gì?", "options": { "a": "Vấn đề liên quan đến đạo đức và lợi ích nhóm" }, "answer": "a" },
-  { "id": 86, "question": "DLXH có vai trò định hướng gì?", "options": { "a": "Hành vi và suy nghĩ của cá nhân" }, "answer": "a" },
-  { "id": 87, "question": "Mạng xã hội làm thay đổi DLXH theo hướng nào?", "options": { "a": "Khuếch đại cả ý kiến tích cực và tiêu cực" }, "answer": "a" },
-  { "id": 88, "question": "DLXH mang tính tự phát khi nào?", "options": { "a": "Khi hình thành nhanh trước sự kiện bất ngờ" }, "answer": "a" },
-  { "id": 89, "question": "Một ví dụ về DLXH chính thức là gì?", "options": { "a": "Kết quả thăm dò dư luận" }, "answer": "a" },
-  { "id": 90, "question": "DLXH góp phần thúc đẩy tiến bộ xã hội như thế nào?", "options": { "a": "Thúc đẩy thay đổi khi ý kiến dân chúng đủ mạnh" }, "answer": "a" },
-  { "id": 91, "question": "Đặc trưng nổi bật của DLXH là gì?", "options": { "a": "Mang tính đánh giá" }, "answer": "a" },
-  { "id": 92, "question": "DLXH dễ bị thao túng nhất bởi yếu tố nào?", "options": { "a": "Thông tin sai lệch trên mạng" }, "answer": "a" },
-  { "id": 93, "question": "DLXH phản ánh điều gì?", "options": { "a": "Thái độ chung của công chúng" }, "answer": "a" },
-  { "id": 94, "question": "Vai trò của sự kiện truyền thông tích cực là gì?", "options": { "a": "Tăng uy tín và củng cố niềm tin xã hội" }, "answer": "a" },
-  { "id": 95, "question": "DLXH hình thành mạnh nhất trong môi trường nào?", "options": { "a": "Môi trường có tự do bày tỏ ý kiến" }, "answer": "a" },
-  { "id": 96, "question": "Tại sao DLXH quan trọng trong quản trị doanh nghiệp?", "options": { "a": "Ảnh hưởng trực tiếp đến danh tiếng doanh nghiệp" }, "answer": "a" },
-  { "id": 97, "question": "Một biểu hiệu của thay đổi DLXH là gì?", "options": { "a": "Sự chuyển biến trong thái độ công chúng" }, "answer": "a" },
-  { "id": 98, "question": "DLXH có tính định hướng khi nào?", "options": { "a": "Khi được củng cố qua truyền thông" }, "answer": "a" },
-  { "id": 99, "question": "DLXH phát huy vai trò giám sát xã hội bằng cách nào?", "options": { "a": "Gây áp lực yêu cầu minh bạch" }, "answer": "a" },
-  { "id": 100, "question": "DLXH là một hiện tượng xã hội vì sao?", "options": { "a": "Là sản phẩm của tương tác và nhận thức cộng đồng" }, "answer": "a" }
+  {
+    "id": 1,
+    "question": "Đối tượng nghiên cứu của xã hội học về dư luận xã hội là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Các quy luật xã hội trong hoạt động của DLXH"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 2,
+    "question": "Hướng tiếp cận của Mỹ trong nghiên cứu dư luận xã hội là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Nhấn mạnh điều tra xã hội học thực nghiệm"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 3,
+    "question": "Theo quan điểm của Durkheim, dư luận xã hội được xem là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Một sự kiện xã hội khách quan"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 4,
+    "question": "Theo Weber, nghiên cứu dư luận xã hội cần điều gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thấu hiểu bản chất bên trong và ý nghĩa ẩn sau hành vi"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 5,
+    "question": "Ý nghĩa của nghiên cứu dư luận xã hội trong quản lý xã hội là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Là cơ sở để ra quyết định quản lý sáng suốt và hợp lòng dân"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 6,
+    "question": "Dư luận xã hội có quan hệ gần gũi nhất với lĩnh vực nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Xã hội học chính trị và tâm lý học xã hội"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 7,
+    "question": "Theo phương pháp trưng cầu (polls), yếu tố quan trọng nhất là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tính đại diện của mẫu"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 8,
+    "question": "Tiếp cận lý thuyết trong nghiên cứu dư luận xã hội chủ yếu nhằm để?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Giải thích bản chất của DLXH và thái độ"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 9,
+    "question": "Theo Kant, “ý kiến” có vị trí như thế nào trong nhận thức?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ở mức thấp hơn kiến thức và niềm tin"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 10,
+    "question": "Theo Young (1923), dư luận xã hội hình thành khi nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Sau thảo luận công cộng và hợp lý hoá"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 11,
+    "question": "Chủ thể của dư luận xã hội theo Habermas là ai?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Những người có học vấn, mức sống cao, tích cực xã hội"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 12,
+    "question": "Khách thể của dư luận xã hội là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Sự kiện hoặc vấn đề xã hội được chú ý"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 13,
+    "question": "Một đặc tính cơ bản của dư luận xã hội là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Khuynh hướng đánh giá (đồng tình/ phản đối)"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 14,
+    "question": "Khác biệt giữa tin đồn và dư luận xã hội là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "DLXH có tính kiểm chứng cao và ổn định hơn tin đồn"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 15,
+    "question": "Chuẩn mực xã hội là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Quy tắc điều chỉnh hành vi được xã hội chia sẻ"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 16,
+    "question": "Mối quan hệ giữa chuẩn mực và dư luận xã hội là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Chuẩn mực là căn cứ để DLXH đánh giá hành vi"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 17,
+    "question": "Tác phẩm “Public Opinion” của Walter Lippmann ra đời năm nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "1922"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 18,
+    "question": "Theo Lippmann, yếu tố định hướng dư luận xã hội là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Truyền thông đại chúng"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 19,
+    "question": "Tönnies chia dư luận xã hội thành mấy dạng?",
+    "options": [
+      {
+        "key": "a",
+        "text": "3 dạng: rắn chắc – lỏng – khí"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 20,
+    "question": "Theo Habermas, điều kiện của “tình huống phát biểu lý tưởng” là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Mọi người được tự do tham gia và không bị ép buộc"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 21,
+    "question": "Theo Noelle-Neumann, hiện tượng “vòng xoắn im lặng” xuất phát từ đâu?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thiểu số sợ bị cô lập nên im lặng"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 22,
+    "question": "Theo Luhmann, giá trị của dư luận xã hội nằm ở đâu?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Nằm ở chủ đề, không phải người phát ngôn"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 23,
+    "question": "Theo Hovland, yếu tố nào không ảnh hưởng mạnh đến thay đổi thái độ?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Yếu tố sợ hãi trung bình"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 24,
+    "question": "Theo quan điểm Mác-xít, dư luận xã hội là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Bộ phận của ý thức xã hội, mang tính giai cấp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 25,
+    "question": "Hồ Chí Minh coi “dân là gốc” vì lý do gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Mọi quyền lực và lợi ích đều thuộc về nhân dân"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 26,
+    "question": "Hadley Cantril xem dư luận xã hội là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Hiện tượng có thể đo lường và dự báo"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 27,
+    "question": "Quy luật 1 của Cantril cho rằng DLXH nhạy cảm với gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Các sự kiện quan trọng"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 28,
+    "question": "Quy luật 3 của Cantril nhấn mạnh điều gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Sự kiện tác động mạnh hơn lời nói"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 29,
+    "question": "Khi DLXH chưa định hình, công chúng dễ bị ảnh hưởng bởi gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Người có uy tín phát biểu"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 30,
+    "question": "Theo Doob, hành vi “tuân theo” thể hiện điều gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Áp lực đi theo ý kiến số đông"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 31,
+    "question": "“Phóng chiếu” trong DLXH là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Gán suy nghĩ của mình cho người khác"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 32,
+    "question": "“Đơn giản hóa” trong DLXH là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Công chúng đơn giản hoá vấn đề phức tạp để dễ hiểu"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 33,
+    "question": "Quy luật 12 của Cantril khẳng định điều gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Dư luận dễ đồng thuận khi được tham gia quyết định"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 34,
+    "question": "Theo Parsons, chức năng xã hội giúp điều gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Duy trì trật tự và ổn định xã hội"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 35,
+    "question": "Merton phân biệt chức năng DLXH như thế nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tích cực và phản chức năng"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 36,
+    "question": "DLXH tác động trực tiếp khi nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Khi được biểu hiện rõ ràng qua truyền thông"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 37,
+    "question": "Một yếu tố làm giảm sức ép DLXH là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ý kiến trái chiều làm giảm hiệu lực dư luận"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 38,
+    "question": "Chức năng kiểm soát xã hội của DLXH thực hiện qua?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Khen ngợi hoặc lên án hành vi"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 39,
+    "question": "DLXH giúp “giải tỏa xã hội” bằng cách nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Giảm căng thẳng tập thể và ngăn ngừa xung đột"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 40,
+    "question": "Chức năng giáo dục của DLXH thể hiện như thế nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Cung cấp giá trị và định hướng hành vi"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 41,
+    "question": "DLXH giúp dự báo xã hội bằng cách nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Phản ánh xu hướng suy nghĩ của công chúng"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 42,
+    "question": "Thành phần nào không thể thiếu trong cơ chế hình thành DLXH?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thảo luận xã hội"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 43,
+    "question": "Điều kiện hình thành DLXH là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Sự kiện xã hội gây chú ý"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 44,
+    "question": "Yếu tố khiến DLXH biến đổi nhanh là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tác động mạnh của truyền thông"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 45,
+    "question": "Tính hai mặt của DLXH là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Vừa tích cực vừa tiêu cực"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 46,
+    "question": "Một ví dụ của chức năng tiêu cực của DLXH là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Gây áp lực quá mức lên cá nhân"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 47,
+    "question": "Khác biệt giữa thái độ và ý kiến trong DLXH là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thái độ mang tính ổn định hơn"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 48,
+    "question": "Theo thang đo Likert, yếu tố được đo là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Mức độ đồng ý hoặc phản đối"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 49,
+    "question": "Kỹ thuật phỏng vấn sâu giúp hiểu điều gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Động cơ và lý do ẩn sau ý kiến"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 50,
+    "question": "Một hạn chế của khảo sát trực tuyến là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Mẫu không đại diện cho toàn bộ dân số"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 51,
+    "question": "Điểm mạnh của phương pháp bảng hỏi là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thu thập dữ liệu từ mẫu lớn"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 52,
+    "question": "Trong điều tra xã hội học, độ tin cậy phản ánh điều gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tính ổn định của kết quả khi lặp lại"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 53,
+    "question": "Độ giá trị trong nghiên cứu đo điều gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Mức độ đo đúng khái niệm cần đo"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 54,
+    "question": "DLXH tác động mạnh nhất trong bối cảnh nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Khi xã hội có sự kiện gây chú ý lớn"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 55,
+    "question": "Chức năng truyền thông của DLXH thể hiện qua gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Lan tỏa thông tin và quan điểm"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 56,
+    "question": "Nguyên nhân dẫn đến mâu thuẫn DLXH là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Khác biệt về giá trị và lợi ích"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 57,
+    "question": "Theo Habermas, truyền thông có vai trò gì trong DLXH?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tạo không gian thảo luận công cộng"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 58,
+    "question": "Yếu tố nào giúp DLXH mang tính ổn định hơn?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Dựa trên kinh nghiệm xã hội lâu dài"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 59,
+    "question": "Trong chính trị, DLXH có vai trò gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Định hướng chính sách và quyết sách"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 60,
+    "question": "DLXH khác với tin đồn ở điểm nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "DLXH thường có cơ sở thực tế rõ ràng"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 61,
+    "question": "DLXH đóng vai trò gì trong bầu cử?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tác động đến lựa chọn ứng cử viên"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 62,
+    "question": "Một yếu tố thúc đẩy hình thành DLXH mạnh là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Sự kiện gây ảnh hưởng đến quyền lợi công chúng"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 63,
+    "question": "Trong kinh tế, DLXH ảnh hưởng đến điều gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Hành vi tiêu dùng và đầu tư"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 64,
+    "question": "Phản ứng DLXH mạnh thường xảy ra khi nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Khi vấn đề chạm đến giá trị đạo đức"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 65,
+    "question": "Một biểu hiện của DLXH tích cực là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Khuyến khích hành vi tốt trong cộng đồng"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 66,
+    "question": "DLXH có thể gây hại khi nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Khi bị thao túng bởi tin giả"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 67,
+    "question": "Vai trò của mạng xã hội trong DLXH là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tăng tốc độ lan truyền ý kiến"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 68,
+    "question": "DLXH thường thể hiện qua hình thức nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thảo luận, bình luận và phản hồi"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 69,
+    "question": "Theo nhìn nhận xã hội học, thái độ gồm mấy thành phần?",
+    "options": [
+      {
+        "key": "a",
+        "text": "3 thành phần: nhận thức, cảm xúc, hành vi"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 70,
+    "question": "Trong nhóm nhỏ, DLXH dễ ảnh hưởng vì sao?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Quan hệ gần gũi và tương tác trực tiếp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 71,
+    "question": "Một ví dụ về sự điều chỉnh chuẩn mực nhờ DLXH là?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Phản ứng xã hội với hành vi sai trái"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 72,
+    "question": "Vai trò của sự kiện truyền thông tiêu cực là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Gây biến động mạnh trong DLXH"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 73,
+    "question": "DLXH có thể đo bằng cách nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Khảo sát ý kiến công chúng"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 74,
+    "question": "Một yếu tố làm sai lệch kết quả khảo sát DLXH là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Cách đặt câu hỏi dẫn dắt"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 75,
+    "question": "DLXH thay đổi mạnh nhất trong giai đoạn nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thời điểm khủng hoảng xã hội"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 76,
+    "question": "Tác động của nhóm tham chiếu trong DLXH là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ảnh hưởng đến quan điểm cá nhân"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 77,
+    "question": "Trong xung đột xã hội, DLXH có thể giúp gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Giảm căng thẳng thông qua thảo luận"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 78,
+    "question": "Một chức năng quan trọng của DLXH trong giáo dục là?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Định hướng giá trị cho thế hệ trẻ"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 79,
+    "question": "DLXH thường đạt độ ổn định khi nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Khi ý kiến được nhiều người chia sẻ"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 80,
+    "question": "Một biểu hiện của DLXH không chính thức là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Bàn tán trong cộng đồng"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 81,
+    "question": "DLXH có thể được củng cố nhờ yếu tố nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thông tin chính xác từ nguồn uy tín"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 82,
+    "question": "Phản ứng xã hội trước sai phạm thường là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Lên án, yêu cầu xử lý"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 83,
+    "question": "DLXH giúp nhà nước điều chỉnh chính sách bằng cách nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Phản ánh nhu cầu và mong muốn của dân"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 84,
+    "question": "Trong nghiên cứu, biến phụ thuộc của DLXH thường là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Mức độ đồng thuận của công chúng"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 85,
+    "question": "Một sự kiện gây chia rẽ DLXH là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Vấn đề liên quan đến đạo đức và lợi ích nhóm"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 86,
+    "question": "DLXH có vai trò định hướng gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Hành vi và suy nghĩ của cá nhân"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 87,
+    "question": "Mạng xã hội làm thay đổi DLXH theo hướng nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Khuếch đại cả ý kiến tích cực và tiêu cực"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 88,
+    "question": "DLXH mang tính tự phát khi nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Khi hình thành nhanh trước sự kiện bất ngờ"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 89,
+    "question": "Một ví dụ về DLXH chính thức là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Kết quả thăm dò dư luận"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 90,
+    "question": "DLXH góp phần thúc đẩy tiến bộ xã hội như thế nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thúc đẩy thay đổi khi ý kiến dân chúng đủ mạnh"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 91,
+    "question": "Đặc trưng nổi bật của DLXH là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Mang tính đánh giá"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 92,
+    "question": "DLXH dễ bị thao túng nhất bởi yếu tố nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thông tin sai lệch trên mạng"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 93,
+    "question": "DLXH phản ánh điều gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thái độ chung của công chúng"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 94,
+    "question": "Vai trò của sự kiện truyền thông tích cực là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tăng uy tín và củng cố niềm tin xã hội"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 95,
+    "question": "DLXH hình thành mạnh nhất trong môi trường nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Môi trường có tự do bày tỏ ý kiến"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 96,
+    "question": "Tại sao DLXH quan trọng trong quản trị doanh nghiệp?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Ảnh hưởng trực tiếp đến danh tiếng doanh nghiệp"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 97,
+    "question": "Một biểu hiệu của thay đổi DLXH là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Sự chuyển biến trong thái độ công chúng"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 98,
+    "question": "DLXH có tính định hướng khi nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Khi được củng cố qua truyền thông"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 99,
+    "question": "DLXH phát huy vai trò giám sát xã hội bằng cách nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Gây áp lực yêu cầu minh bạch"
+      }
+    ],
+    "answer": "a"
+  },
+  {
+    "id": 100,
+    "question": "DLXH là một hiện tượng xã hội vì sao?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Là sản phẩm của tương tác và nhận thức cộng đồng"
+      }
+    ],
+    "answer": "a"
+  }
 ]
