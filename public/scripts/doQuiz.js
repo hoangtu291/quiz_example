@@ -5,13 +5,15 @@ let quizSelection = null; // { startIndex: 1-based, count }
 document.getElementById('quizModeBtn').addEventListener('click', () => {
     // If not currently in quizMode, show modal to pick number of questions and starting index
     if (!quizMode) {
-        const source = (Array.isArray(filtered) && filtered.length) ? filtered : (Array.isArray(questions) ? questions : []);
+        // Prefer the full `questions` list when opening the Quiz modal so
+        // previous `filtered` slices (from earlier Quiz runs) don't produce
+        // unexpectedly small totals when configuring a new Quiz.
+        const source = (Array.isArray(questions) && questions.length) ? questions : (Array.isArray(filtered) ? filtered : []);
         const totalAvailable = source.length;
         if (totalAvailable === 0) {
             alert('Không có câu hỏi để bắt đầu Quiz.');
             return;
         }
-
         const modal = document.createElement('div');
         modal.id = 'quizSelectModal';
         modal.setAttribute('role', 'dialog');
@@ -107,10 +109,14 @@ document.getElementById('quizModeBtn').addEventListener('click', () => {
 
         startBtn.addEventListener('click', () => {
             const count = Math.min(totalAvailable, Math.max(1, parseInt(countInput.value, 10) || 1));
-            const start = Math.min(totalAvailable, Math.max(1, parseInt(startInput.value, 10) || 1));
+            let start = Math.min(totalAvailable, Math.max(1, parseInt(startInput.value, 10) || 1));
+            if (isNaN(start) || start < 1 || start > totalAvailable) { alert('Số bắt đầu không hợp lệ'); return; }
             if (isNaN(count) || count < 1) { alert('Số câu không hợp lệ'); return; }
-            if (isNaN(start) || start < 1) { alert('Số bắt đầu không hợp lệ'); return; }
-            const maxStart = Math.max(1, totalAvailable - count + 1);
+            if (start + count - 1 > totalAvailable) {
+                console.warn('Điều chỉnh lại chỉ số bắt đầu để vừa với tổng câu hỏi khả dụng');
+                start = totalAvailable - count + 1;
+            }
+            const maxStart = totalAvailable
             const finalStart = Math.min(start, maxStart);
 
             quizSelection = { startIndex: finalStart, count };
@@ -125,6 +131,13 @@ document.getElementById('quizModeBtn').addEventListener('click', () => {
             showAnswers = false;
             perPage = count;
             currentPage = 1;
+            console.log("count: " + count);
+            console.log("start: " + finalStart);
+            console.log("total available: " + totalAvailable);
+            console.log("max start: " + maxStart);
+            console.log("quuiz Selection: " + JSON.stringify(quizSelection));
+
+
             document.getElementById('pagerArea').style.display = 'none';
             quizInfo = questions.slice(finalStart - 1, finalStart - 1 + count).map(item => {
                 return {
@@ -137,7 +150,7 @@ document.getElementById('quizModeBtn').addEventListener('click', () => {
             updateViewerForQuizMode();
             renderPage(filtered);
         });
-        
+
     } else {
         // exiting quiz
         quizMode = false;
@@ -223,7 +236,7 @@ function renderQuestionInGrid() {
         btn.className = 'btn small ' + ((quizMode && !!submited) ? (q.userAnswer === q.answer ? 'success' : 'error') : '') + (!!q.userAnswer ? '' : 'ques-btn');
         btn.title = `Câu ${q.id}\n${q.userAnswer || 'Chưa trả lời'}`;
         btn.onclick = () => {
-            scrollToQuestion(i+1)
+            scrollToQuestion(i + 1)
         };
         container.appendChild(btn);
     }
